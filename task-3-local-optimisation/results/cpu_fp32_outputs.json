@@ -1,0 +1,104 @@
+{
+  "model": "google/flan-t5-small",
+  "quantized": false,
+  "dtype": "FP32",
+  "prompts": [
+    {
+      "id": 1,
+      "category": "factual",
+      "prompt": "What is the capital of France?",
+      "output": "l'ondre",
+      "tokens": 8,
+      "latency_s": 0.267,
+      "tokens_per_sec": 29.98
+    },
+    {
+      "id": 2,
+      "category": "factual",
+      "prompt": "Who invented the telephone?",
+      "output": "john w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w. w",
+      "tokens": 101,
+      "latency_s": 0.935,
+      "tokens_per_sec": 108.02
+    },
+    {
+      "id": 3,
+      "category": "reasoning",
+      "prompt": "If a train travels at 60 mph for 2.5 hours, how far does it travel? Show your work.",
+      "output": "If the train travels at 60 mph for 2.5 hours, it travels at 60 / 2.5 = 10 hours. If the train travels at 60 mph for 2.5 hours, it travels 10 * 2.5 = 30 hours. If the train travels at 60 mph for 2.5 hours, it travels 30 * 2.5 = 120 hours. If the train travels at 60 mph for 2.5 hours, it travels 120 * 2.5 = 240 hours. If the train travels",
+      "tokens": 101,
+      "latency_s": 1.067,
+      "tokens_per_sec": 94.69
+    },
+    {
+      "id": 4,
+      "category": "reasoning",
+      "prompt": "A store sells apples for $0.75 each and oranges for $1.25 each. If I buy 4 apples and 3 oranges, what is the total cost?",
+      "output": "4 apples = $1.25 each. 3 oranges = $1.25 each. 3 apples = $1.25 each. 3 apples = $1.25 each. 3 apples = $1.25 each. 3 apples = $1.25 each. 3 apples = $1.25 each. 3 apples = $1.25 each. 3 apples = $1.25 each. 3 apples = $1.25 each. 3 apples = $1.25 each. 3 apples = $1.25 each. 3 apples =",
+      "tokens": 101,
+      "latency_s": 1.092,
+      "tokens_per_sec": 92.46
+    },
+    {
+      "id": 5,
+      "category": "creative",
+      "prompt": "Write a short paragraph about the beauty of a mountain sunrise.",
+      "output": "a mountain sunrise is a beautiful sight",
+      "tokens": 11,
+      "latency_s": 0.162,
+      "tokens_per_sec": 68.01
+    },
+    {
+      "id": 6,
+      "category": "creative",
+      "prompt": "Describe what a futuristic city might look like in 100 years.",
+      "output": "a city that is a city that is a city that is a city that is a city that is a city that is a city that is a city that is a city that is a city that is a city that is a city that is a city that is a city that is a city that is a city that is a city that is a city that is a city that is a city that is",
+      "tokens": 101,
+      "latency_s": 0.963,
+      "tokens_per_sec": 104.93
+    },
+    {
+      "id": 7,
+      "category": "code",
+      "prompt": "Write a Python function that checks if a number is prime.",
+      "output": "if a number is prime then a number is prime.",
+      "tokens": 16,
+      "latency_s": 0.141,
+      "tokens_per_sec": 113.09
+    },
+    {
+      "id": 8,
+      "category": "code",
+      "prompt": "Write a Python function that sorts a list of dictionaries by a given key.",
+      "output": "a) a list of dictionaries by a given key b) a) a list of dictionaries by a given key c) a list of dictionaries by a given key d) a list of dictionaries by a given key d) a list of dictionaries by a given key d) a list of dictionaries by a given key d) a list of",
+      "tokens": 101,
+      "latency_s": 0.904,
+      "tokens_per_sec": 111.76
+    },
+    {
+      "id": 9,
+      "category": "summarization",
+      "prompt": "Summarize the following in one sentence: Machine learning is a branch of artificial intelligence that focuses on building systems that can learn from data and improve their performance over time without being explicitly programmed for each task.",
+      "output": "Machine learning is a tool used to learn from data and to improve the performance of the building.",
+      "tokens": 22,
+      "latency_s": 0.196,
+      "tokens_per_sec": 112.51
+    },
+    {
+      "id": 10,
+      "category": "summarization",
+      "prompt": "In one sentence, what is the main idea: Neural networks are inspired by the structure of the human brain and consist of layers of interconnected nodes that process information and can recognize patterns in data.",
+      "output": "Neural networks are a type of network that is a part of the brain that processes information and can recognize patterns in data.",
+      "tokens": 29,
+      "latency_s": 0.252,
+      "tokens_per_sec": 115.15
+    }
+  ],
+  "summary": {
+    "load_time_s": 92.722,
+    "model_memory_mb": 69.4,
+    "avg_tokens_per_sec": 98.87,
+    "avg_latency_s": 0.598,
+    "total_tokens_generated": 591
+  }
+}

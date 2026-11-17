@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "How many identical layers are in the Transformer encoder stack, and what sub-layers does each layer contain?",
+    "expected_answer": "The encoder is composed of a stack of N = 6 identical layers, each containing two sub-layers: a multi-head self-attention mechanism and a position-wise fully connected feed-forward network.",
+    "correct_source_passage": "The encoder is composed of a stack of N = 6 identical layers. Each layer has two sub-layers. The first is a multi-head self-attention mechanism, and the second is a simple, position-wise fully connected feed-forward network.",
+    "source_doc": "attention.pdf",
+    "source_page": 3
+  },
+  {
+    "id": 2,
+    "question": "Why does the Transformer scale the dot products by the square root of dk in Scaled Dot-Product Attention?",
+    "expected_answer": "To prevent the dot products from growing large in magnitude for large values of dk, which would push the softmax function into regions with extremely small gradients.",
+    "correct_source_passage": "We suspect that for large values of dk, the dot products grow large in magnitude, pushing the softmax function into regions where it has extremely small gradients. To counteract this effect, we scale the dot products by 1 / sqrt(dk).",
+    "source_doc": "attention.pdf",
+    "source_page": 4
+  },
+  {
+    "id": 3,
+    "question": "How many parallel attention layers or heads are used in the Transformer model, and what are their dimensions?",
+    "expected_answer": "The model employs h = 8 parallel attention heads with dk = dv = dmodel / h = 64.",
+    "correct_source_passage": "In this work we employ h = 8 parallel attention layers, or heads. For each of these we use dk = dv = dmodel/h = 64.",
+    "source_doc": "attention.pdf",
+    "source_page": 5
+  },
+  {
+    "id": 4,
+    "question": "What is the formula and activation function used in the Position-wise Feed-Forward Networks of the Transformer?",
+    "expected_answer": "FFN(x) = max(0, xW1 + b1)W2 + b2, which consists of two linear transformations with a ReLU activation in between.",
+    "correct_source_passage": "This consists of two linear transformations with a ReLU activation in between. FFN(x) = max(0, xW1 + b1)W2 + b2 While the linear transformations are the same across different positions, they use different parameters from layer to layer.",
+    "source_doc": "attention.pdf",
+    "source_page": 5
+  },
+  {
+    "id": 5,
+    "question": "Why does the Transformer add positional encodings to the input embeddings?",
+    "expected_answer": "Because the Transformer contains no recurrence and no convolution, positional encodings inject information about the relative or absolute position of tokens in the sequence.",
+    "correct_source_passage": "Since our model contains no recurrence and no convolution, in order for the model to make use of the order of the sequence, we must inject some information about the relative or absolute position of the tokens in the sequence.",
+    "source_doc": "attention.pdf",
+    "source_page": 6
+  },
+  {
+    "id": 6,
+    "question": "What datasets and vocabulary sizes were used to train the Transformer for English-to-German and English-to-French translation?",
+    "expected_answer": "WMT 2014 English-German with 4.5 million sentence pairs and byte-pair encoding (37,000 tokens), and WMT 2014 English-French with 36 million sentences split into 32,000 word-piece tokens.",
+    "correct_source_passage": "We trained on the standard WMT 2014 English-German dataset consisting of about 4.5 million sentence pairs. Sentences were encoded using byte-pair encoding, which has a shared source-target vocabulary of about 37000 tokens. For English-French, we used the significantly larger WMT 2014 English-French dataset consisting of 36M sentences and split tokens into a 32000 word-piece vocabulary.",
+    "source_doc": "attention.pdf",
+    "source_page": 7
+  },
+  {
+    "id": 7,
+    "question": "What optimizer and learning rate schedule formula was used during training of the Transformer?",
+    "expected_answer": "The Adam optimizer with beta1 = 0.9, beta2 = 0.98, and epsilon = 1e-9, with a learning rate schedule that increases linearly for warmup_steps and decreases proportionally to the inverse square root of the step number.",
+    "correct_source_passage": "We used the Adam optimizer with beta1 = 0.9, beta2 = 0.98 and epsilon = 10^-9. We varied the learning rate over the course of training, according to the formula: lrate = dmodel^-0.5 * min(step_num^-0.5, step_num * warmup_steps^-1.5).",
+    "source_doc": "attention.pdf",
+    "source_page": 7
+  },
+  {
+    "id": 8,
+    "question": "What BLEU score did the big Transformer model achieve on English-to-French translation?",
+    "expected_answer": "The big Transformer model achieved a BLEU score of 41.0 (and 41.8 in subsequent evaluations), outperforming all previously published single models.",
+    "correct_source_passage": "On the English-to-French task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models and ensembles, at less than 1/4 the training cost of the previous state-of-the-art model.",
+    "source_doc": "attention.pdf",
+    "source_page": 8
+  },
+  {
+    "id": 9,
+    "question": "What does the acronym BERT stand for, and how does its pre-training differ from earlier language representation models?",
+    "expected_answer": "BERT stands for Bidirectional Encoder Representations from Transformers. Unlike earlier models, BERT pre-trains deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers.",
+    "correct_source_passage": "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers.",
+    "source_doc": "bert.pdf",
+    "source_page": 1
+  },
+  {
+    "id": 10,
+    "question": "What are the architectural specifications and parameter counts of BERT-Base and BERT-Large?",
+    "expected_answer": "BERT-Base has L=12 layers, H=768 hidden size, A=12 heads, and 110M total parameters. BERT-Large has L=24 layers, H=1024 hidden size, A=16 heads, and 340M total parameters.",
+    "correct_source_passage": "BERTBASE (L=12, H=768, A=12, Total Parameters=110M) and BERTLARGE (L=24, H=1024, A=16, Total Parameters=340M). BERTBASE was chosen to have the same model size as OpenAI GPT for comparison purposes.",
+    "source_doc": "bert.pdf",
+    "source_page": 3
+  },
+  {
+    "id": 11,
+    "question": "What token embeddings and vocabulary size does BERT use, and what is the role of the special [CLS] token?",
+    "expected_answer": "BERT uses WordPiece embeddings with a 30,000 token vocabulary. The first token is always [CLS], and its final hidden state is used as the aggregate sequence representation for classification tasks.",
+    "correct_source_passage": "We use WordPiece embeddings with a 30,000 token vocabulary. The first token of every sequence is always a special classification token ([CLS]). The final hidden state corresponding to this token is used as the aggregate sequence representation for classification tasks.",
+    "source_doc": "bert.pdf",
+    "source_page": 4
+  },
+  {
+    "id": 12,
+    "question": "How are sentence pairs packed and distinguished in a single input sequence in BERT?",
+    "expected_answer": "Sentence pairs are separated by a special [SEP] token, and a learned segment embedding is added to every token indicating whether it belongs to sentence A or sentence B.",
+    "correct_source_passage": "Sentence pairs are packed together into a single sequence. We differentiate the sentences in two ways. First, we separate them with a special token ([SEP]). Second, we add a learned embedding to every token indicating whether it belongs to sentence A or sentence B.",
+    "source_doc": "bert.pdf",
+    "source_page": 4
+  },
+  {
+    "id": 13,
+    "question": "What percentage of tokens are masked in BERT's Masked LM task, and how are the selected tokens replaced?",
+    "expected_answer": "15% of tokens are masked at random: 80% are replaced with the [MASK] token, 10% with a random token, and 10% kept unchanged.",
+    "correct_source_passage": "In all of our experiments, we mask 15% of all WordPiece tokens in each sequence at random. If the i-th token is chosen, we replace the i-th token with (1) the [MASK] token 80% of the time (2) a random token 10% of the time (3) the unchanged i-th token 10% of the time.",
+    "source_doc": "bert.pdf",
+    "source_page": 4
+  },
+  {
+    "id": 14,
+    "question": "What is the purpose of the Next Sentence Prediction (NSP) task in BERT, and how are training sentence pairs constructed?",
+    "expected_answer": "To train the model to understand sentence relationships for downstream tasks like QA and NLI. 50% of the time sentence B is the actual next sentence (IsNext), and 50% of the time it is a random sentence from the corpus (NotNext).",
+    "correct_source_passage": "Many important downstream tasks such as Question Answering (QA) and Natural Language Inference (NLI) are based on understanding the relationship between two sentences... 50% of the time B is the actual next sentence that follows A (labeled as IsNext), and 50% of the time it is a random sentence from the corpus (labeled as NotNext).",
+    "source_doc": "bert.pdf",
+    "source_page": 4
+  },
+  {
+    "id": 15,
+    "question": "What average score did BERT-Large achieve on the GLUE benchmark, and how did it compare to OpenAI GPT?",
+    "expected_answer": "BERT-Large achieved an average score of 80.5 on the GLUE benchmark, outperforming OpenAI GPT which scored 75.1.",
+    "correct_source_passage": "BERTBASE achieves 79.6 average score and BERTLARGE achieves 80.5 average score on the GLUE benchmark, substantially outperforming OpenAI GPT which achieved 75.1 average score.",
+    "source_doc": "bert.pdf",
+    "source_page": 6
+  }
+]

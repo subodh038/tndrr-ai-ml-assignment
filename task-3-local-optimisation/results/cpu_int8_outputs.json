@@ -1,0 +1,104 @@
+{
+  "model": "google/flan-t5-small",
+  "quantized": true,
+  "dtype": "INT8 (dynamic)",
+  "prompts": [
+    {
+      "id": 1,
+      "category": "factual",
+      "prompt": "What is the capital of France?",
+      "output": "h\u00f4tel",
+      "tokens": 4,
+      "latency_s": 0.079,
+      "tokens_per_sec": 50.44
+    },
+    {
+      "id": 2,
+      "category": "factual",
+      "prompt": "Who invented the telephone?",
+      "output": "who invented the telephone",
+      "tokens": 6,
+      "latency_s": 0.078,
+      "tokens_per_sec": 76.64
+    },
+    {
+      "id": 3,
+      "category": "reasoning",
+      "prompt": "If a train travels at 60 mph for 2.5 hours, how far does it travel? Show your work.",
+      "output": "If a train travels at 60 mph for 2.5 hours, it travels up to 60 mph.",
+      "tokens": 25,
+      "latency_s": 0.298,
+      "tokens_per_sec": 84.01
+    },
+    {
+      "id": 4,
+      "category": "reasoning",
+      "prompt": "A store sells apples for $0.75 each and oranges for $1.25 each. If I buy 4 apples and 3 oranges, what is the total cost?",
+      "output": "If I buy 4 apples and 3 oranges, the total cost is 4 apples + 3 oranges = $18.75.",
+      "tokens": 28,
+      "latency_s": 0.33,
+      "tokens_per_sec": 84.73
+    },
+    {
+      "id": 5,
+      "category": "creative",
+      "prompt": "Write a short paragraph about the beauty of a mountain sunrise.",
+      "output": "a shady sandbar that looks like a sandbar that looks like a rocky cliff",
+      "tokens": 30,
+      "latency_s": 0.351,
+      "tokens_per_sec": 85.52
+    },
+    {
+      "id": 6,
+      "category": "creative",
+      "prompt": "Describe what a futuristic city might look like in 100 years.",
+      "output": "Describe the city in a year.",
+      "tokens": 11,
+      "latency_s": 0.145,
+      "tokens_per_sec": 76.09
+    },
+    {
+      "id": 7,
+      "category": "code",
+      "prompt": "Write a Python function that checks if a number is prime.",
+      "output": "a syncing function",
+      "tokens": 9,
+      "latency_s": 0.111,
+      "tokens_per_sec": 81.19
+    },
+    {
+      "id": 8,
+      "category": "code",
+      "prompt": "Write a Python function that sorts a list of dictionaries by a given key.",
+      "output": "a computer",
+      "tokens": 5,
+      "latency_s": 0.068,
+      "tokens_per_sec": 73.27
+    },
+    {
+      "id": 9,
+      "category": "summarization",
+      "prompt": "Summarize the following in one sentence: Machine learning is a branch of artificial intelligence that focuses on building systems that can learn from data and improve their performance over time without being explicitly programmed for each task.",
+      "output": "Summarize the following in one sentence: Machine learning is a branch of artificial intelligence that focuses on building systems that can learn from data and improve their performance over time without being explicitly programmed for each task.",
+      "tokens": 46,
+      "latency_s": 0.604,
+      "tokens_per_sec": 76.12
+    },
+    {
+      "id": 10,
+      "category": "summarization",
+      "prompt": "In one sentence, what is the main idea: Neural networks are inspired by the structure of the human brain and consist of layers of interconnected nodes that process information and can recognize patterns in data.",
+      "output": "The main idea is to create a network that connects the human brain to the environment and to provide a network that connects the data to the environment.",
+      "tokens": 35,
+      "latency_s": 0.414,
+      "tokens_per_sec": 84.49
+    }
+  ],
+  "summary": {
+    "load_time_s": 3.434,
+    "model_memory_mb": 427.5,
+    "avg_tokens_per_sec": 80.29,
+    "avg_latency_s": 0.248,
+    "total_tokens_generated": 199
+  }
+}

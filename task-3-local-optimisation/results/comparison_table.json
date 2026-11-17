@@ -1,0 +1,23 @@
+{
+  "fp32": {
+    "load_time_s": 92.722,
+    "model_memory_mb": 69.4,
+    "avg_tokens_per_sec": 98.87,
+    "avg_latency_s": 0.598,
+    "total_tokens_generated": 591
+  },
+  "int8": {
+    "load_time_s": 3.434,
+    "model_memory_mb": 427.5,
+    "avg_tokens_per_sec": 80.29,
+    "avg_latency_s": 0.248,
+    "total_tokens_generated": 199
+  },
+  "speedup": {
+    "load_time": 27.001,
+    "model_memory": 0.162,
+    "avg_tokens_per_sec": 0.812,
+    "avg_latency": 2.411
+  },
+  "notes": "Speedup for load_time / memory / latency: fp32/int8 (>1 means INT8 is faster/smaller). Speedup for TPS: int8/fp32 (>1 means INT8 is faster)."
+}

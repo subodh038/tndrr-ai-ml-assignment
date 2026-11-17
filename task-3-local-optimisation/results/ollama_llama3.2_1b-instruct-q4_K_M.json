@@ -1,0 +1,163 @@
+{
+  "model_info": {
+    "model_size_bytes": 940908215,
+    "model_size_mb": 897.32,
+    "vram_bytes": 0,
+    "vram_mb": 0.0,
+    "vram_status": "0.0 MB (CPU Mode / No VRAM offloaded)",
+    "quantization": "Q4_K_M",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "llama",
+      "families": [
+        "llama"
+      ],
+      "parameter_size": "1.2B",
+      "quantization_level": "Q4_K_M"
+    }
+  },
+  "summary": {
+    "model": "llama3.2:1b-instruct-q4_K_M",
+    "quantization": "Q4_K_M",
+    "model_size_mb": 897.32,
+    "vram_mb": 0.0,
+    "vram_status": "0.0 MB (CPU Mode / No VRAM offloaded)",
+    "system_ram_before_mb": 11868.37,
+    "system_ram_after_load_mb": 12749.59,
+    "system_ram_delta_mb": 881.22,
+    "generation_options": {
+      "num_predict": 128,
+      "temperature": 0.7,
+      "num_ctx": 2048
+    },
+    "num_prompts": 10,
+    "total_output_tokens": 855,
+    "total_eval_duration_s": 19.3528,
+    "total_wall_clock_s": 41.5,
+    "avg_latency_s": 4.15,
+    "aggregate_generation_tokens_per_sec": 44.18
+  },
+  "prompts": [
+    {
+      "id": 1,
+      "category": "factual",
+      "prompt": "What is the capital of France?",
+      "output": "The capital of France is Paris.",
+      "output_tokens": 8,
+      "prompt_eval_count": 32,
+      "prompt_eval_duration_s": 0.1075,
+      "eval_duration_s": 0.1782,
+      "latency_s": 2.392,
+      "generation_tokens_per_sec": 44.89
+    },
+    {
+      "id": 2,
+      "category": "factual",
+      "prompt": "Who invented the telephone?",
+      "output": "The invention of the telephone is a bit complex, and it involved the contributions of several individuals over time. While Alexander Graham Bell is often credited with the invention of the first practical telephone, the actual story is more nuanced.\n\nHere's a brief rundown of the key players:\n\n* Alexander Graham Bell (1847-1922): An Scottish-born inventor and scientist, Bell is often credited with inventing the first practical telephone. He patented the device on March 7, 1876, and demonstrated it to the public.\n* Elisha Gray (1835-1901): An American inventor, Gray had developed a similar device called the",
+      "output_tokens": 128,
+      "prompt_eval_count": 30,
+      "prompt_eval_duration_s": 0.0929,
+      "eval_duration_s": 2.892,
+      "latency_s": 5.035,
+      "generation_tokens_per_sec": 44.26
+    },
+    {
+      "id": 3,
+      "category": "reasoning",
+      "prompt": "If a train travels at 60 mph for 2.5 hours, how far does it travel? Show your work.",
+      "output": "To find the distance traveled, we can use the formula:\n\nDistance = Speed x Time\n\nIn this case, the speed is 60 mph and the time is 2.5 hours.\n\nDistance = 60 mph x 2.5 hours\nDistance = 150 miles\n\nSo, the train travels 150 miles.",
+      "output_tokens": 66,
+      "prompt_eval_count": 50,
+      "prompt_eval_duration_s": 0.1503,
+      "eval_duration_s": 1.5394,
+      "latency_s": 3.745,
+      "generation_tokens_per_sec": 42.87
+    },
+    {
+      "id": 4,
+      "category": "reasoning",
+      "prompt": "A store sells apples for $0.75 each and oranges for $1.25 each. If I buy 4 apples and 3 oranges, what is the total cost?",
+      "output": "To find the total cost, you need to calculate the cost of the apples and the oranges separately and then add them together.\n\nThe cost of 4 apples is 4 x $0.75 = $3.00\nThe cost of 3 oranges is 3 x $1.25 = $3.75\n\nThe total cost is $3.00 + $3.75 = $6.75",
+      "output_tokens": 84,
+      "prompt_eval_count": 61,
+      "prompt_eval_duration_s": 0.196,
+      "eval_duration_s": 1.8806,
+      "latency_s": 4.152,
+      "generation_tokens_per_sec": 44.67
+    },
+    {
+      "id": 5,
+      "category": "creative",
+      "prompt": "Write a short paragraph about the beauty of a mountain sunrise.",
+      "output": "The mountain sunrise is a breathtaking sight to behold. As the darkness is slowly lifted, the rugged peaks are bathed in a warm, golden light, as if infused with the very essence of the dawn. The sky erupts in a kaleidoscope of colors, from soft pinks and blushing peaches to fiery oranges and burning cinnabar, a breathtaking display of natural beauty. The gentle rise of the sun is accompanied by the soothing sounds of nature, as the wind whispers through the valleys and the trees rustle in the gentle morning breeze. The mountain sunrise is a time of awe and wonder, a reminder of the awe-ins",
+      "output_tokens": 128,
+      "prompt_eval_count": 37,
+      "prompt_eval_duration_s": 0.1061,
+      "eval_duration_s": 2.8572,
+      "latency_s": 5.017,
+      "generation_tokens_per_sec": 44.8
+    },
+    {
+      "id": 6,
+      "category": "creative",
+      "prompt": "Describe what a futuristic city might look like in 100 years.",
+      "output": "A futuristic city in 100 years could be a vastly different and awe-inspiring place. Here's a glimpse into what it might look like:\n\n**Sustainable Energy and Architecture**\n\nThe city would likely be powered by 100% renewable energy sources, such as solar, wind, and hydrogen fuel cells. Buildings would be designed with sustainability in mind, featuring:\n\n1. **Vertical Farms**: Towering vertical farms would provide a significant portion of the city's food supply, using hydroponics, aeroponics, or other soilless cultivation methods.\n2. **Holographic Skyscrapers**: Holographic structures would appear",
+      "output_tokens": 128,
+      "prompt_eval_count": 38,
+      "prompt_eval_duration_s": 0.1327,
+      "eval_duration_s": 2.8757,
+      "latency_s": 5.073,
+      "generation_tokens_per_sec": 44.51
+    },
+    {
+      "id": 7,
+      "category": "code",
+      "prompt": "Write a Python function that checks if a number is prime.",
+      "output": "**Prime Number Checker Function**\n=====================================\n\nHere's a Python function that checks if a number is prime:\n\n```python\ndef is_prime(n):\n    \"\"\"\n    Checks if a number is prime.\n\n    Args:\n        n (int): The number to check.\n\n    Returns:\n        bool: True if the number is prime, False otherwise.\n    \"\"\"\n    if n <= 1:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n```\n\n**Example Usage**\n---------------\n\n```",
+      "output_tokens": 128,
+      "prompt_eval_count": 37,
+      "prompt_eval_duration_s": 0.1317,
+      "eval_duration_s": 2.8166,
+      "latency_s": 5.005,
+      "generation_tokens_per_sec": 45.45
+    },
+    {
+      "id": 8,
+      "category": "code",
+      "prompt": "Write a Python function that sorts a list of dictionaries by a given key.",
+      "output": "Here's a Python function that sorts a list of dictionaries by a given key using the built-in `sorted` function and a custom sorting key function:\n\n```python\ndef sort_dict_list(dict_list, key):\n    \"\"\"\n    Sorts a list of dictionaries by a given key.\n\n    Args:\n        dict_list (list): A list of dictionaries.\n        key (str): The key to sort by.\n\n    Returns:\n        list: The sorted list of dictionaries.\n    \"\"\"\n    return sorted(dict_list, key=lambda x: x[key], reverse=True)\n\n# Example usage:\ndict_list = [\n    {\"name\": \"John\", \"age",
+      "output_tokens": 128,
+      "prompt_eval_count": 40,
+      "prompt_eval_duration_s": 0.1123,
+      "eval_duration_s": 2.8975,
+      "latency_s": 5.101,
+      "generation_tokens_per_sec": 44.18
+    },
+    {
+      "id": 9,
+      "category": "summarization",
+      "prompt": "Summarize the following in one sentence: Machine learning is a branch of artificial intelligence that focuses on building systems that can learn from data and improve their performance over time without being explicitly programmed for each task.",
+      "output": "Machine learning is a subfield of artificial intelligence that enables computers to learn from data and improve their performance over time through algorithms and statistical models.",
+      "output_tokens": 29,
+      "prompt_eval_count": 66,
+      "prompt_eval_duration_s": 0.2163,
+      "eval_duration_s": 0.6472,
+      "latency_s": 2.933,
+      "generation_tokens_per_sec": 44.81
+    },
+    {
+      "id": 10,
+      "category": "summarization",
+      "prompt": "In one sentence, what is the main idea: Neural networks are inspired by the structure of the human brain and consist of layers of interconnected nodes that process information and can recognize patterns in data.",
+      "output": "Neural networks are inspired by the structure of the human brain, where layers of interconnected nodes process information and can recognize patterns in data.",
+      "output_tokens": 28,
+      "prompt_eval_count": 63,
+      "prompt_eval_duration_s": 0.2005,
+      "eval_duration_s": 0.7684,
+      "latency_s": 3.048,
+      "generation_tokens_per_sec": 36.44
+    }
+  ]
+}

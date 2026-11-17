@@ -1,0 +1,38 @@
+{
+  "total": 720,
+  "train": 503,
+  "val": 108,
+  "test": 109,
+  "action_counts": {
+    "set_reminder": 120,
+    "create_task": 120,
+    "cancel_event": 110,
+    "send_message": 120,
+    "create_event": 130,
+    "reschedule_event": 120
+  },
+  "train_action_counts": {
+    "set_reminder": 78,
+    "create_task": 84,
+    "cancel_event": 78,
+    "send_message": 82,
+    "create_event": 100,
+    "reschedule_event": 81
+  },
+  "val_action_counts": {
+    "reschedule_event": 17,
+    "cancel_event": 18,
+    "create_event": 12,
+    "set_reminder": 21,
+    "send_message": 18,
+    "create_task": 22
+  },
+  "test_action_counts": {
+    "set_reminder": 21,
+    "reschedule_event": 22,
+    "create_event": 18,
+    "cancel_event": 14,
+    "send_message": 20,
+    "create_task": 14
+  }
+}

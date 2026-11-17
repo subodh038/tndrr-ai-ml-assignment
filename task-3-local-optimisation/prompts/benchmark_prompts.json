@@ -1,0 +1,12 @@
+[
+  {"id": 1, "category": "factual", "prompt": "What is the capital of France?", "expected_length": "short"},
+  {"id": 2, "category": "factual", "prompt": "Who invented the telephone?", "expected_length": "short"},
+  {"id": 3, "category": "reasoning", "prompt": "If a train travels at 60 mph for 2.5 hours, how far does it travel? Show your work.", "expected_length": "medium"},
+  {"id": 4, "category": "reasoning", "prompt": "A store sells apples for $0.75 each and oranges for $1.25 each. If I buy 4 apples and 3 oranges, what is the total cost?", "expected_length": "medium"},
+  {"id": 5, "category": "creative", "prompt": "Write a short paragraph about the beauty of a mountain sunrise.", "expected_length": "medium"},
+  {"id": 6, "category": "creative", "prompt": "Describe what a futuristic city might look like in 100 years.", "expected_length": "medium"},
+  {"id": 7, "category": "code", "prompt": "Write a Python function that checks if a number is prime.", "expected_length": "long"},
+  {"id": 8, "category": "code", "prompt": "Write a Python function that sorts a list of dictionaries by a given key.", "expected_length": "long"},
+  {"id": 9, "category": "summarization", "prompt": "Summarize the following in one sentence: Machine learning is a branch of artificial intelligence that focuses on building systems that can learn from data and improve their performance over time without being explicitly programmed for each task.", "expected_length": "short"},
+  {"id": 10, "category": "summarization", "prompt": "In one sentence, what is the main idea: Neural networks are inspired by the structure of the human brain and consist of layers of interconnected nodes that process information and can recognize patterns in data.", "expected_length": "short"}
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "input": "Can you schedule a sync with David next Friday around 3 in the afternoon?",
+    "gold_output": {
+      "action": "create_event",
+      "person": "David",
+      "date": "next Friday",
+      "time": "15:00"
+    },
+    "base_model_prediction": "Sure! Here is the structured JSON representation of your meeting request:\n```json\n{\n  \"action\": \"schedule_meeting\",\n  \"attendee\": \"David\",\n  \"day\": \"Friday\",\n  \"time\": \"3:00 PM\"\n}\n```\nLet me know if you need any adjustments!",
+    "failure_type": "Schema Non-Compliance and Conversational Wrapper",
+    "cause": "The base instruction model produces conversational pleasantries ('Sure! Here is...') and markdown fences (```json), causing standard json.loads() parsers to fail. Furthermore, zero-shot base models hallucinate alternative key names ('attendee' instead of 'person', 'schedule_meeting' instead of 'create_event', '3:00 PM' instead of '15:00') due to lack of domain-specific schema alignment.",
+    "fine_tuned_mitigation": "Supervised fine-tuning with LoRA forces the model to learn deterministic EOS token generation immediately following the closing brace '}', and binds the token vocabulary to the exact canonical schema keys ('action', 'person', 'date', 'time')."
+  },
+  {
+    "id": 2,
+    "input": "Reschedule the review meeting with Sarah from Monday to Wednesday morning at 10",
+    "gold_output": {
+      "action": "reschedule_event",
+      "person": "Sarah",
+      "old_date": "Monday",
+      "new_date": "Wednesday",
+      "new_time": "10:00"
+    },
+    "base_model_prediction": "{\n  \"action\": \"create_event\",\n  \"person\": \"Sarah\",\n  \"date\": \"Wednesday\",\n  \"time\": \"10:00\"\n}",
+    "failure_type": "Action Misclassification and Temporal Slot Dropping",
+    "cause": "The base model detects 'meeting with Sarah Wednesday at 10' and triggers the higher-prior 'create_event' pattern, completely dropping the 'reschedule' semantic intent and discarding the 'old_date' slot ('Monday').",
+    "fine_tuned_mitigation": "LoRA adapter updates across the attention projection layers (q_proj, k_proj, v_proj, o_proj) allow the model to attend to multi-temporal prepositional phrases ('from Monday to Wednesday') and reliably output 'old_date' alongside 'new_date'."
+  },
+  {
+    "id": 3,
+    "input": "Remind me to submit the quarterly tax report to the accountant before 5 PM on the 25th",
+    "gold_output": {
+      "action": "set_reminder",
+      "task": "submit the quarterly tax report",
+      "date": "the 25th",
+      "time": "17:00"
+    },
+    "base_model_prediction": "{\n  \"action\": \"set_reminder\",\n  \"task\": \"submit the quarterly tax report to the accountant before 5 PM on the 25th\",\n  \"date\": null,\n  \"time\": null\n}",
+    "failure_type": "Slot Boundary Bleed / Over-Inclusion",
+    "cause": "Without fine-tuning on slot delimiters, the model copies the entire predicate into the 'task' string value instead of segmenting 'the 25th' into 'date' and '5 PM' into '17:00', resulting in null/empty temporal slots.",
+    "fine_tuned_mitigation": "Training on balanced slot-filling examples teaches the network boundary token transitions between task descriptions and temporal specifiers."
+  }
+]

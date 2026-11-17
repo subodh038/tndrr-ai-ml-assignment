@@ -1,0 +1,10 @@
+Metric,llama3.2:1b-instruct-q4_K_M,llama3.2:1b-instruct-q8_0
+Quantization Level,Q4_K_M,Q8_0
+Model Size (Disk/RAM MB),897.32 MB,1386.92 MB
+VRAM Allocation,0.0 MB (CPU Mode / No VRAM offloaded),0.0 MB (CPU Mode / No VRAM offloaded)
+Host System RAM Delta (MB),+881.2 MB,+1368.5 MB
+Average Latency (s),4.150 s,4.990 s
+Aggregate Generation Tok/s,44.18 tok/s,32.99 tok/s
+Total Tokens Generated,855,880
+Total Eval Duration (s),19.353 s,26.675 s
+Total Wall-Clock Time (s),41.500 s,49.901 s

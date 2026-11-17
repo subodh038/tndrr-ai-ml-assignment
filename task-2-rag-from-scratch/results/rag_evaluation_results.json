@@ -1,0 +1,337 @@
+{
+  "dataset": {
+    "document_collection": "arXiv:1706.03762 (Attention) + arXiv:1810.04805 (BERT)",
+    "total_pages": 31,
+    "num_questions": 15
+  },
+  "config_a": {
+    "config_name": "Config_A",
+    "chunk_size": 256,
+    "overlap": 32,
+    "total_chunks": 1529,
+    "total_questions": 15,
+    "hits_at_1": 5,
+    "hits_at_3": 7,
+    "hits_at_5": 9,
+    "recall_at_1": 0.3333,
+    "recall_at_3": 0.4667,
+    "recall_at_5": 0.6,
+    "mrr_at_5": 0.4189
+  },
+  "config_b": {
+    "config_name": "Config_B",
+    "chunk_size": 512,
+    "overlap": 64,
+    "total_chunks": 2262,
+    "total_questions": 15,
+    "hits_at_1": 9,
+    "hits_at_3": 10,
+    "hits_at_5": 12,
+    "recall_at_1": 0.6,
+    "recall_at_3": 0.6667,
+    "recall_at_5": 0.8,
+    "mrr_at_5": 0.66
+  },
+  "comparison_summary": {
+    "better_config": "Config_B",
+    "recall_5_diff": 0.2,
+    "mrr_diff": 0.2411
+  },
+  "total_failures_detected": 7,
+  "failure_cases": [
+    {
+      "id": 3,
+      "question": "How many parallel attention layers or heads are used in the Transformer model, and what are their dimensions?",
+      "gold_doc": "attention.pdf",
+      "gold_page": 5,
+      "hit_config_a": false,
+      "hit_config_b": true,
+      "rank_a": null,
+      "rank_b": 1,
+      "top_retrieved_a": [
+        {
+          "rank": 1,
+          "source": "attention.pdf",
+          "page": 5,
+          "score": 0.7488,
+          "snippet": "we use\ndk = dv = dmodel/h = 64. Due to the reduced dimension of each head, the total computational cost\nis similar to that of single-head attention with full di..."
+        },
+        {
+          "rank": 2,
+          "source": "bert.pdf",
+          "page": 3,
+          "score": 0.6725,
+          "snippet": "to the original,\nwe will omit an exhaustive background description of the model architecture and refer readers to\nVaswani et al. (2017) as well as excellent gui..."
+        }
+      ],
+      "top_retrieved_b": [
+        {
+          "rank": 1,
+          "source": "attention.pdf",
+          "page": 5,
+          "score": 0.7709,
+          "snippet": "s are parameter matrices W Q\ni\n\u2208Rdmodel\u00d7dk, W K\ni\n\u2208Rdmodel\u00d7dk, W V\ni\n\u2208Rdmodel\u00d7dv\nand W O \u2208Rhdv\u00d7dmodel.\nIn this work we employ h = 8 parallel attention layers, o..."
+        },
+        {
+          "rank": 2,
+          "source": "attention.pdf",
+          "page": 3,
+          "score": 0.6569,
+          "snippet": "Figure 1: The Transformer - model architecture.\nThe Transformer follows this overall architecture using stacked self-attention and point-wise, fully\nconnected l..."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What is the formula and activation function used in the Position-wise Feed-Forward Networks of the Transformer?",
+      "gold_doc": "attention.pdf",
+      "gold_page": 5,
+      "hit_config_a": false,
+      "hit_config_b": true,
+      "rank_a": null,
+      "rank_b": 1,
+      "top_retrieved_a": [
+        {
+          "rank": 1,
+          "source": "attention.pdf",
+          "page": 1,
+          "score": 0.5599,
+          "snippet": "through an attention\nmechanism. We propose a new simple network architecture, the Transformer,\nbased solely on attention mechanisms, dispensing with recurrence ..."
+        },
+        {
+          "rank": 2,
+          "source": "attention.pdf",
+          "page": 3,
+          "score": 0.5462,
+          "snippet": "Figure 1: The Transformer - model architecture.\nThe Transformer follows this overall architecture using stacked self-attention and point-wise, fully\nconnected l..."
+        }
+      ],
+      "top_retrieved_b": [
+        {
+          "rank": 1,
+          "source": "attention.pdf",
+          "page": 5,
+          "score": 0.5317,
+          "snippet": "k, which is applied to each position separately and identically. This\nconsists of two linear transformations with a ReLU activation in between.\nFFN(x) = max(0, ..."
+        },
+        {
+          "rank": 2,
+          "source": "attention.pdf",
+          "page": 3,
+          "score": 0.5158,
+          "snippet": "Figure 1: The Transformer - model architecture.\nThe Transformer follows this overall architecture using stacked self-attention and point-wise, fully\nconnected l..."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Why does the Transformer add positional encodings to the input embeddings?",
+      "gold_doc": "attention.pdf",
+      "gold_page": 6,
+      "hit_config_a": true,
+      "hit_config_b": false,
+      "rank_a": 5,
+      "rank_b": null,
+      "top_retrieved_a": [
+        {
+          "rank": 1,
+          "source": "attention.pdf",
+          "page": 9,
+          "score": 0.6612,
+          "snippet": "elpful in avoiding over-fitting. In row (E) we replace our\nsinusoidal positional encoding with learned positional embeddings [9], and observe nearly identical\nr..."
+        },
+        {
+          "rank": 2,
+          "source": "attention.pdf",
+          "page": 6,
+          "score": 0.62,
+          "snippet": "the encoder and decoder stacks. The positional encodings have the same dimension dmodel\nas the embeddings, so that the two can be summed...."
+        }
+      ],
+      "top_retrieved_b": [
+        {
+          "rank": 1,
+          "source": "attention.pdf",
+          "page": 3,
+          "score": 0.532,
+          "snippet": "Figure 1: The Transformer - model architecture.\nThe Transformer follows this overall architecture using stacked self-attention and point-wise, fully\nconnected l..."
+        },
+        {
+          "rank": 2,
+          "source": "attention.pdf",
+          "page": 6,
+          "score": 0.5254,
+          "snippet": "put embeddings at the\nbottoms of the encoder and decoder stacks. The positional encodings have the same dimension dmodel\nas the embeddings, so that the two can ..."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What datasets and vocabulary sizes were used to train the Transformer for English-to-German and English-to-French translation?",
+      "gold_doc": "attention.pdf",
+      "gold_page": 7,
+      "hit_config_a": false,
+      "hit_config_b": true,
+      "rank_a": null,
+      "rank_b": 5,
+      "top_retrieved_a": [
+        {
+          "rank": 1,
+          "source": "attention.pdf",
+          "page": 8,
+          "score": 0.6188,
+          "snippet": "previous state-of-the-art model. The Transformer (big) model trained for English-to-French used\ndropout rate Pdrop = 0.1, instead of 0.3.\nFor the base models, w..."
+        },
+        {
+          "rank": 2,
+          "source": "attention.pdf",
+          "page": 8,
+          "score": 0.613,
+          "snippet": "Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the\nEnglish-to-German and English-to-French newstest2014 tests at ..."
+        }
+      ],
+      "top_retrieved_b": [
+        {
+          "rank": 1,
+          "source": "attention.pdf",
+          "page": 8,
+          "score": 0.6722,
+          "snippet": "the\npositional encodings in both the encoder and decoder stacks. For the base model, we use a rate of\nPdrop = 0.1.\nLabel Smoothing\nDuring training, we employed ..."
+        },
+        {
+          "rank": 2,
+          "source": "attention.pdf",
+          "page": 9,
+          "score": 0.6138,
+          "snippet": "Table 3: Variations on the Transformer architecture. Unlisted values are identical to those of the base\nmodel. All metrics are on the English-to-German translat..."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What does the acronym BERT stand for, and how does its pre-training differ from earlier language representation models?",
+      "gold_doc": "bert.pdf",
+      "gold_page": 1,
+      "hit_config_a": false,
+      "hit_config_b": false,
+      "rank_a": null,
+      "rank_b": null,
+      "top_retrieved_a": [
+        {
+          "rank": 1,
+          "source": "bert.pdf",
+          "page": 3,
+          "score": 0.7608,
+          "snippet": "(Deng et al., 2009; Yosinski et al., 2014).\n\nBERT\nWe introduce BERT and its detailed implementation in this section. There are two steps in our\nframework: pre-t..."
+        },
+        {
+          "rank": 2,
+          "source": "bert.pdf",
+          "page": 2,
+          "score": 0.7307,
+          "snippet": "entations. Unlike Radford et al. (2018), which uses unidirectional language models for pre-training, BERT\nuses masked language models to enable pretrained deep ..."
+        }
+      ],
+      "top_retrieved_b": [
+        {
+          "rank": 1,
+          "source": "bert.pdf",
+          "page": 2,
+          "score": 0.7029,
+          "snippet": "the need for many heavily-engineered taskspeci\ufb01c architectures. BERT is the \ufb01rst \ufb01netuning based representation model that achieves\nstate-of-the-art performance..."
+        },
+        {
+          "rank": 2,
+          "source": "bert.pdf",
+          "page": 3,
+          "score": 0.6832,
+          "snippet": "introduce BERT and its detailed implementation in this section. There are two steps in our\nframework: pre-training and \ufb01ne-tuning.\nDuring pre-training, the mode..."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "What token embeddings and vocabulary size does BERT use, and what is the role of the special [CLS] token?",
+      "gold_doc": "bert.pdf",
+      "gold_page": 4,
+      "hit_config_a": false,
+      "hit_config_b": true,
+      "rank_a": null,
+      "rank_b": 1,
+      "top_retrieved_a": [
+        {
+          "rank": 1,
+          "source": "bert.pdf",
+          "page": 4,
+          "score": 0.7217,
+          "snippet": "token, its input representation is\nconstructed by summing the corresponding token,\nsegment, and position embeddings. A visualization of this construction can be..."
+        },
+        {
+          "rank": 2,
+          "source": "bert.pdf",
+          "page": 2,
+          "score": 0.6681,
+          "snippet": "entations. Unlike Radford et al. (2018), which uses unidirectional language models for pre-training, BERT\nuses masked language models to enable pretrained deep ..."
+        }
+      ],
+      "top_retrieved_b": [
+        {
+          "rank": 1,
+          "source": "bert.pdf",
+          "page": 4,
+          "score": 0.6922,
+          "snippet": "n of contiguous text, rather than an actual\nlinguistic sentence. A \u201csequence\u201d refers to the input token sequence to BERT, which may be a single sentence or two ..."
+        },
+        {
+          "rank": 2,
+          "source": "bert.pdf",
+          "page": 4,
+          "score": 0.6761,
+          "snippet": "token indicating whether it belongs\nto sentence A or sentence B. As shown in Figure 1,\nwe denote input embedding as E, the \ufb01nal hidden\nvector of the special [CL..."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "What is the purpose of the Next Sentence Prediction (NSP) task in BERT, and how are training sentence pairs constructed?",
+      "gold_doc": "bert.pdf",
+      "gold_page": 4,
+      "hit_config_a": false,
+      "hit_config_b": false,
+      "rank_a": null,
+      "rank_b": null,
+      "top_retrieved_a": [
+        {
+          "rank": 1,
+          "source": "bert.pdf",
+          "page": 5,
+          "score": 0.6924,
+          "snippet": "two sentences.\nFor each task, we simply plug in the taskspeci\ufb01c inputs and outputs into BERT and \ufb01netune all the parameters end-to-end.\nAt the input, sentence A..."
+        },
+        {
+          "rank": 2,
+          "source": "bert.pdf",
+          "page": 8,
+          "score": 0.6811,
+          "snippet": "tion over the pre-training tasks using the\nBERTBASE architecture. \u201cNo NSP\u201d is trained without\nthe next sentence prediction task. \u201cLTR & No NSP\u201d is\ntrained as a ..."
+        }
+      ],
+      "top_retrieved_b": [
+        {
+          "rank": 1,
+          "source": "bert.pdf",
+          "page": 8,
+          "score": 0.6865,
+          "snippet": "-right LM without the next sentence\nprediction, like OpenAI GPT. \u201c+ BiLSTM\u201d adds a randomly initialized BiLSTM on top of the \u201cLTR + No\nNSP\u201d model during \ufb01ne-tun..."
+        },
+        {
+          "rank": 2,
+          "source": "bert.pdf",
+          "page": 5,
+          "score": 0.6848,
+          "snippet": "ntences.\nFor each task, we simply plug in the taskspeci\ufb01c inputs and outputs into BERT and \ufb01netune all the parameters end-to-end.\nAt the input, sentence A and s..."
+        }
+      ]
+    }
+  ]
+}

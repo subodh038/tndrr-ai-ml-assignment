@@ -1,0 +1,22 @@
+[
+  {
+    "filename": "attention.pdf",
+    "title": "Attention Is All You Need",
+    "authors": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin",
+    "source_url": "https://arxiv.org/abs/1706.03762",
+    "pdf_url": "https://arxiv.org/pdf/1706.03762.pdf",
+    "pages": 15,
+    "license": "arXiv.org non-exclusive distribution license / Open Access",
+    "year": 2017
+  },
+  {
+    "filename": "bert.pdf",
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "authors": "Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova",
+    "source_url": "https://arxiv.org/abs/1810.04805",
+    "pdf_url": "https://arxiv.org/pdf/1810.04805.pdf",
+    "pages": 16,
+    "license": "arXiv.org non-exclusive distribution license / Open Access / CC-BY",
+    "year": 2018
+  }
+]

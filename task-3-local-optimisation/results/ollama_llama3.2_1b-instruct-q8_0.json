@@ -1,0 +1,163 @@
+{
+  "model_info": {
+    "model_size_bytes": 1454291025,
+    "model_size_mb": 1386.92,
+    "vram_bytes": 0,
+    "vram_mb": 0.0,
+    "vram_status": "0.0 MB (CPU Mode / No VRAM offloaded)",
+    "quantization": "Q8_0",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "llama",
+      "families": [
+        "llama"
+      ],
+      "parameter_size": "1.2B",
+      "quantization_level": "Q8_0"
+    }
+  },
+  "summary": {
+    "model": "llama3.2:1b-instruct-q8_0",
+    "quantization": "Q8_0",
+    "model_size_mb": 1386.92,
+    "vram_mb": 0.0,
+    "vram_status": "0.0 MB (CPU Mode / No VRAM offloaded)",
+    "system_ram_before_mb": 12788.47,
+    "system_ram_after_load_mb": 14156.94,
+    "system_ram_delta_mb": 1368.47,
+    "generation_options": {
+      "num_predict": 128,
+      "temperature": 0.7,
+      "num_ctx": 2048
+    },
+    "num_prompts": 10,
+    "total_output_tokens": 880,
+    "total_eval_duration_s": 26.6746,
+    "total_wall_clock_s": 49.901,
+    "avg_latency_s": 4.99,
+    "aggregate_generation_tokens_per_sec": 32.99
+  },
+  "prompts": [
+    {
+      "id": 1,
+      "category": "factual",
+      "prompt": "What is the capital of France?",
+      "output": "The capital of France is Paris.",
+      "output_tokens": 8,
+      "prompt_eval_count": 32,
+      "prompt_eval_duration_s": 0.1319,
+      "eval_duration_s": 0.2582,
+      "latency_s": 2.439,
+      "generation_tokens_per_sec": 30.99
+    },
+    {
+      "id": 2,
+      "category": "factual",
+      "prompt": "Who invented the telephone?",
+      "output": "The invention of the telephone is a bit complex, as it involved the contributions of several individuals over time. While Alexander Graham Bell is often credited with inventing the first practical telephone, the development of the telephone was a collaborative effort.\n\nThe story begins in the mid-19th century, when Alexander Graham Bell was working on a device to transmit the human voice over wires. He was trying to create a device that could transmit the voice of a person over a distance, without using the traditional method of sending a message through the postal service.\n\nBell's work was influenced by earlier inventors, such as Elisha Gray, who had also been",
+      "output_tokens": 128,
+      "prompt_eval_count": 30,
+      "prompt_eval_duration_s": 0.145,
+      "eval_duration_s": 3.8138,
+      "latency_s": 6.024,
+      "generation_tokens_per_sec": 33.56
+    },
+    {
+      "id": 3,
+      "category": "reasoning",
+      "prompt": "If a train travels at 60 mph for 2.5 hours, how far does it travel? Show your work.",
+      "output": "To find the distance traveled, we need to multiply the speed (60 mph) by the time (2.5 hours).\n\nDistance = Speed x Time\nDistance = 60 mph x 2.5 hours\nDistance = 150 miles\n\nSo, the train travels 150 miles.",
+      "output_tokens": 59,
+      "prompt_eval_count": 50,
+      "prompt_eval_duration_s": 0.2652,
+      "eval_duration_s": 1.7861,
+      "latency_s": 4.114,
+      "generation_tokens_per_sec": 33.03
+    },
+    {
+      "id": 4,
+      "category": "reasoning",
+      "prompt": "A store sells apples for $0.75 each and oranges for $1.25 each. If I buy 4 apples and 3 oranges, what is the total cost?",
+      "output": "To find the total cost, you need to calculate the cost of the apples and the oranges separately, then add them together.\n\nApples: 4 apples at $0.75 each is 4 x $0.75 = $3.00\nOranges: 3 oranges at $1.25 each is 3 x $1.25 = $3.75\n\nTotal cost: $3.00 (apples) + $3.75 (oranges) = $6.75",
+      "output_tokens": 103,
+      "prompt_eval_count": 61,
+      "prompt_eval_duration_s": 0.3607,
+      "eval_duration_s": 3.0804,
+      "latency_s": 5.525,
+      "generation_tokens_per_sec": 33.44
+    },
+    {
+      "id": 5,
+      "category": "creative",
+      "prompt": "Write a short paragraph about the beauty of a mountain sunrise.",
+      "output": "The mountain sunrise is a sight to behold, as the horizon slowly rises from a deep shade of indigo, gradually giving way to a kaleidoscope of colors. Soft pink and peach hues dance across the sky, gradually deepening to vibrant oranges and corals as the sun slowly climbs higher. The mountains, bathed in a warm golden light, stand sentinel against the backdrop of the rising sun, their rugged peaks and valleys a testament to the natural beauty that lies within. As the sky continues to transform, the clouds are streaked with shades of purple and blue, adding a touch of drama and wonder to the scene. The mountain sunrise",
+      "output_tokens": 128,
+      "prompt_eval_count": 37,
+      "prompt_eval_duration_s": 0.1929,
+      "eval_duration_s": 3.816,
+      "latency_s": 6.079,
+      "generation_tokens_per_sec": 33.54
+    },
+    {
+      "id": 6,
+      "category": "creative",
+      "prompt": "Describe what a futuristic city might look like in 100 years.",
+      "output": "In 100 years, a futuristic city might be a marvel of technological advancements, sustainable design, and innovative urban planning. Here's a possible vision of what such a city could look like:\n\n**Architecture and Infrastructure:**\n\nThe city's architecture would likely be a blend of futuristic and sustainable design elements, incorporating cutting-edge materials and technologies. Buildings might be made from advanced materials such as carbon fiber, nanomaterials, or 3D-printed concrete, which would provide strength, durability, and minimal environmental impact. The city's infrastructure would be designed to be highly efficient, with advanced transportation systems, such as self-driving vehicles, hyper",
+      "output_tokens": 128,
+      "prompt_eval_count": 38,
+      "prompt_eval_duration_s": 0.1832,
+      "eval_duration_s": 4.1193,
+      "latency_s": 6.403,
+      "generation_tokens_per_sec": 31.07
+    },
+    {
+      "id": 7,
+      "category": "code",
+      "prompt": "Write a Python function that checks if a number is prime.",
+      "output": "**Prime Number Checker Function**\n=====================================\n\nHere is a simple Python function that checks if a given number is prime:\n\n```python\ndef is_prime(n):\n    \"\"\"\n    Checks if a number is prime.\n\n    Args:\n        n (int): The number to check.\n\n    Returns:\n        bool: True if the number is prime, False otherwise.\n    \"\"\"\n    if n <= 1:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n```\n\n**Explanation**\n---------------",
+      "output_tokens": 128,
+      "prompt_eval_count": 37,
+      "prompt_eval_duration_s": 0.206,
+      "eval_duration_s": 3.8535,
+      "latency_s": 6.146,
+      "generation_tokens_per_sec": 33.22
+    },
+    {
+      "id": 8,
+      "category": "code",
+      "prompt": "Write a Python function that sorts a list of dictionaries by a given key.",
+      "output": "Here's an example of a Python function that sorts a list of dictionaries by a given key:\n\n```python\ndef sort_dict_list(dict_list, key, reverse=False):\n    \"\"\"\n    Sorts a list of dictionaries by a given key.\n\n    Args:\n        dict_list (list): A list of dictionaries.\n        key (str): The key to sort by.\n        reverse (bool, optional): Whether to sort in descending order. Defaults to False.\n\n    Returns:\n        list: The sorted list of dictionaries.\n    \"\"\"\n    return sorted(dict_list, key=lambda x: x[key], reverse=reverse)\n\n# Example usage:\ndata =",
+      "output_tokens": 128,
+      "prompt_eval_count": 40,
+      "prompt_eval_duration_s": 0.1803,
+      "eval_duration_s": 3.7382,
+      "latency_s": 5.995,
+      "generation_tokens_per_sec": 34.24
+    },
+    {
+      "id": 9,
+      "category": "summarization",
+      "prompt": "Summarize the following in one sentence: Machine learning is a branch of artificial intelligence that focuses on building systems that can learn from data and improve their performance over time without being explicitly programmed for each task.",
+      "output": "Machine learning is a subset of artificial intelligence that enables systems to automatically improve their performance and make decisions based on data by learning from experience.",
+      "output_tokens": 28,
+      "prompt_eval_count": 66,
+      "prompt_eval_duration_s": 0.4065,
+      "eval_duration_s": 0.8983,
+      "latency_s": 3.392,
+      "generation_tokens_per_sec": 31.17
+    },
+    {
+      "id": 10,
+      "category": "summarization",
+      "prompt": "In one sentence, what is the main idea: Neural networks are inspired by the structure of the human brain and consist of layers of interconnected nodes that process information and can recognize patterns in data.",
+      "output": "Neural networks are inspired by the structure of the human brain, where they consist of layers of interconnected nodes that process information and can recognize patterns in data by mimicking the way neurons in the brain interact.",
+      "output_tokens": 42,
+      "prompt_eval_count": 63,
+      "prompt_eval_duration_s": 0.397,
+      "eval_duration_s": 1.3109,
+      "latency_s": 3.784,
+      "generation_tokens_per_sec": 32.04
+    }
+  ]
+}

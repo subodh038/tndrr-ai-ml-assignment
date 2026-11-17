@@ -1,0 +1,6464 @@
+[
+  {
+    "input": "Can you ping me to run the tests on 2026-12-28 at 12:45?",
+    "output": {
+      "action": "set_reminder",
+      "task": "run the tests",
+      "date": "2026-12-28",
+      "time": "12:45"
+    }
+  },
+  {
+    "input": "Create a low priority task to deploy the fix by 2026-12-12.",
+    "output": {
+      "action": "create_task",
+      "title": "deploy the fix",
+      "due_date": "2026-12-12",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Scratch the meeting with Aiden on 2026-12-30.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Aiden",
+      "date": "2026-12-30"
+    }
+  },
+  {
+    "input": "Drop Frank a message saying looking forward to our call",
+    "output": {
+      "action": "send_message",
+      "person": "Frank",
+      "message": "looking forward to our call"
+    }
+  },
+  {
+    "input": "Don't let me forget to finish the analysis on 2026-12-06 at 11:30.",
+    "output": {
+      "action": "set_reminder",
+      "task": "finish the analysis",
+      "date": "2026-12-06",
+      "time": "11:30"
+    }
+  },
+  {
+    "input": "Send Isabella the following message: please confirm receipt",
+    "output": {
+      "action": "send_message",
+      "person": "Isabella",
+      "message": "please confirm receipt"
+    }
+  },
+  {
+    "input": "Can you ping me to file the expenses on 2026-12-12 at 15:45?",
+    "output": {
+      "action": "set_reminder",
+      "task": "file the expenses",
+      "date": "2026-12-12",
+      "time": "15:45"
+    }
+  },
+  {
+    "input": "Free up 2027-01-10 \u2014 cancel my time with Olivia.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Olivia",
+      "date": "2027-01-10"
+    }
+  },
+  {
+    "input": "Compose a message to Frank saying 'can we reschedule?'",
+    "output": {
+      "action": "send_message",
+      "person": "Frank",
+      "message": "can we reschedule?"
+    }
+  },
+  {
+    "input": "I can't make it to the meeting with Xander on 2027-01-08. Cancel it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Xander",
+      "date": "2027-01-08"
+    }
+  },
+  {
+    "input": "Schedule a meeting with Zoe on 2027-01-14 at 08:15 in board room.",
+    "output": {
+      "action": "create_event",
+      "person": "Zoe",
+      "date": "2027-01-14",
+      "time": "08:15",
+      "location": "board room"
+    }
+  },
+  {
+    "input": "Call off the 2026-11-25 session with Xander.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Xander",
+      "date": "2026-11-25"
+    }
+  },
+  {
+    "input": "Schedule a notification at 10:15 on 2026-12-15 to schedule interviews.",
+    "output": {
+      "action": "set_reminder",
+      "task": "schedule interviews",
+      "date": "2026-12-15",
+      "time": "10:15"
+    }
+  },
+  {
+    "input": "Can you ping me to finish the analysis on 2026-12-10 at 12:30?",
+    "output": {
+      "action": "set_reminder",
+      "task": "finish the analysis",
+      "date": "2026-12-10",
+      "time": "12:30"
+    }
+  },
+  {
+    "input": "Please remind me about book the flight on 2027-01-06 at 15:45.",
+    "output": {
+      "action": "set_reminder",
+      "task": "book the flight",
+      "date": "2027-01-06",
+      "time": "15:45"
+    }
+  },
+  {
+    "input": "Forward a note to Tom: please confirm receipt",
+    "output": {
+      "action": "send_message",
+      "person": "Tom",
+      "message": "please confirm receipt"
+    }
+  },
+  {
+    "input": "Set an alert for 2026-12-23 at 10:30 to deploy the fix.",
+    "output": {
+      "action": "set_reminder",
+      "task": "deploy the fix",
+      "date": "2026-12-23",
+      "time": "10:30"
+    }
+  },
+  {
+    "input": "Move my meeting with Mia from 2026-11-28 to 2027-01-06 at 15:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Mia",
+      "old_date": "2026-11-28",
+      "new_date": "2027-01-06",
+      "new_time": "15:15"
+    }
+  },
+  {
+    "input": "Schedule a 12:15 stand-up with Alice on 2026-12-07 in my place.",
+    "output": {
+      "action": "create_event",
+      "person": "Alice",
+      "date": "2026-12-07",
+      "time": "12:15",
+      "location": "my place"
+    }
+  },
+  {
+    "input": "Compose a message to Xander saying 'can you join 5 minutes early?'",
+    "output": {
+      "action": "send_message",
+      "person": "Xander",
+      "message": "can you join 5 minutes early?"
+    }
+  },
+  {
+    "input": "I need to call the client before 2027-01-03. Set priority to high.",
+    "output": {
+      "action": "create_task",
+      "title": "call the client",
+      "due_date": "2027-01-03",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Remind me I have to send the invoice by 2026-11-29. This is medium.",
+    "output": {
+      "action": "create_task",
+      "title": "send the invoice",
+      "due_date": "2026-11-29",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "The 2026-12-01 meeting with Yara needs to move to 2027-01-11 at 13:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Yara",
+      "old_date": "2026-12-01",
+      "new_date": "2027-01-11",
+      "new_time": "13:00"
+    }
+  },
+  {
+    "input": "Add a task: update dependencies due 2027-01-13 with medium priority.",
+    "output": {
+      "action": "create_task",
+      "title": "update dependencies",
+      "due_date": "2027-01-13",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Remind me I have to read the proposal by 2027-01-11. This is medium.",
+    "output": {
+      "action": "create_task",
+      "title": "read the proposal",
+      "due_date": "2027-01-11",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "I need to meet Sophia on 2026-12-13 at 18:45.",
+    "output": {
+      "action": "create_event",
+      "person": "Sophia",
+      "date": "2026-12-13",
+      "time": "18:45"
+    }
+  },
+  {
+    "input": "Postpone my 2026-11-25 meeting with Ray to 2026-12-21 at 08:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Ray",
+      "old_date": "2026-11-25",
+      "new_date": "2026-12-21",
+      "new_time": "08:15"
+    }
+  },
+  {
+    "input": "Move the Leo session on 2026-11-19 to a new time: 2026-12-25 at 15:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Leo",
+      "old_date": "2026-11-19",
+      "new_date": "2026-12-25",
+      "new_time": "15:45"
+    }
+  },
+  {
+    "input": "Scratch the meeting with Frank on 2026-11-23.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Frank",
+      "date": "2026-11-23"
+    }
+  },
+  {
+    "input": "Create a urgent priority task to complete onboarding by 2027-01-11.",
+    "output": {
+      "action": "create_task",
+      "title": "complete onboarding",
+      "due_date": "2027-01-11",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Let Bob know: can we reschedule?",
+    "output": {
+      "action": "send_message",
+      "person": "Bob",
+      "message": "can we reschedule?"
+    }
+  },
+  {
+    "input": "Change my 2026-12-10 meeting with Olivia to 2027-01-02 at 18:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Olivia",
+      "old_date": "2026-12-10",
+      "new_date": "2027-01-02",
+      "new_time": "18:15"
+    }
+  },
+  {
+    "input": "Can you add an event: meet Ray at board room on 2026-12-15 at 15:00?",
+    "output": {
+      "action": "create_event",
+      "person": "Ray",
+      "date": "2026-12-15",
+      "time": "15:00",
+      "location": "board room"
+    }
+  },
+  {
+    "input": "Notify Ray: please prepare a 2-minute intro",
+    "output": {
+      "action": "send_message",
+      "person": "Ray",
+      "message": "please prepare a 2-minute intro"
+    }
+  },
+  {
+    "input": "I want to be reminded to renew the license at 18:45 on 2026-12-07.",
+    "output": {
+      "action": "set_reminder",
+      "task": "renew the license",
+      "date": "2026-12-07",
+      "time": "18:45"
+    }
+  },
+  {
+    "input": "Move the Vince session on 2026-11-23 to a new time: 2027-01-02 at 15:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Vince",
+      "old_date": "2026-11-23",
+      "new_date": "2027-01-02",
+      "new_time": "15:30"
+    }
+  },
+  {
+    "input": "Delete the appointment with Ethan scheduled for 2027-01-03.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Ethan",
+      "date": "2027-01-03"
+    }
+  },
+  {
+    "input": "Reschedule Vince's meeting: 2026-12-04 \u2192 2027-01-13 at 16:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Vince",
+      "old_date": "2026-12-04",
+      "new_date": "2027-01-13",
+      "new_time": "16:45"
+    }
+  },
+  {
+    "input": "Update my meeting with Ethan: old date 2026-11-26, new date 2026-12-22 at 18:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Ethan",
+      "old_date": "2026-11-26",
+      "new_date": "2026-12-22",
+      "new_time": "18:30"
+    }
+  },
+  {
+    "input": "I can't make it to the meeting with Noah on 2026-11-29. Cancel it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Noah",
+      "date": "2026-11-29"
+    }
+  },
+  {
+    "input": "Move the Lucas session on 2026-11-20 to a new time: 2027-01-07 at 18:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Lucas",
+      "old_date": "2026-11-20",
+      "new_date": "2027-01-07",
+      "new_time": "18:45"
+    }
+  },
+  {
+    "input": "Notify me to write the blog post when it is 16:45 on 2026-11-25.",
+    "output": {
+      "action": "set_reminder",
+      "task": "write the blog post",
+      "date": "2026-11-25",
+      "time": "16:45"
+    }
+  },
+  {
+    "input": "I want to catch up with Carol on 2026-12-27 at 09:45 at Studio 3.",
+    "output": {
+      "action": "create_event",
+      "person": "Carol",
+      "date": "2026-12-27",
+      "time": "09:45",
+      "location": "Studio 3"
+    }
+  },
+  {
+    "input": "Let Leo know: please prepare a 2-minute intro",
+    "output": {
+      "action": "send_message",
+      "person": "Leo",
+      "message": "please prepare a 2-minute intro"
+    }
+  },
+  {
+    "input": "Can we bump the 2026-12-01 call with Xander to 2027-01-15 at 14:45?",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Xander",
+      "old_date": "2026-12-01",
+      "new_date": "2027-01-15",
+      "new_time": "14:45"
+    }
+  },
+  {
+    "input": "Call off the 2026-11-29 session with Bob.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Bob",
+      "date": "2026-11-29"
+    }
+  },
+  {
+    "input": "Remind me I have to review pull requests by 2027-01-16. This is low.",
+    "output": {
+      "action": "create_task",
+      "title": "review pull requests",
+      "due_date": "2027-01-16",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Flag 2026-12-06 at 18:45 so I don't miss draft the email.",
+    "output": {
+      "action": "set_reminder",
+      "task": "draft the email",
+      "date": "2026-12-06",
+      "time": "18:45"
+    }
+  },
+  {
+    "input": "I want to be reminded to run the tests at 17:30 on 2026-11-20.",
+    "output": {
+      "action": "set_reminder",
+      "task": "run the tests",
+      "date": "2026-11-20",
+      "time": "17:30"
+    }
+  },
+  {
+    "input": "I want to catch up with Olivia on 2026-12-30 at 16:30 at their office.",
+    "output": {
+      "action": "create_event",
+      "person": "Olivia",
+      "date": "2026-12-30",
+      "time": "16:30",
+      "location": "their office"
+    }
+  },
+  {
+    "input": "I need to push my Isabella meeting from 2026-12-16 to 2027-01-13 at 18:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Isabella",
+      "old_date": "2026-12-16",
+      "new_date": "2027-01-13",
+      "new_time": "18:45"
+    }
+  },
+  {
+    "input": "Remove the event with Olivia from 2027-01-15.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Olivia",
+      "date": "2027-01-15"
+    }
+  },
+  {
+    "input": "Remind me I have to finish the analysis by 2027-01-08. This is medium.",
+    "output": {
+      "action": "create_task",
+      "title": "finish the analysis",
+      "due_date": "2027-01-08",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "I want to be reminded to back up the database at 12:00 on 2026-12-14.",
+    "output": {
+      "action": "set_reminder",
+      "task": "back up the database",
+      "date": "2026-12-14",
+      "time": "12:00"
+    }
+  },
+  {
+    "input": "Tell Olivia that can you join 5 minutes early?",
+    "output": {
+      "action": "send_message",
+      "person": "Olivia",
+      "message": "can you join 5 minutes early?"
+    }
+  },
+  {
+    "input": "Add a reminder: back up the database \u2014 2026-12-18 at 12:00.",
+    "output": {
+      "action": "set_reminder",
+      "task": "back up the database",
+      "date": "2026-12-18",
+      "time": "12:00"
+    }
+  },
+  {
+    "input": "Postpone my 2026-12-07 meeting with Frank to 2027-01-06 at 16:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Frank",
+      "old_date": "2026-12-07",
+      "new_date": "2027-01-06",
+      "new_time": "16:45"
+    }
+  },
+  {
+    "input": "Track a medium item: submit the report, deadline 2026-12-01.",
+    "output": {
+      "action": "create_task",
+      "title": "submit the report",
+      "due_date": "2026-12-01",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Add a task: write the blog post due 2027-01-10 with low priority.",
+    "output": {
+      "action": "create_task",
+      "title": "write the blog post",
+      "due_date": "2027-01-10",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Compose a message to Liam saying 'here are the notes from last time'",
+    "output": {
+      "action": "send_message",
+      "person": "Liam",
+      "message": "here are the notes from last time"
+    }
+  },
+  {
+    "input": "Let's sync with Ava on 2026-12-30 at 09:15 at their office.",
+    "output": {
+      "action": "create_event",
+      "person": "Ava",
+      "date": "2026-12-30",
+      "time": "09:15",
+      "location": "their office"
+    }
+  },
+  {
+    "input": "Message Wendy and say: I'll be 10 minutes late",
+    "output": {
+      "action": "send_message",
+      "person": "Wendy",
+      "message": "I'll be 10 minutes late"
+    }
+  },
+  {
+    "input": "Organise a 15:15 meeting with Dave on 2026-12-25 in Conference Room B.",
+    "output": {
+      "action": "create_event",
+      "person": "Dave",
+      "date": "2026-12-25",
+      "time": "15:15",
+      "location": "Conference Room B"
+    }
+  },
+  {
+    "input": "Schedule task 'schedule interviews' with deadline 2027-01-06 and medium urgency.",
+    "output": {
+      "action": "create_task",
+      "title": "schedule interviews",
+      "due_date": "2027-01-06",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Set an alert for 2026-12-06 at 15:45 to renew the license.",
+    "output": {
+      "action": "set_reminder",
+      "task": "renew the license",
+      "date": "2026-12-06",
+      "time": "15:45"
+    }
+  },
+  {
+    "input": "Notify Bob: I'll be 10 minutes late",
+    "output": {
+      "action": "send_message",
+      "person": "Bob",
+      "message": "I'll be 10 minutes late"
+    }
+  },
+  {
+    "input": "Create a task called 'schedule interviews' that is due on 2026-12-31 and has high priority.",
+    "output": {
+      "action": "create_task",
+      "title": "schedule interviews",
+      "due_date": "2026-12-31",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Add to my to-do: book the flight. Deadline 2026-12-21, medium priority.",
+    "output": {
+      "action": "create_task",
+      "title": "book the flight",
+      "due_date": "2026-12-21",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "New event: Pam, 2026-12-05, 10:00.",
+    "output": {
+      "action": "create_event",
+      "person": "Pam",
+      "date": "2026-12-05",
+      "time": "10:00"
+    }
+  },
+  {
+    "input": "Add a task: schedule interviews due 2027-01-01 with medium priority.",
+    "output": {
+      "action": "create_task",
+      "title": "schedule interviews",
+      "due_date": "2027-01-01",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Please remind me about write the blog post on 2027-01-16 at 12:15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "write the blog post",
+      "date": "2027-01-16",
+      "time": "12:15"
+    }
+  },
+  {
+    "input": "Log a urgent task: prepare slides \u2014 must be done by 2027-01-16.",
+    "output": {
+      "action": "create_task",
+      "title": "prepare slides",
+      "due_date": "2027-01-16",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Postpone my 2026-11-20 meeting with Aiden to 2026-12-22 at 13:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Aiden",
+      "old_date": "2026-11-20",
+      "new_date": "2026-12-22",
+      "new_time": "13:00"
+    }
+  },
+  {
+    "input": "Add to my to-do: file the expenses. Deadline 2026-12-08, low priority.",
+    "output": {
+      "action": "create_task",
+      "title": "file the expenses",
+      "due_date": "2026-12-08",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Notify me to renew the license when it is 08:30 on 2026-12-25.",
+    "output": {
+      "action": "set_reminder",
+      "task": "renew the license",
+      "date": "2026-12-25",
+      "time": "08:30"
+    }
+  },
+  {
+    "input": "Remind me I have to update the roadmap by 2026-12-20. This is urgent.",
+    "output": {
+      "action": "create_task",
+      "title": "update the roadmap",
+      "due_date": "2026-12-20",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Shift the 2026-12-02 event with Pam to 2026-12-21 at 12:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Pam",
+      "old_date": "2026-12-02",
+      "new_date": "2026-12-21",
+      "new_time": "12:45"
+    }
+  },
+  {
+    "input": "I need to push my Lucas meeting from 2026-12-01 to 2026-12-23 at 11:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Lucas",
+      "old_date": "2026-12-01",
+      "new_date": "2026-12-23",
+      "new_time": "11:15"
+    }
+  },
+  {
+    "input": "Please remind me about deploy the fix on 2026-12-17 at 12:15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "deploy the fix",
+      "date": "2026-12-17",
+      "time": "12:15"
+    }
+  },
+  {
+    "input": "Remind me I have to audit the logs by 2026-12-24. This is medium.",
+    "output": {
+      "action": "create_task",
+      "title": "audit the logs",
+      "due_date": "2026-12-24",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Add Chloe to my calendar on 2026-12-26 at 18:30.",
+    "output": {
+      "action": "create_event",
+      "person": "Chloe",
+      "date": "2026-12-26",
+      "time": "18:30"
+    }
+  },
+  {
+    "input": "Put a meeting with Sophia in my calendar for 2026-11-23 at 08:00.",
+    "output": {
+      "action": "create_event",
+      "person": "Sophia",
+      "date": "2026-11-23",
+      "time": "08:00"
+    }
+  },
+  {
+    "input": "Let's sync with James on 2026-12-15 at 16:45 at Google Meet.",
+    "output": {
+      "action": "create_event",
+      "person": "James",
+      "date": "2026-12-15",
+      "time": "16:45",
+      "location": "Google Meet"
+    }
+  },
+  {
+    "input": "I need a reminder to book the flight at 15:00 on 2026-11-20.",
+    "output": {
+      "action": "set_reminder",
+      "task": "book the flight",
+      "date": "2026-11-20",
+      "time": "15:00"
+    }
+  },
+  {
+    "input": "Add to my to-do: write the blog post. Deadline 2026-11-21, low priority.",
+    "output": {
+      "action": "create_task",
+      "title": "write the blog post",
+      "due_date": "2026-11-21",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "I want to catch up with Zoe on 2027-01-03 at 10:45 at Teams.",
+    "output": {
+      "action": "create_event",
+      "person": "Zoe",
+      "date": "2027-01-03",
+      "time": "10:45",
+      "location": "Teams"
+    }
+  },
+  {
+    "input": "Free up 2027-01-12 \u2014 cancel my time with Noah.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Noah",
+      "date": "2027-01-12"
+    }
+  },
+  {
+    "input": "Send a message to Noah: 'can we reschedule?'",
+    "output": {
+      "action": "send_message",
+      "person": "Noah",
+      "message": "can we reschedule?"
+    }
+  },
+  {
+    "input": "Create a reminder for me: review pull requests on 2026-12-27 at 09:15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "review pull requests",
+      "date": "2026-12-27",
+      "time": "09:15"
+    }
+  },
+  {
+    "input": "Let's sync with Bob on 2027-01-16 at 12:45 at board room.",
+    "output": {
+      "action": "create_event",
+      "person": "Bob",
+      "date": "2027-01-16",
+      "time": "12:45",
+      "location": "board room"
+    }
+  },
+  {
+    "input": "Drop the 2026-12-13 meeting with Chloe.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Chloe",
+      "date": "2026-12-13"
+    }
+  },
+  {
+    "input": "Create a reminder for me: deploy the fix on 2026-11-19 at 09:15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "deploy the fix",
+      "date": "2026-11-19",
+      "time": "09:15"
+    }
+  },
+  {
+    "input": "Change my 2026-11-18 meeting with Mason to 2027-01-14 at 09:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Mason",
+      "old_date": "2026-11-18",
+      "new_date": "2027-01-14",
+      "new_time": "09:45"
+    }
+  },
+  {
+    "input": "Set up a call with Ava for 2027-01-08 at 14:15.",
+    "output": {
+      "action": "create_event",
+      "person": "Ava",
+      "date": "2027-01-08",
+      "time": "14:15"
+    }
+  },
+  {
+    "input": "Ping Tom with: bring the signed docs",
+    "output": {
+      "action": "send_message",
+      "person": "Tom",
+      "message": "bring the signed docs"
+    }
+  },
+  {
+    "input": "Write to Frank: great job on the presentation",
+    "output": {
+      "action": "send_message",
+      "person": "Frank",
+      "message": "great job on the presentation"
+    }
+  },
+  {
+    "input": "I can't make it to the meeting with Ray on 2026-11-19. Cancel it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Ray",
+      "date": "2026-11-19"
+    }
+  },
+  {
+    "input": "Call off the 2026-11-26 session with Eve.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Eve",
+      "date": "2026-11-26"
+    }
+  },
+  {
+    "input": "Call off the 2026-12-11 session with Karen.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Karen",
+      "date": "2026-12-11"
+    }
+  },
+  {
+    "input": "Notify Pam: just following up on this",
+    "output": {
+      "action": "send_message",
+      "person": "Pam",
+      "message": "just following up on this"
+    }
+  },
+  {
+    "input": "Message James and say: here are the notes from last time",
+    "output": {
+      "action": "send_message",
+      "person": "James",
+      "message": "here are the notes from last time"
+    }
+  },
+  {
+    "input": "The 2026-11-29 meeting with Dave needs to move to 2027-01-13 at 12:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Dave",
+      "old_date": "2026-11-29",
+      "new_date": "2027-01-13",
+      "new_time": "12:00"
+    }
+  },
+  {
+    "input": "I want to catch up with Pam on 2026-12-13 at 09:15 at Studio 3.",
+    "output": {
+      "action": "create_event",
+      "person": "Pam",
+      "date": "2026-12-13",
+      "time": "09:15",
+      "location": "Studio 3"
+    }
+  },
+  {
+    "input": "Remind me to book the flight on 2026-12-11 at 09:45.",
+    "output": {
+      "action": "set_reminder",
+      "task": "book the flight",
+      "date": "2026-12-11",
+      "time": "09:45"
+    }
+  },
+  {
+    "input": "Move my meeting with Zoe from 2026-11-29 to 2027-01-03 at 18:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Zoe",
+      "old_date": "2026-11-29",
+      "new_date": "2027-01-03",
+      "new_time": "18:15"
+    }
+  },
+  {
+    "input": "Schedule a 10:30 stand-up with Liam on 2026-11-19 in my place.",
+    "output": {
+      "action": "create_event",
+      "person": "Liam",
+      "date": "2026-11-19",
+      "time": "10:30",
+      "location": "my place"
+    }
+  },
+  {
+    "input": "Flag 2027-01-06 at 14:30 so I don't miss deploy the fix.",
+    "output": {
+      "action": "set_reminder",
+      "task": "deploy the fix",
+      "date": "2027-01-06",
+      "time": "14:30"
+    }
+  },
+  {
+    "input": "I want to be reminded to review pull requests at 16:30 on 2026-11-21.",
+    "output": {
+      "action": "set_reminder",
+      "task": "review pull requests",
+      "date": "2026-11-21",
+      "time": "16:30"
+    }
+  },
+  {
+    "input": "Create a reminder for me: submit the report on 2027-01-14 at 15:30.",
+    "output": {
+      "action": "set_reminder",
+      "task": "submit the report",
+      "date": "2027-01-14",
+      "time": "15:30"
+    }
+  },
+  {
+    "input": "Please update the Aiden meeting: was 2026-11-27, now 2027-01-02 at 08:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Aiden",
+      "old_date": "2026-11-27",
+      "new_date": "2027-01-02",
+      "new_time": "08:30"
+    }
+  },
+  {
+    "input": "I need to file the expenses before 2026-11-30. Set priority to medium.",
+    "output": {
+      "action": "create_task",
+      "title": "file the expenses",
+      "due_date": "2026-11-30",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Message Noah and say: the meeting link is in your calendar",
+    "output": {
+      "action": "send_message",
+      "person": "Noah",
+      "message": "the meeting link is in your calendar"
+    }
+  },
+  {
+    "input": "Put a meeting with Xander in my calendar for 2026-11-28 at 13:30.",
+    "output": {
+      "action": "create_event",
+      "person": "Xander",
+      "date": "2026-11-28",
+      "time": "13:30"
+    }
+  },
+  {
+    "input": "I need to deploy the fix before 2027-01-16. Set priority to high.",
+    "output": {
+      "action": "create_task",
+      "title": "deploy the fix",
+      "due_date": "2027-01-16",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Set up a call with Eve for 2026-11-20 at 18:15.",
+    "output": {
+      "action": "create_event",
+      "person": "Eve",
+      "date": "2026-11-20",
+      "time": "18:15"
+    }
+  },
+  {
+    "input": "Let Sophia know: the meeting link is in your calendar",
+    "output": {
+      "action": "send_message",
+      "person": "Sophia",
+      "message": "the meeting link is in your calendar"
+    }
+  },
+  {
+    "input": "Create a reminder for me: audit the logs on 2026-12-29 at 09:30.",
+    "output": {
+      "action": "set_reminder",
+      "task": "audit the logs",
+      "date": "2026-12-29",
+      "time": "09:30"
+    }
+  },
+  {
+    "input": "The 2026-12-15 meeting with Sara needs to move to 2026-12-20 at 12:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Sara",
+      "old_date": "2026-12-15",
+      "new_date": "2026-12-20",
+      "new_time": "12:15"
+    }
+  },
+  {
+    "input": "Can we bump the 2026-12-13 call with Ray to 2026-12-20 at 14:00?",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Ray",
+      "old_date": "2026-12-13",
+      "new_date": "2026-12-20",
+      "new_time": "14:00"
+    }
+  },
+  {
+    "input": "Please cancel my 2026-11-18 meeting with Ivy.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Ivy",
+      "date": "2026-11-18"
+    }
+  },
+  {
+    "input": "Track a medium item: file the expenses, deadline 2026-12-06.",
+    "output": {
+      "action": "create_task",
+      "title": "file the expenses",
+      "due_date": "2026-12-06",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Schedule task 'book the flight' with deadline 2026-12-07 and medium urgency.",
+    "output": {
+      "action": "create_task",
+      "title": "book the flight",
+      "due_date": "2026-12-07",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Please update the Zoe meeting: was 2026-11-19, now 2027-01-05 at 16:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Zoe",
+      "old_date": "2026-11-19",
+      "new_date": "2027-01-05",
+      "new_time": "16:15"
+    }
+  },
+  {
+    "input": "Put a meeting with Mason in my calendar for 2026-11-19 at 14:00.",
+    "output": {
+      "action": "create_event",
+      "person": "Mason",
+      "date": "2026-11-19",
+      "time": "14:00"
+    }
+  },
+  {
+    "input": "Schedule a notification at 13:45 on 2026-12-12 to book the flight.",
+    "output": {
+      "action": "set_reminder",
+      "task": "book the flight",
+      "date": "2026-12-12",
+      "time": "13:45"
+    }
+  },
+  {
+    "input": "Please update the Carol meeting: was 2026-12-12, now 2027-01-07 at 11:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Carol",
+      "old_date": "2026-12-12",
+      "new_date": "2027-01-07",
+      "new_time": "11:30"
+    }
+  },
+  {
+    "input": "Call off the 2026-11-18 session with Isabella.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Isabella",
+      "date": "2026-11-18"
+    }
+  },
+  {
+    "input": "Let Leo know: here are the notes from last time",
+    "output": {
+      "action": "send_message",
+      "person": "Leo",
+      "message": "here are the notes from last time"
+    }
+  },
+  {
+    "input": "Please cancel my 2026-11-19 meeting with Zoe.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Zoe",
+      "date": "2026-11-19"
+    }
+  },
+  {
+    "input": "Please cancel my 2026-12-17 meeting with Liam.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Liam",
+      "date": "2026-12-17"
+    }
+  },
+  {
+    "input": "New event: Ray, 2027-01-16, 18:15.",
+    "output": {
+      "action": "create_event",
+      "person": "Ray",
+      "date": "2027-01-16",
+      "time": "18:15"
+    }
+  },
+  {
+    "input": "Task: update dependencies. Due 2026-12-10. Mark as low.",
+    "output": {
+      "action": "create_task",
+      "title": "update dependencies",
+      "due_date": "2026-12-10",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Set an alert for 2027-01-13 at 14:00 to update the roadmap.",
+    "output": {
+      "action": "set_reminder",
+      "task": "update the roadmap",
+      "date": "2027-01-13",
+      "time": "14:00"
+    }
+  },
+  {
+    "input": "Remind me I have to deploy the fix by 2026-12-12. This is medium.",
+    "output": {
+      "action": "create_task",
+      "title": "deploy the fix",
+      "due_date": "2026-12-12",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "The 2026-11-20 meeting with Jack needs to move to 2026-12-27 at 09:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Jack",
+      "old_date": "2026-11-20",
+      "new_date": "2026-12-27",
+      "new_time": "09:00"
+    }
+  },
+  {
+    "input": "Scratch the meeting with Uma on 2026-12-24.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Uma",
+      "date": "2026-12-24"
+    }
+  },
+  {
+    "input": "Compose a message to Vince saying 'just following up on this'",
+    "output": {
+      "action": "send_message",
+      "person": "Vince",
+      "message": "just following up on this"
+    }
+  },
+  {
+    "input": "Send a message to Liam: 'please review before EOD'",
+    "output": {
+      "action": "send_message",
+      "person": "Liam",
+      "message": "please review before EOD"
+    }
+  },
+  {
+    "input": "I want to be reminded to file the expenses at 15:00 on 2027-01-15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "file the expenses",
+      "date": "2027-01-15",
+      "time": "15:00"
+    }
+  },
+  {
+    "input": "Track a medium item: read the proposal, deadline 2027-01-02.",
+    "output": {
+      "action": "create_task",
+      "title": "read the proposal",
+      "due_date": "2027-01-02",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "I need to push my Vince meeting from 2026-11-20 to 2026-12-28 at 09:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Vince",
+      "old_date": "2026-11-20",
+      "new_date": "2026-12-28",
+      "new_time": "09:45"
+    }
+  },
+  {
+    "input": "Scratch the meeting with Aiden on 2026-12-02.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Aiden",
+      "date": "2026-12-02"
+    }
+  },
+  {
+    "input": "Please add 'renew the license' to my task list. Due: 2026-11-18. Priority: high.",
+    "output": {
+      "action": "create_task",
+      "title": "renew the license",
+      "due_date": "2026-11-18",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Remove the event with Liam from 2026-12-21.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Liam",
+      "date": "2026-12-21"
+    }
+  },
+  {
+    "input": "Schedule task 'call the client' with deadline 2026-11-18 and high urgency.",
+    "output": {
+      "action": "create_task",
+      "title": "call the client",
+      "due_date": "2026-11-18",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Free up 2026-12-22 \u2014 cancel my time with Yara.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Yara",
+      "date": "2026-12-22"
+    }
+  },
+  {
+    "input": "Chat Uma and tell them: just following up on this",
+    "output": {
+      "action": "send_message",
+      "person": "Uma",
+      "message": "just following up on this"
+    }
+  },
+  {
+    "input": "I need to push my Tom meeting from 2026-12-03 to 2026-12-25 at 18:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Tom",
+      "old_date": "2026-12-03",
+      "new_date": "2026-12-25",
+      "new_time": "18:45"
+    }
+  },
+  {
+    "input": "Don't let me forget to prepare slides on 2026-12-24 at 18:00.",
+    "output": {
+      "action": "set_reminder",
+      "task": "prepare slides",
+      "date": "2026-12-24",
+      "time": "18:00"
+    }
+  },
+  {
+    "input": "Schedule task 'audit the logs' with deadline 2026-12-17 and high urgency.",
+    "output": {
+      "action": "create_task",
+      "title": "audit the logs",
+      "due_date": "2026-12-17",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Drop Emma a message saying looking forward to our call",
+    "output": {
+      "action": "send_message",
+      "person": "Emma",
+      "message": "looking forward to our call"
+    }
+  },
+  {
+    "input": "Remove the event with Liam from 2026-12-06.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Liam",
+      "date": "2026-12-06"
+    }
+  },
+  {
+    "input": "Forward a note to Zoe: looking forward to our call",
+    "output": {
+      "action": "send_message",
+      "person": "Zoe",
+      "message": "looking forward to our call"
+    }
+  },
+  {
+    "input": "I want to be reminded to write the blog post at 09:45 on 2026-12-29.",
+    "output": {
+      "action": "set_reminder",
+      "task": "write the blog post",
+      "date": "2026-12-29",
+      "time": "09:45"
+    }
+  },
+  {
+    "input": "Chat Ethan and tell them: I'll be 10 minutes late",
+    "output": {
+      "action": "send_message",
+      "person": "Ethan",
+      "message": "I'll be 10 minutes late"
+    }
+  },
+  {
+    "input": "Message Zoe and say: please prepare a 2-minute intro",
+    "output": {
+      "action": "send_message",
+      "person": "Zoe",
+      "message": "please prepare a 2-minute intro"
+    }
+  },
+  {
+    "input": "The 2026-12-05 meeting with Wendy needs to move to 2026-12-28 at 18:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Wendy",
+      "old_date": "2026-12-05",
+      "new_date": "2026-12-28",
+      "new_time": "18:15"
+    }
+  },
+  {
+    "input": "Send Aiden the following message: the deadline has changed to next Friday",
+    "output": {
+      "action": "send_message",
+      "person": "Aiden",
+      "message": "the deadline has changed to next Friday"
+    }
+  },
+  {
+    "input": "I'd like to schedule time with Jack at Google Meet on 2027-01-16 starting at 11:15.",
+    "output": {
+      "action": "create_event",
+      "person": "Jack",
+      "date": "2027-01-16",
+      "time": "11:15",
+      "location": "Google Meet"
+    }
+  },
+  {
+    "input": "Drop Jack a message saying can you join 5 minutes early?",
+    "output": {
+      "action": "send_message",
+      "person": "Jack",
+      "message": "can you join 5 minutes early?"
+    }
+  },
+  {
+    "input": "The meeting with Xander on 2026-11-27 is no longer happening. Remove it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Xander",
+      "date": "2026-11-27"
+    }
+  },
+  {
+    "input": "Organise a 09:15 meeting with Carol on 2026-11-19 in cafeteria.",
+    "output": {
+      "action": "create_event",
+      "person": "Carol",
+      "date": "2026-11-19",
+      "time": "09:15",
+      "location": "cafeteria"
+    }
+  },
+  {
+    "input": "Please remind me about send the invoice on 2026-12-03 at 16:15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "send the invoice",
+      "date": "2026-12-03",
+      "time": "16:15"
+    }
+  },
+  {
+    "input": "Set a reminder for finish the analysis at 17:15 on 2027-01-15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "finish the analysis",
+      "date": "2027-01-15",
+      "time": "17:15"
+    }
+  },
+  {
+    "input": "Set up a call with Karen for 2027-01-07 at 18:45.",
+    "output": {
+      "action": "create_event",
+      "person": "Karen",
+      "date": "2027-01-07",
+      "time": "18:45"
+    }
+  },
+  {
+    "input": "I can't make it to the meeting with Vince on 2027-01-06. Cancel it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Vince",
+      "date": "2027-01-06"
+    }
+  },
+  {
+    "input": "Free up 2026-12-23 \u2014 cancel my time with Chloe.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Chloe",
+      "date": "2026-12-23"
+    }
+  },
+  {
+    "input": "Put a meeting with Carol in my calendar for 2027-01-14 at 13:15.",
+    "output": {
+      "action": "create_event",
+      "person": "Carol",
+      "date": "2027-01-14",
+      "time": "13:15"
+    }
+  },
+  {
+    "input": "I need to push my Tom meeting from 2026-12-04 to 2026-12-30 at 16:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Tom",
+      "old_date": "2026-12-04",
+      "new_date": "2026-12-30",
+      "new_time": "16:45"
+    }
+  },
+  {
+    "input": "Put a meeting with Eve in my calendar for 2026-12-01 at 17:30.",
+    "output": {
+      "action": "create_event",
+      "person": "Eve",
+      "date": "2026-12-01",
+      "time": "17:30"
+    }
+  },
+  {
+    "input": "Schedule a 12:15 stand-up with Ava on 2026-12-16 in rooftop terrace.",
+    "output": {
+      "action": "create_event",
+      "person": "Ava",
+      "date": "2026-12-16",
+      "time": "12:15",
+      "location": "rooftop terrace"
+    }
+  },
+  {
+    "input": "Cancel my meeting with Isabella on 2026-11-19.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Isabella",
+      "date": "2026-11-19"
+    }
+  },
+  {
+    "input": "The meeting with Ray on 2026-12-16 is no longer happening. Remove it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Ray",
+      "date": "2026-12-16"
+    }
+  },
+  {
+    "input": "Shift the 2026-11-18 event with Xander to 2026-12-29 at 12:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Xander",
+      "old_date": "2026-11-18",
+      "new_date": "2026-12-29",
+      "new_time": "12:15"
+    }
+  },
+  {
+    "input": "Move the Zoe session on 2026-11-22 to a new time: 2027-01-06 at 09:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Zoe",
+      "old_date": "2026-11-22",
+      "new_date": "2027-01-06",
+      "new_time": "09:30"
+    }
+  },
+  {
+    "input": "Please cancel my 2026-12-06 meeting with Quinn.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Quinn",
+      "date": "2026-12-06"
+    }
+  },
+  {
+    "input": "Delete the appointment with Frank scheduled for 2026-12-30.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Frank",
+      "date": "2026-12-30"
+    }
+  },
+  {
+    "input": "Add a task: prepare slides due 2026-12-22 with medium priority.",
+    "output": {
+      "action": "create_task",
+      "title": "prepare slides",
+      "due_date": "2026-12-22",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Notify me to write the blog post when it is 08:30 on 2026-12-18.",
+    "output": {
+      "action": "set_reminder",
+      "task": "write the blog post",
+      "date": "2026-12-18",
+      "time": "08:30"
+    }
+  },
+  {
+    "input": "Add a reminder: schedule interviews \u2014 2026-12-01 at 15:45.",
+    "output": {
+      "action": "set_reminder",
+      "task": "schedule interviews",
+      "date": "2026-12-01",
+      "time": "15:45"
+    }
+  },
+  {
+    "input": "Task: back up the database. Due 2027-01-12. Mark as low.",
+    "output": {
+      "action": "create_task",
+      "title": "back up the database",
+      "due_date": "2027-01-12",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Move my meeting with James from 2026-11-20 to 2026-12-27 at 15:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "James",
+      "old_date": "2026-11-20",
+      "new_date": "2026-12-27",
+      "new_time": "15:45"
+    }
+  },
+  {
+    "input": "I need to back up the database before 2026-12-02. Set priority to medium.",
+    "output": {
+      "action": "create_task",
+      "title": "back up the database",
+      "due_date": "2026-12-02",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "I need to push my Lucas meeting from 2026-11-30 to 2027-01-16 at 16:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Lucas",
+      "old_date": "2026-11-30",
+      "new_date": "2027-01-16",
+      "new_time": "16:00"
+    }
+  },
+  {
+    "input": "I need to cancel the event with Hank on 2027-01-11.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Hank",
+      "date": "2027-01-11"
+    }
+  },
+  {
+    "input": "Plan a meeting with Oscar in Main Hall at 10:15 on 2026-12-12.",
+    "output": {
+      "action": "create_event",
+      "person": "Oscar",
+      "date": "2026-12-12",
+      "time": "10:15",
+      "location": "Main Hall"
+    }
+  },
+  {
+    "input": "Update my meeting with Hank: old date 2026-12-01, new date 2027-01-05 at 12:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Hank",
+      "old_date": "2026-12-01",
+      "new_date": "2027-01-05",
+      "new_time": "12:00"
+    }
+  },
+  {
+    "input": "Let's sync with Carol on 2026-11-24 at 17:45 at auditorium.",
+    "output": {
+      "action": "create_event",
+      "person": "Carol",
+      "date": "2026-11-24",
+      "time": "17:45",
+      "location": "auditorium"
+    }
+  },
+  {
+    "input": "The 2026-12-12 meeting with Aiden needs to move to 2027-01-05 at 15:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Aiden",
+      "old_date": "2026-12-12",
+      "new_date": "2027-01-05",
+      "new_time": "15:30"
+    }
+  },
+  {
+    "input": "Ping Liam with: great job on the presentation",
+    "output": {
+      "action": "send_message",
+      "person": "Liam",
+      "message": "great job on the presentation"
+    }
+  },
+  {
+    "input": "I can't make it to the meeting with Uma on 2026-12-26. Cancel it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Uma",
+      "date": "2026-12-26"
+    }
+  },
+  {
+    "input": "New task: write the blog post. Due date: 2026-11-20. Priority: low.",
+    "output": {
+      "action": "create_task",
+      "title": "write the blog post",
+      "due_date": "2026-11-20",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Can you ping me to send the invoice on 2027-01-14 at 18:00?",
+    "output": {
+      "action": "set_reminder",
+      "task": "send the invoice",
+      "date": "2027-01-14",
+      "time": "18:00"
+    }
+  },
+  {
+    "input": "Free up 2026-12-13 \u2014 cancel my time with Aiden.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Aiden",
+      "date": "2026-12-13"
+    }
+  },
+  {
+    "input": "Let Zoe know: sending the agenda now",
+    "output": {
+      "action": "send_message",
+      "person": "Zoe",
+      "message": "sending the agenda now"
+    }
+  },
+  {
+    "input": "Postpone my 2026-11-19 meeting with Emma to 2026-12-31 at 13:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Emma",
+      "old_date": "2026-11-19",
+      "new_date": "2026-12-31",
+      "new_time": "13:15"
+    }
+  },
+  {
+    "input": "Schedule task 'finish the analysis' with deadline 2027-01-12 and high urgency.",
+    "output": {
+      "action": "create_task",
+      "title": "finish the analysis",
+      "due_date": "2027-01-12",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Organise a 10:45 meeting with Noah on 2026-12-02 in Conference Room B.",
+    "output": {
+      "action": "create_event",
+      "person": "Noah",
+      "date": "2026-12-02",
+      "time": "10:45",
+      "location": "Conference Room B"
+    }
+  },
+  {
+    "input": "New event: Frank, 2026-12-06, 16:30.",
+    "output": {
+      "action": "create_event",
+      "person": "Frank",
+      "date": "2026-12-06",
+      "time": "16:30"
+    }
+  },
+  {
+    "input": "Please add 'renew the license' to my task list. Due: 2026-11-21. Priority: urgent.",
+    "output": {
+      "action": "create_task",
+      "title": "renew the license",
+      "due_date": "2026-11-21",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Update my meeting with Liam: old date 2026-11-25, new date 2027-01-14 at 10:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Liam",
+      "old_date": "2026-11-25",
+      "new_date": "2027-01-14",
+      "new_time": "10:30"
+    }
+  },
+  {
+    "input": "Schedule a 16:30 stand-up with Emma on 2027-01-10 in Park.",
+    "output": {
+      "action": "create_event",
+      "person": "Emma",
+      "date": "2027-01-10",
+      "time": "16:30",
+      "location": "Park"
+    }
+  },
+  {
+    "input": "Plan a meeting with Isabella in the lab at 16:15 on 2026-11-19.",
+    "output": {
+      "action": "create_event",
+      "person": "Isabella",
+      "date": "2026-11-19",
+      "time": "16:15",
+      "location": "the lab"
+    }
+  },
+  {
+    "input": "Add Oscar to my calendar on 2027-01-12 at 09:45.",
+    "output": {
+      "action": "create_event",
+      "person": "Oscar",
+      "date": "2027-01-12",
+      "time": "09:45"
+    }
+  },
+  {
+    "input": "Add to my to-do: update the roadmap. Deadline 2026-11-18, medium priority.",
+    "output": {
+      "action": "create_task",
+      "title": "update the roadmap",
+      "due_date": "2026-11-18",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "I need to cancel the event with Eve on 2026-12-18.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Eve",
+      "date": "2026-12-18"
+    }
+  },
+  {
+    "input": "Set an alert for 2026-11-23 at 11:00 to update dependencies.",
+    "output": {
+      "action": "set_reminder",
+      "task": "update dependencies",
+      "date": "2026-11-23",
+      "time": "11:00"
+    }
+  },
+  {
+    "input": "Can you add an event: meet Quinn at their office on 2026-12-13 at 10:30?",
+    "output": {
+      "action": "create_event",
+      "person": "Quinn",
+      "date": "2026-12-13",
+      "time": "10:30",
+      "location": "their office"
+    }
+  },
+  {
+    "input": "Scratch the meeting with Lucas on 2026-12-01.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Lucas",
+      "date": "2026-12-01"
+    }
+  },
+  {
+    "input": "Add a reminder: draft the email \u2014 2026-12-28 at 15:00.",
+    "output": {
+      "action": "set_reminder",
+      "task": "draft the email",
+      "date": "2026-12-28",
+      "time": "15:00"
+    }
+  },
+  {
+    "input": "Task: update the roadmap. Due 2026-11-19. Mark as high.",
+    "output": {
+      "action": "create_task",
+      "title": "update the roadmap",
+      "due_date": "2026-11-19",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Free up 2027-01-04 \u2014 cancel my time with Grace.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Grace",
+      "date": "2027-01-04"
+    }
+  },
+  {
+    "input": "I need to push my Grace meeting from 2026-11-20 to 2026-12-28 at 18:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Grace",
+      "old_date": "2026-11-20",
+      "new_date": "2026-12-28",
+      "new_time": "18:30"
+    }
+  },
+  {
+    "input": "Set a reminder for deploy the fix at 14:30 on 2026-12-25.",
+    "output": {
+      "action": "set_reminder",
+      "task": "deploy the fix",
+      "date": "2026-12-25",
+      "time": "14:30"
+    }
+  },
+  {
+    "input": "Book a session with Ray at 17:15 on 2026-12-06 in room 202.",
+    "output": {
+      "action": "create_event",
+      "person": "Ray",
+      "date": "2026-12-06",
+      "time": "17:15",
+      "location": "room 202"
+    }
+  },
+  {
+    "input": "Task: schedule interviews. Due 2026-12-29. Mark as urgent.",
+    "output": {
+      "action": "create_task",
+      "title": "schedule interviews",
+      "due_date": "2026-12-29",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Create an appointment with Pam on 2026-12-31 at 12:15 at the office.",
+    "output": {
+      "action": "create_event",
+      "person": "Pam",
+      "date": "2026-12-31",
+      "time": "12:15",
+      "location": "the office"
+    }
+  },
+  {
+    "input": "Can we bump the 2026-11-28 call with Jack to 2027-01-14 at 13:30?",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Jack",
+      "old_date": "2026-11-28",
+      "new_date": "2027-01-14",
+      "new_time": "13:30"
+    }
+  },
+  {
+    "input": "I need to push my Eve meeting from 2026-12-10 to 2027-01-11 at 15:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Eve",
+      "old_date": "2026-12-10",
+      "new_date": "2027-01-11",
+      "new_time": "15:00"
+    }
+  },
+  {
+    "input": "Notify me to audit the logs when it is 08:00 on 2026-12-05.",
+    "output": {
+      "action": "set_reminder",
+      "task": "audit the logs",
+      "date": "2026-12-05",
+      "time": "08:00"
+    }
+  },
+  {
+    "input": "Plan a meeting with Karen in their office at 11:15 on 2026-12-22.",
+    "output": {
+      "action": "create_event",
+      "person": "Karen",
+      "date": "2026-12-22",
+      "time": "11:15",
+      "location": "their office"
+    }
+  },
+  {
+    "input": "Put a meeting with Emma in my calendar for 2026-12-31 at 11:45.",
+    "output": {
+      "action": "create_event",
+      "person": "Emma",
+      "date": "2026-12-31",
+      "time": "11:45"
+    }
+  },
+  {
+    "input": "Notify me to update the roadmap when it is 10:30 on 2026-12-15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "update the roadmap",
+      "date": "2026-12-15",
+      "time": "10:30"
+    }
+  },
+  {
+    "input": "Create a task called 'finish the analysis' that is due on 2026-11-22 and has low priority.",
+    "output": {
+      "action": "create_task",
+      "title": "finish the analysis",
+      "due_date": "2026-11-22",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Notify Frank: can you join 5 minutes early?",
+    "output": {
+      "action": "send_message",
+      "person": "Frank",
+      "message": "can you join 5 minutes early?"
+    }
+  },
+  {
+    "input": "Plan a meeting with Ivy in Studio 3 at 16:30 on 2026-12-03.",
+    "output": {
+      "action": "create_event",
+      "person": "Ivy",
+      "date": "2026-12-03",
+      "time": "16:30",
+      "location": "Studio 3"
+    }
+  },
+  {
+    "input": "Change my 2026-12-12 meeting with Vince to 2027-01-02 at 11:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Vince",
+      "old_date": "2026-12-12",
+      "new_date": "2027-01-02",
+      "new_time": "11:15"
+    }
+  },
+  {
+    "input": "Set a reminder for renew the license at 16:30 on 2027-01-05.",
+    "output": {
+      "action": "set_reminder",
+      "task": "renew the license",
+      "date": "2027-01-05",
+      "time": "16:30"
+    }
+  },
+  {
+    "input": "Schedule a notification at 09:45 on 2026-12-08 to deploy the fix.",
+    "output": {
+      "action": "set_reminder",
+      "task": "deploy the fix",
+      "date": "2026-12-08",
+      "time": "09:45"
+    }
+  },
+  {
+    "input": "Add to my to-do: finish the analysis. Deadline 2026-12-11, high priority.",
+    "output": {
+      "action": "create_task",
+      "title": "finish the analysis",
+      "due_date": "2026-12-11",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "I need to meet Dave on 2026-12-02 at 08:30.",
+    "output": {
+      "action": "create_event",
+      "person": "Dave",
+      "date": "2026-12-02",
+      "time": "08:30"
+    }
+  },
+  {
+    "input": "Drop Karen a message saying great job on the presentation",
+    "output": {
+      "action": "send_message",
+      "person": "Karen",
+      "message": "great job on the presentation"
+    }
+  },
+  {
+    "input": "I'd like to schedule time with Noah at Main Hall on 2026-12-23 starting at 08:00.",
+    "output": {
+      "action": "create_event",
+      "person": "Noah",
+      "date": "2026-12-23",
+      "time": "08:00",
+      "location": "Main Hall"
+    }
+  },
+  {
+    "input": "Postpone my 2026-11-22 meeting with Uma to 2027-01-01 at 09:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Uma",
+      "old_date": "2026-11-22",
+      "new_date": "2027-01-01",
+      "new_time": "09:45"
+    }
+  },
+  {
+    "input": "Log a medium task: write the blog post \u2014 must be done by 2026-12-04.",
+    "output": {
+      "action": "create_task",
+      "title": "write the blog post",
+      "due_date": "2026-12-04",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Plan a meeting with Lucas in auditorium at 16:15 on 2027-01-16.",
+    "output": {
+      "action": "create_event",
+      "person": "Lucas",
+      "date": "2027-01-16",
+      "time": "16:15",
+      "location": "auditorium"
+    }
+  },
+  {
+    "input": "Compose a message to Eve saying 'the venue has changed'",
+    "output": {
+      "action": "send_message",
+      "person": "Eve",
+      "message": "the venue has changed"
+    }
+  },
+  {
+    "input": "Add a task: update dependencies due 2026-12-23 with urgent priority.",
+    "output": {
+      "action": "create_task",
+      "title": "update dependencies",
+      "due_date": "2026-12-23",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Schedule task 'renew the license' with deadline 2026-12-25 and urgent urgency.",
+    "output": {
+      "action": "create_task",
+      "title": "renew the license",
+      "due_date": "2026-12-25",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Track a high item: audit the logs, deadline 2026-12-31.",
+    "output": {
+      "action": "create_task",
+      "title": "audit the logs",
+      "due_date": "2026-12-31",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Please update the Yara meeting: was 2026-11-20, now 2026-12-29 at 11:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Yara",
+      "old_date": "2026-11-20",
+      "new_date": "2026-12-29",
+      "new_time": "11:00"
+    }
+  },
+  {
+    "input": "Unschedule my appointment with Ethan on 2026-11-19.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Ethan",
+      "date": "2026-11-19"
+    }
+  },
+  {
+    "input": "Track a urgent item: file the expenses, deadline 2027-01-06.",
+    "output": {
+      "action": "create_task",
+      "title": "file the expenses",
+      "due_date": "2027-01-06",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "I need to cancel the event with Bob on 2026-11-21.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Bob",
+      "date": "2026-11-21"
+    }
+  },
+  {
+    "input": "Schedule task 'write the blog post' with deadline 2026-12-23 and high urgency.",
+    "output": {
+      "action": "create_task",
+      "title": "write the blog post",
+      "due_date": "2026-12-23",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Tell Grace that bring the signed docs",
+    "output": {
+      "action": "send_message",
+      "person": "Grace",
+      "message": "bring the signed docs"
+    }
+  },
+  {
+    "input": "Write to Mason: just following up on this",
+    "output": {
+      "action": "send_message",
+      "person": "Mason",
+      "message": "just following up on this"
+    }
+  },
+  {
+    "input": "New event: Bob, 2026-11-20, 11:45.",
+    "output": {
+      "action": "create_event",
+      "person": "Bob",
+      "date": "2026-11-20",
+      "time": "11:45"
+    }
+  },
+  {
+    "input": "Scratch the meeting with Wendy on 2026-11-22.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Wendy",
+      "date": "2026-11-22"
+    }
+  },
+  {
+    "input": "Update my meeting with Jack: old date 2026-11-21, new date 2026-12-19 at 12:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Jack",
+      "old_date": "2026-11-21",
+      "new_date": "2026-12-19",
+      "new_time": "12:45"
+    }
+  },
+  {
+    "input": "Free up 2026-11-27 \u2014 cancel my time with Eve.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Eve",
+      "date": "2026-11-27"
+    }
+  },
+  {
+    "input": "Task: book the flight. Due 2027-01-15. Mark as urgent.",
+    "output": {
+      "action": "create_task",
+      "title": "book the flight",
+      "due_date": "2027-01-15",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "I need to cancel the event with Liam on 2026-12-09.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Liam",
+      "date": "2026-12-09"
+    }
+  },
+  {
+    "input": "Set a reminder for renew the license at 13:15 on 2026-12-05.",
+    "output": {
+      "action": "set_reminder",
+      "task": "renew the license",
+      "date": "2026-12-05",
+      "time": "13:15"
+    }
+  },
+  {
+    "input": "Flag 2027-01-13 at 15:15 so I don't miss deploy the fix.",
+    "output": {
+      "action": "set_reminder",
+      "task": "deploy the fix",
+      "date": "2027-01-13",
+      "time": "15:15"
+    }
+  },
+  {
+    "input": "Send a message to Mason: 'great job on the presentation'",
+    "output": {
+      "action": "send_message",
+      "person": "Mason",
+      "message": "great job on the presentation"
+    }
+  },
+  {
+    "input": "Remove the event with Aiden from 2026-12-01.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Aiden",
+      "date": "2026-12-01"
+    }
+  },
+  {
+    "input": "I'd like to schedule time with Uma at board room on 2026-12-15 starting at 17:00.",
+    "output": {
+      "action": "create_event",
+      "person": "Uma",
+      "date": "2026-12-15",
+      "time": "17:00",
+      "location": "board room"
+    }
+  },
+  {
+    "input": "Create an appointment with Karen on 2027-01-01 at 14:30 at rooftop terrace.",
+    "output": {
+      "action": "create_event",
+      "person": "Karen",
+      "date": "2027-01-01",
+      "time": "14:30",
+      "location": "rooftop terrace"
+    }
+  },
+  {
+    "input": "The 2026-12-08 meeting with Yara needs to move to 2027-01-12 at 13:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Yara",
+      "old_date": "2026-12-08",
+      "new_date": "2027-01-12",
+      "new_time": "13:15"
+    }
+  },
+  {
+    "input": "Notify Emma: please review before EOD",
+    "output": {
+      "action": "send_message",
+      "person": "Emma",
+      "message": "please review before EOD"
+    }
+  },
+  {
+    "input": "Tell Jack that I'll be 10 minutes late",
+    "output": {
+      "action": "send_message",
+      "person": "Jack",
+      "message": "I'll be 10 minutes late"
+    }
+  },
+  {
+    "input": "Track a low item: deploy the fix, deadline 2027-01-09.",
+    "output": {
+      "action": "create_task",
+      "title": "deploy the fix",
+      "due_date": "2027-01-09",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Move the Carol session on 2026-11-22 to a new time: 2027-01-09 at 13:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Carol",
+      "old_date": "2026-11-22",
+      "new_date": "2027-01-09",
+      "new_time": "13:45"
+    }
+  },
+  {
+    "input": "Schedule a 13:15 stand-up with Mia on 2026-11-27 in the lab.",
+    "output": {
+      "action": "create_event",
+      "person": "Mia",
+      "date": "2026-11-27",
+      "time": "13:15",
+      "location": "the lab"
+    }
+  },
+  {
+    "input": "Log a urgent task: draft the email \u2014 must be done by 2026-12-08.",
+    "output": {
+      "action": "create_task",
+      "title": "draft the email",
+      "due_date": "2026-12-08",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Organise a 15:00 meeting with Eve on 2026-11-18 in Main Hall.",
+    "output": {
+      "action": "create_event",
+      "person": "Eve",
+      "date": "2026-11-18",
+      "time": "15:00",
+      "location": "Main Hall"
+    }
+  },
+  {
+    "input": "Notify me to draft the email when it is 11:45 on 2026-11-24.",
+    "output": {
+      "action": "set_reminder",
+      "task": "draft the email",
+      "date": "2026-11-24",
+      "time": "11:45"
+    }
+  },
+  {
+    "input": "Drop the 2026-12-21 meeting with Hank.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Hank",
+      "date": "2026-12-21"
+    }
+  },
+  {
+    "input": "Let's sync with Mia on 2026-11-22 at 17:15 at Zoom.",
+    "output": {
+      "action": "create_event",
+      "person": "Mia",
+      "date": "2026-11-22",
+      "time": "17:15",
+      "location": "Zoom"
+    }
+  },
+  {
+    "input": "Chat Jack and tell them: here are the notes from last time",
+    "output": {
+      "action": "send_message",
+      "person": "Jack",
+      "message": "here are the notes from last time"
+    }
+  },
+  {
+    "input": "Schedule task 'draft the email' with deadline 2026-12-18 and medium urgency.",
+    "output": {
+      "action": "create_task",
+      "title": "draft the email",
+      "due_date": "2026-12-18",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Track a medium item: audit the logs, deadline 2026-12-21.",
+    "output": {
+      "action": "create_task",
+      "title": "audit the logs",
+      "due_date": "2026-12-21",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Free up 2027-01-07 \u2014 cancel my time with Grace.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Grace",
+      "date": "2027-01-07"
+    }
+  },
+  {
+    "input": "I need to review pull requests before 2026-12-06. Set priority to urgent.",
+    "output": {
+      "action": "create_task",
+      "title": "review pull requests",
+      "due_date": "2026-12-06",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Scratch the meeting with Hank on 2026-12-10.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Hank",
+      "date": "2026-12-10"
+    }
+  },
+  {
+    "input": "Schedule task 'draft the email' with deadline 2026-11-30 and medium urgency.",
+    "output": {
+      "action": "create_task",
+      "title": "draft the email",
+      "due_date": "2026-11-30",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Track a urgent item: back up the database, deadline 2026-12-11.",
+    "output": {
+      "action": "create_task",
+      "title": "back up the database",
+      "due_date": "2026-12-11",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Schedule a 13:30 stand-up with Mia on 2026-12-13 in Main Hall.",
+    "output": {
+      "action": "create_event",
+      "person": "Mia",
+      "date": "2026-12-13",
+      "time": "13:30",
+      "location": "Main Hall"
+    }
+  },
+  {
+    "input": "Please add 'prepare slides' to my task list. Due: 2026-12-31. Priority: medium.",
+    "output": {
+      "action": "create_task",
+      "title": "prepare slides",
+      "due_date": "2026-12-31",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Cancel my meeting with Hank on 2026-12-30.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Hank",
+      "date": "2026-12-30"
+    }
+  },
+  {
+    "input": "Schedule a 17:45 stand-up with Ivy on 2027-01-03 in cafeteria.",
+    "output": {
+      "action": "create_event",
+      "person": "Ivy",
+      "date": "2027-01-03",
+      "time": "17:45",
+      "location": "cafeteria"
+    }
+  },
+  {
+    "input": "Flag 2027-01-07 at 17:15 so I don't miss back up the database.",
+    "output": {
+      "action": "set_reminder",
+      "task": "back up the database",
+      "date": "2027-01-07",
+      "time": "17:15"
+    }
+  },
+  {
+    "input": "Move the Emma session on 2026-11-21 to a new time: 2027-01-12 at 13:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Emma",
+      "old_date": "2026-11-21",
+      "new_date": "2027-01-12",
+      "new_time": "13:00"
+    }
+  },
+  {
+    "input": "Track a high item: run the tests, deadline 2026-12-29.",
+    "output": {
+      "action": "create_task",
+      "title": "run the tests",
+      "due_date": "2026-12-29",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Schedule a meeting with Olivia on 2026-12-10 at 12:15 in cafeteria.",
+    "output": {
+      "action": "create_event",
+      "person": "Olivia",
+      "date": "2026-12-10",
+      "time": "12:15",
+      "location": "cafeteria"
+    }
+  },
+  {
+    "input": "Log a low task: read the proposal \u2014 must be done by 2026-12-24.",
+    "output": {
+      "action": "create_task",
+      "title": "read the proposal",
+      "due_date": "2026-12-24",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "New task: update dependencies. Due date: 2026-12-27. Priority: low.",
+    "output": {
+      "action": "create_task",
+      "title": "update dependencies",
+      "due_date": "2026-12-27",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Let Yara know: sending the agenda now",
+    "output": {
+      "action": "send_message",
+      "person": "Yara",
+      "message": "sending the agenda now"
+    }
+  },
+  {
+    "input": "Set a reminder for update the roadmap at 18:15 on 2026-12-14.",
+    "output": {
+      "action": "set_reminder",
+      "task": "update the roadmap",
+      "date": "2026-12-14",
+      "time": "18:15"
+    }
+  },
+  {
+    "input": "Can we bump the 2026-12-02 call with Ray to 2027-01-15 at 16:15?",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Ray",
+      "old_date": "2026-12-02",
+      "new_date": "2027-01-15",
+      "new_time": "16:15"
+    }
+  },
+  {
+    "input": "I need to audit the logs before 2027-01-07. Set priority to urgent.",
+    "output": {
+      "action": "create_task",
+      "title": "audit the logs",
+      "due_date": "2027-01-07",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Delete the appointment with Nina scheduled for 2027-01-09.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Nina",
+      "date": "2027-01-09"
+    }
+  },
+  {
+    "input": "I want to be reminded to finish the analysis at 15:30 on 2027-01-04.",
+    "output": {
+      "action": "set_reminder",
+      "task": "finish the analysis",
+      "date": "2027-01-04",
+      "time": "15:30"
+    }
+  },
+  {
+    "input": "Drop the 2026-11-26 meeting with Jack.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Jack",
+      "date": "2026-11-26"
+    }
+  },
+  {
+    "input": "Move my meeting with Mia from 2026-12-07 to 2027-01-03 at 14:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Mia",
+      "old_date": "2026-12-07",
+      "new_date": "2027-01-03",
+      "new_time": "14:00"
+    }
+  },
+  {
+    "input": "Schedule a meeting with Hank on 2027-01-16 at 13:30 in cafeteria.",
+    "output": {
+      "action": "create_event",
+      "person": "Hank",
+      "date": "2027-01-16",
+      "time": "13:30",
+      "location": "cafeteria"
+    }
+  },
+  {
+    "input": "Organise a 13:15 meeting with Chloe on 2026-12-13 in Teams.",
+    "output": {
+      "action": "create_event",
+      "person": "Chloe",
+      "date": "2026-12-13",
+      "time": "13:15",
+      "location": "Teams"
+    }
+  },
+  {
+    "input": "Let's sync with Wendy on 2026-12-07 at 14:45 at the lab.",
+    "output": {
+      "action": "create_event",
+      "person": "Wendy",
+      "date": "2026-12-07",
+      "time": "14:45",
+      "location": "the lab"
+    }
+  },
+  {
+    "input": "I need a reminder to run the tests at 17:45 on 2026-12-24.",
+    "output": {
+      "action": "set_reminder",
+      "task": "run the tests",
+      "date": "2026-12-24",
+      "time": "17:45"
+    }
+  },
+  {
+    "input": "Let's sync with Grace on 2026-12-10 at 13:30 at Conference Room B.",
+    "output": {
+      "action": "create_event",
+      "person": "Grace",
+      "date": "2026-12-10",
+      "time": "13:30",
+      "location": "Conference Room B"
+    }
+  },
+  {
+    "input": "Plan a meeting with Isabella in lobby at 11:15 on 2026-12-15.",
+    "output": {
+      "action": "create_event",
+      "person": "Isabella",
+      "date": "2026-12-15",
+      "time": "11:15",
+      "location": "lobby"
+    }
+  },
+  {
+    "input": "Remove the event with Tom from 2026-12-10.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Tom",
+      "date": "2026-12-10"
+    }
+  },
+  {
+    "input": "I need to push my Dave meeting from 2026-12-14 to 2026-12-21 at 16:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Dave",
+      "old_date": "2026-12-14",
+      "new_date": "2026-12-21",
+      "new_time": "16:15"
+    }
+  },
+  {
+    "input": "Let's sync with Oscar on 2026-12-25 at 11:00 at Main Hall.",
+    "output": {
+      "action": "create_event",
+      "person": "Oscar",
+      "date": "2026-12-25",
+      "time": "11:00",
+      "location": "Main Hall"
+    }
+  },
+  {
+    "input": "Don't let me forget to read the proposal on 2026-12-29 at 14:00.",
+    "output": {
+      "action": "set_reminder",
+      "task": "read the proposal",
+      "date": "2026-12-29",
+      "time": "14:00"
+    }
+  },
+  {
+    "input": "Put a meeting with Sara in my calendar for 2026-12-23 at 10:15.",
+    "output": {
+      "action": "create_event",
+      "person": "Sara",
+      "date": "2026-12-23",
+      "time": "10:15"
+    }
+  },
+  {
+    "input": "Unschedule my appointment with Uma on 2026-12-12.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Uma",
+      "date": "2026-12-12"
+    }
+  },
+  {
+    "input": "Chat Bob and tell them: please review before EOD",
+    "output": {
+      "action": "send_message",
+      "person": "Bob",
+      "message": "please review before EOD"
+    }
+  },
+  {
+    "input": "Notify me to call the client when it is 17:45 on 2026-11-23.",
+    "output": {
+      "action": "set_reminder",
+      "task": "call the client",
+      "date": "2026-11-23",
+      "time": "17:45"
+    }
+  },
+  {
+    "input": "Remove the event with Ava from 2026-11-22.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Ava",
+      "date": "2026-11-22"
+    }
+  },
+  {
+    "input": "Set an alert for 2027-01-05 at 16:45 to book the flight.",
+    "output": {
+      "action": "set_reminder",
+      "task": "book the flight",
+      "date": "2027-01-05",
+      "time": "16:45"
+    }
+  },
+  {
+    "input": "Reschedule Dave's meeting: 2026-12-08 \u2192 2027-01-02 at 13:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Dave",
+      "old_date": "2026-12-08",
+      "new_date": "2027-01-02",
+      "new_time": "13:00"
+    }
+  },
+  {
+    "input": "Schedule a notification at 11:15 on 2026-11-28 to prepare slides.",
+    "output": {
+      "action": "set_reminder",
+      "task": "prepare slides",
+      "date": "2026-11-28",
+      "time": "11:15"
+    }
+  },
+  {
+    "input": "The 2026-12-06 meeting with Yara needs to move to 2026-12-19 at 17:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Yara",
+      "old_date": "2026-12-06",
+      "new_date": "2026-12-19",
+      "new_time": "17:15"
+    }
+  },
+  {
+    "input": "Plan a meeting with Nina in Main Hall at 13:00 on 2027-01-05.",
+    "output": {
+      "action": "create_event",
+      "person": "Nina",
+      "date": "2027-01-05",
+      "time": "13:00",
+      "location": "Main Hall"
+    }
+  },
+  {
+    "input": "Cancel my meeting with Oscar on 2026-12-27.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Oscar",
+      "date": "2026-12-27"
+    }
+  },
+  {
+    "input": "Move the Aiden session on 2026-12-02 to a new time: 2027-01-01 at 12:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Aiden",
+      "old_date": "2026-12-02",
+      "new_date": "2027-01-01",
+      "new_time": "12:45"
+    }
+  },
+  {
+    "input": "Chat Ivy and tell them: sending the agenda now",
+    "output": {
+      "action": "send_message",
+      "person": "Ivy",
+      "message": "sending the agenda now"
+    }
+  },
+  {
+    "input": "Add to my to-do: back up the database. Deadline 2027-01-11, urgent priority.",
+    "output": {
+      "action": "create_task",
+      "title": "back up the database",
+      "due_date": "2027-01-11",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "I want to catch up with Hank on 2027-01-06 at 10:30 at Zoom.",
+    "output": {
+      "action": "create_event",
+      "person": "Hank",
+      "date": "2027-01-06",
+      "time": "10:30",
+      "location": "Zoom"
+    }
+  },
+  {
+    "input": "Book a session with Lucas at 12:15 on 2026-12-08 in room 202.",
+    "output": {
+      "action": "create_event",
+      "person": "Lucas",
+      "date": "2026-12-08",
+      "time": "12:15",
+      "location": "room 202"
+    }
+  },
+  {
+    "input": "I need a reminder to run the tests at 15:30 on 2026-12-22.",
+    "output": {
+      "action": "set_reminder",
+      "task": "run the tests",
+      "date": "2026-12-22",
+      "time": "15:30"
+    }
+  },
+  {
+    "input": "Drop Pam a message saying looking forward to our call",
+    "output": {
+      "action": "send_message",
+      "person": "Pam",
+      "message": "looking forward to our call"
+    }
+  },
+  {
+    "input": "I want to catch up with Quinn on 2027-01-06 at 13:15 at Park.",
+    "output": {
+      "action": "create_event",
+      "person": "Quinn",
+      "date": "2027-01-06",
+      "time": "13:15",
+      "location": "Park"
+    }
+  },
+  {
+    "input": "I want to catch up with Leo on 2026-12-20 at 09:30 at satellite campus.",
+    "output": {
+      "action": "create_event",
+      "person": "Leo",
+      "date": "2026-12-20",
+      "time": "09:30",
+      "location": "satellite campus"
+    }
+  },
+  {
+    "input": "Remind me to update the roadmap on 2026-12-28 at 15:00.",
+    "output": {
+      "action": "set_reminder",
+      "task": "update the roadmap",
+      "date": "2026-12-28",
+      "time": "15:00"
+    }
+  },
+  {
+    "input": "I need a reminder to audit the logs at 14:00 on 2026-12-02.",
+    "output": {
+      "action": "set_reminder",
+      "task": "audit the logs",
+      "date": "2026-12-02",
+      "time": "14:00"
+    }
+  },
+  {
+    "input": "Add Eve to my calendar on 2026-12-17 at 14:15.",
+    "output": {
+      "action": "create_event",
+      "person": "Eve",
+      "date": "2026-12-17",
+      "time": "14:15"
+    }
+  },
+  {
+    "input": "I can't make it to the meeting with Quinn on 2027-01-08. Cancel it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Quinn",
+      "date": "2027-01-08"
+    }
+  },
+  {
+    "input": "Call off the 2027-01-01 session with Ray.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Ray",
+      "date": "2027-01-01"
+    }
+  },
+  {
+    "input": "Shift the 2026-11-25 event with Sara to 2026-12-27 at 09:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Sara",
+      "old_date": "2026-11-25",
+      "new_date": "2026-12-27",
+      "new_time": "09:00"
+    }
+  },
+  {
+    "input": "Create an appointment with Uma on 2027-01-14 at 16:00 at Teams.",
+    "output": {
+      "action": "create_event",
+      "person": "Uma",
+      "date": "2027-01-14",
+      "time": "16:00",
+      "location": "Teams"
+    }
+  },
+  {
+    "input": "Reschedule Quinn's meeting: 2026-12-10 \u2192 2027-01-01 at 11:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Quinn",
+      "old_date": "2026-12-10",
+      "new_date": "2027-01-01",
+      "new_time": "11:30"
+    }
+  },
+  {
+    "input": "Put a meeting with Ray in my calendar for 2027-01-01 at 18:00.",
+    "output": {
+      "action": "create_event",
+      "person": "Ray",
+      "date": "2027-01-01",
+      "time": "18:00"
+    }
+  },
+  {
+    "input": "Shift the 2026-11-30 event with Frank to 2027-01-03 at 15:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Frank",
+      "old_date": "2026-11-30",
+      "new_date": "2027-01-03",
+      "new_time": "15:15"
+    }
+  },
+  {
+    "input": "Cancel my meeting with Vince on 2026-12-10.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Vince",
+      "date": "2026-12-10"
+    }
+  },
+  {
+    "input": "Send Yara the following message: I'll be 10 minutes late",
+    "output": {
+      "action": "send_message",
+      "person": "Yara",
+      "message": "I'll be 10 minutes late"
+    }
+  },
+  {
+    "input": "Message Mia and say: the deadline has changed to next Friday",
+    "output": {
+      "action": "send_message",
+      "person": "Mia",
+      "message": "the deadline has changed to next Friday"
+    }
+  },
+  {
+    "input": "Add a task: complete onboarding due 2027-01-16 with medium priority.",
+    "output": {
+      "action": "create_task",
+      "title": "complete onboarding",
+      "due_date": "2027-01-16",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Set up a call with Carol for 2026-12-10 at 16:45.",
+    "output": {
+      "action": "create_event",
+      "person": "Carol",
+      "date": "2026-12-10",
+      "time": "16:45"
+    }
+  },
+  {
+    "input": "Plan a meeting with Dave in Conference Room B at 18:00 on 2026-12-31.",
+    "output": {
+      "action": "create_event",
+      "person": "Dave",
+      "date": "2026-12-31",
+      "time": "18:00",
+      "location": "Conference Room B"
+    }
+  },
+  {
+    "input": "Delete the appointment with Tom scheduled for 2026-11-20.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Tom",
+      "date": "2026-11-20"
+    }
+  },
+  {
+    "input": "Write to Dave: just following up on this",
+    "output": {
+      "action": "send_message",
+      "person": "Dave",
+      "message": "just following up on this"
+    }
+  },
+  {
+    "input": "Schedule a 18:00 stand-up with Tom on 2027-01-11 in Studio 3.",
+    "output": {
+      "action": "create_event",
+      "person": "Tom",
+      "date": "2027-01-11",
+      "time": "18:00",
+      "location": "Studio 3"
+    }
+  },
+  {
+    "input": "I need to push my Uma meeting from 2026-12-09 to 2026-12-29 at 09:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Uma",
+      "old_date": "2026-12-09",
+      "new_date": "2026-12-29",
+      "new_time": "09:30"
+    }
+  },
+  {
+    "input": "Can you ping me to send the invoice on 2027-01-05 at 11:15?",
+    "output": {
+      "action": "set_reminder",
+      "task": "send the invoice",
+      "date": "2027-01-05",
+      "time": "11:15"
+    }
+  },
+  {
+    "input": "Please update the Mia meeting: was 2026-11-19, now 2027-01-12 at 11:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Mia",
+      "old_date": "2026-11-19",
+      "new_date": "2027-01-12",
+      "new_time": "11:00"
+    }
+  },
+  {
+    "input": "Please update the Tom meeting: was 2026-12-13, now 2026-12-26 at 17:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Tom",
+      "old_date": "2026-12-13",
+      "new_date": "2026-12-26",
+      "new_time": "17:00"
+    }
+  },
+  {
+    "input": "Move the Sara session on 2026-12-12 to a new time: 2027-01-10 at 15:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Sara",
+      "old_date": "2026-12-12",
+      "new_date": "2027-01-10",
+      "new_time": "15:15"
+    }
+  },
+  {
+    "input": "Delete the appointment with Aiden scheduled for 2026-12-20.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Aiden",
+      "date": "2026-12-20"
+    }
+  },
+  {
+    "input": "Message Uma and say: looking forward to our call",
+    "output": {
+      "action": "send_message",
+      "person": "Uma",
+      "message": "looking forward to our call"
+    }
+  },
+  {
+    "input": "Can you add an event: meet Jack at lobby on 2026-12-15 at 10:00?",
+    "output": {
+      "action": "create_event",
+      "person": "Jack",
+      "date": "2026-12-15",
+      "time": "10:00",
+      "location": "lobby"
+    }
+  },
+  {
+    "input": "I need to meet Ethan on 2026-12-30 at 15:15.",
+    "output": {
+      "action": "create_event",
+      "person": "Ethan",
+      "date": "2026-12-30",
+      "time": "15:15"
+    }
+  },
+  {
+    "input": "Book a session with Vince at 09:15 on 2027-01-08 in the office.",
+    "output": {
+      "action": "create_event",
+      "person": "Vince",
+      "date": "2027-01-08",
+      "time": "09:15",
+      "location": "the office"
+    }
+  },
+  {
+    "input": "Change my 2026-11-30 meeting with Grace to 2026-12-29 at 13:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Grace",
+      "old_date": "2026-11-30",
+      "new_date": "2026-12-29",
+      "new_time": "13:30"
+    }
+  },
+  {
+    "input": "Write to Carol: just following up on this",
+    "output": {
+      "action": "send_message",
+      "person": "Carol",
+      "message": "just following up on this"
+    }
+  },
+  {
+    "input": "Compose a message to Tom saying 'the deadline has changed to next Friday'",
+    "output": {
+      "action": "send_message",
+      "person": "Tom",
+      "message": "the deadline has changed to next Friday"
+    }
+  },
+  {
+    "input": "Free up 2026-11-23 \u2014 cancel my time with Bob.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Bob",
+      "date": "2026-11-23"
+    }
+  },
+  {
+    "input": "Compose a message to Isabella saying 'here are the notes from last time'",
+    "output": {
+      "action": "send_message",
+      "person": "Isabella",
+      "message": "here are the notes from last time"
+    }
+  },
+  {
+    "input": "New event: Carol, 2027-01-11, 15:15.",
+    "output": {
+      "action": "create_event",
+      "person": "Carol",
+      "date": "2027-01-11",
+      "time": "15:15"
+    }
+  },
+  {
+    "input": "Add a task: read the proposal due 2027-01-13 with low priority.",
+    "output": {
+      "action": "create_task",
+      "title": "read the proposal",
+      "due_date": "2027-01-13",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Drop Jack a message saying can you join 5 minutes early?",
+    "output": {
+      "action": "send_message",
+      "person": "Jack",
+      "message": "can you join 5 minutes early?"
+    }
+  },
+  {
+    "input": "Please remind me about send the invoice on 2027-01-11 at 10:30.",
+    "output": {
+      "action": "set_reminder",
+      "task": "send the invoice",
+      "date": "2027-01-11",
+      "time": "10:30"
+    }
+  },
+  {
+    "input": "Move the Olivia session on 2026-12-09 to a new time: 2027-01-03 at 13:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Olivia",
+      "old_date": "2026-12-09",
+      "new_date": "2027-01-03",
+      "new_time": "13:15"
+    }
+  },
+  {
+    "input": "Reschedule Emma's meeting: 2026-12-07 \u2192 2027-01-09 at 14:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Emma",
+      "old_date": "2026-12-07",
+      "new_date": "2027-01-09",
+      "new_time": "14:15"
+    }
+  },
+  {
+    "input": "I need to book the flight before 2026-12-01. Set priority to low.",
+    "output": {
+      "action": "create_task",
+      "title": "book the flight",
+      "due_date": "2026-12-01",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Message Grace and say: please prepare a 2-minute intro",
+    "output": {
+      "action": "send_message",
+      "person": "Grace",
+      "message": "please prepare a 2-minute intro"
+    }
+  },
+  {
+    "input": "Change my 2026-12-14 meeting with Grace to 2027-01-09 at 18:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Grace",
+      "old_date": "2026-12-14",
+      "new_date": "2027-01-09",
+      "new_time": "18:30"
+    }
+  },
+  {
+    "input": "Scratch the meeting with Grace on 2026-12-08.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Grace",
+      "date": "2026-12-08"
+    }
+  },
+  {
+    "input": "I need to cancel the event with Lucas on 2026-12-07.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Lucas",
+      "date": "2026-12-07"
+    }
+  },
+  {
+    "input": "Book a session with Xander at 16:45 on 2026-12-16 in Zoom.",
+    "output": {
+      "action": "create_event",
+      "person": "Xander",
+      "date": "2026-12-16",
+      "time": "16:45",
+      "location": "Zoom"
+    }
+  },
+  {
+    "input": "Let's sync with Grace on 2026-12-10 at 16:45 at Park.",
+    "output": {
+      "action": "create_event",
+      "person": "Grace",
+      "date": "2026-12-10",
+      "time": "16:45",
+      "location": "Park"
+    }
+  },
+  {
+    "input": "Unschedule my appointment with Karen on 2027-01-08.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Karen",
+      "date": "2027-01-08"
+    }
+  },
+  {
+    "input": "The meeting with Hank on 2026-12-06 is no longer happening. Remove it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Hank",
+      "date": "2026-12-06"
+    }
+  },
+  {
+    "input": "Send a message to Ivy: 'bring the signed docs'",
+    "output": {
+      "action": "send_message",
+      "person": "Ivy",
+      "message": "bring the signed docs"
+    }
+  },
+  {
+    "input": "I want to be reminded to file the expenses at 08:30 on 2026-12-05.",
+    "output": {
+      "action": "set_reminder",
+      "task": "file the expenses",
+      "date": "2026-12-05",
+      "time": "08:30"
+    }
+  },
+  {
+    "input": "Organise a 08:30 meeting with Jack on 2026-12-22 in Studio 3.",
+    "output": {
+      "action": "create_event",
+      "person": "Jack",
+      "date": "2026-12-22",
+      "time": "08:30",
+      "location": "Studio 3"
+    }
+  },
+  {
+    "input": "Set an alert for 2026-11-29 at 08:30 to complete onboarding.",
+    "output": {
+      "action": "set_reminder",
+      "task": "complete onboarding",
+      "date": "2026-11-29",
+      "time": "08:30"
+    }
+  },
+  {
+    "input": "Schedule task 'book the flight' with deadline 2027-01-16 and high urgency.",
+    "output": {
+      "action": "create_task",
+      "title": "book the flight",
+      "due_date": "2027-01-16",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Notify me to renew the license when it is 12:00 on 2026-12-15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "renew the license",
+      "date": "2026-12-15",
+      "time": "12:00"
+    }
+  },
+  {
+    "input": "Send Ray the following message: please review before EOD",
+    "output": {
+      "action": "send_message",
+      "person": "Ray",
+      "message": "please review before EOD"
+    }
+  },
+  {
+    "input": "Schedule a meeting with Nina on 2026-11-21 at 17:00 in room 202.",
+    "output": {
+      "action": "create_event",
+      "person": "Nina",
+      "date": "2026-11-21",
+      "time": "17:00",
+      "location": "room 202"
+    }
+  },
+  {
+    "input": "Add to my to-do: submit the report. Deadline 2026-12-16, high priority.",
+    "output": {
+      "action": "create_task",
+      "title": "submit the report",
+      "due_date": "2026-12-16",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Forward a note to Sophia: just following up on this",
+    "output": {
+      "action": "send_message",
+      "person": "Sophia",
+      "message": "just following up on this"
+    }
+  },
+  {
+    "input": "Don't let me forget to read the proposal on 2027-01-10 at 17:45.",
+    "output": {
+      "action": "set_reminder",
+      "task": "read the proposal",
+      "date": "2027-01-10",
+      "time": "17:45"
+    }
+  },
+  {
+    "input": "Write to Pam: can you join 5 minutes early?",
+    "output": {
+      "action": "send_message",
+      "person": "Pam",
+      "message": "can you join 5 minutes early?"
+    }
+  },
+  {
+    "input": "Organise a 13:00 meeting with Oscar on 2026-11-22 in Studio 3.",
+    "output": {
+      "action": "create_event",
+      "person": "Oscar",
+      "date": "2026-11-22",
+      "time": "13:00",
+      "location": "Studio 3"
+    }
+  },
+  {
+    "input": "Can we bump the 2026-12-04 call with Frank to 2026-12-29 at 09:00?",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Frank",
+      "old_date": "2026-12-04",
+      "new_date": "2026-12-29",
+      "new_time": "09:00"
+    }
+  },
+  {
+    "input": "Track a medium item: send the invoice, deadline 2026-12-09.",
+    "output": {
+      "action": "create_task",
+      "title": "send the invoice",
+      "due_date": "2026-12-09",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Forward a note to Leo: great job on the presentation",
+    "output": {
+      "action": "send_message",
+      "person": "Leo",
+      "message": "great job on the presentation"
+    }
+  },
+  {
+    "input": "Add a reminder: write the blog post \u2014 2026-12-19 at 17:15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "write the blog post",
+      "date": "2026-12-19",
+      "time": "17:15"
+    }
+  },
+  {
+    "input": "Create an appointment with Eve on 2027-01-13 at 11:30 at lobby.",
+    "output": {
+      "action": "create_event",
+      "person": "Eve",
+      "date": "2027-01-13",
+      "time": "11:30",
+      "location": "lobby"
+    }
+  },
+  {
+    "input": "Postpone my 2026-11-20 meeting with Olivia to 2027-01-09 at 08:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Olivia",
+      "old_date": "2026-11-20",
+      "new_date": "2027-01-09",
+      "new_time": "08:15"
+    }
+  },
+  {
+    "input": "Add a task: finish the analysis due 2026-12-25 with low priority.",
+    "output": {
+      "action": "create_task",
+      "title": "finish the analysis",
+      "due_date": "2026-12-25",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Please add 'finish the analysis' to my task list. Due: 2026-12-23. Priority: high.",
+    "output": {
+      "action": "create_task",
+      "title": "finish the analysis",
+      "due_date": "2026-12-23",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Ping Ray with: sending the agenda now",
+    "output": {
+      "action": "send_message",
+      "person": "Ray",
+      "message": "sending the agenda now"
+    }
+  },
+  {
+    "input": "Create a reminder for me: deploy the fix on 2026-12-31 at 18:15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "deploy the fix",
+      "date": "2026-12-31",
+      "time": "18:15"
+    }
+  },
+  {
+    "input": "Scratch the meeting with Xander on 2026-11-23.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Xander",
+      "date": "2026-11-23"
+    }
+  },
+  {
+    "input": "Free up 2026-11-26 \u2014 cancel my time with Dave.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Dave",
+      "date": "2026-11-26"
+    }
+  },
+  {
+    "input": "New task: review pull requests. Due date: 2026-12-16. Priority: low.",
+    "output": {
+      "action": "create_task",
+      "title": "review pull requests",
+      "due_date": "2026-12-16",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Remove the event with Oscar from 2027-01-11.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Oscar",
+      "date": "2027-01-11"
+    }
+  },
+  {
+    "input": "Task: review pull requests. Due 2027-01-02. Mark as medium.",
+    "output": {
+      "action": "create_task",
+      "title": "review pull requests",
+      "due_date": "2027-01-02",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Organise a 12:45 meeting with James on 2026-12-03 in the office.",
+    "output": {
+      "action": "create_event",
+      "person": "James",
+      "date": "2026-12-03",
+      "time": "12:45",
+      "location": "the office"
+    }
+  },
+  {
+    "input": "Tell Lucas that please confirm receipt",
+    "output": {
+      "action": "send_message",
+      "person": "Lucas",
+      "message": "please confirm receipt"
+    }
+  },
+  {
+    "input": "Schedule a meeting with Bob on 2027-01-11 at 17:45 in downtown HQ.",
+    "output": {
+      "action": "create_event",
+      "person": "Bob",
+      "date": "2027-01-11",
+      "time": "17:45",
+      "location": "downtown HQ"
+    }
+  },
+  {
+    "input": "Postpone my 2026-11-18 meeting with Sophia to 2026-12-29 at 16:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Sophia",
+      "old_date": "2026-11-18",
+      "new_date": "2026-12-29",
+      "new_time": "16:30"
+    }
+  },
+  {
+    "input": "Book a session with Pam at 14:45 on 2026-11-28 in downtown HQ.",
+    "output": {
+      "action": "create_event",
+      "person": "Pam",
+      "date": "2026-11-28",
+      "time": "14:45",
+      "location": "downtown HQ"
+    }
+  },
+  {
+    "input": "Send a message to Lucas: 'please prepare a 2-minute intro'",
+    "output": {
+      "action": "send_message",
+      "person": "Lucas",
+      "message": "please prepare a 2-minute intro"
+    }
+  },
+  {
+    "input": "Set up a call with Olivia for 2026-12-03 at 09:45.",
+    "output": {
+      "action": "create_event",
+      "person": "Olivia",
+      "date": "2026-12-03",
+      "time": "09:45"
+    }
+  },
+  {
+    "input": "Update my meeting with Emma: old date 2026-11-29, new date 2026-12-29 at 15:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Emma",
+      "old_date": "2026-11-29",
+      "new_date": "2026-12-29",
+      "new_time": "15:00"
+    }
+  },
+  {
+    "input": "Write to Wendy: please confirm receipt",
+    "output": {
+      "action": "send_message",
+      "person": "Wendy",
+      "message": "please confirm receipt"
+    }
+  },
+  {
+    "input": "Text Noah: sending the agenda now",
+    "output": {
+      "action": "send_message",
+      "person": "Noah",
+      "message": "sending the agenda now"
+    }
+  },
+  {
+    "input": "Please update the Pam meeting: was 2026-11-27, now 2027-01-12 at 15:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Pam",
+      "old_date": "2026-11-27",
+      "new_date": "2027-01-12",
+      "new_time": "15:15"
+    }
+  },
+  {
+    "input": "Delete the appointment with Jack scheduled for 2026-12-04.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Jack",
+      "date": "2026-12-04"
+    }
+  },
+  {
+    "input": "I need to push my Lucas meeting from 2026-12-07 to 2026-12-23 at 13:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Lucas",
+      "old_date": "2026-12-07",
+      "new_date": "2026-12-23",
+      "new_time": "13:30"
+    }
+  },
+  {
+    "input": "Set a reminder for update the roadmap at 17:30 on 2027-01-08.",
+    "output": {
+      "action": "set_reminder",
+      "task": "update the roadmap",
+      "date": "2027-01-08",
+      "time": "17:30"
+    }
+  },
+  {
+    "input": "Update my meeting with Mason: old date 2026-11-20, new date 2027-01-03 at 18:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Mason",
+      "old_date": "2026-11-20",
+      "new_date": "2027-01-03",
+      "new_time": "18:15"
+    }
+  },
+  {
+    "input": "Send Frank the following message: I'll be 10 minutes late",
+    "output": {
+      "action": "send_message",
+      "person": "Frank",
+      "message": "I'll be 10 minutes late"
+    }
+  },
+  {
+    "input": "Organise a 15:00 meeting with Noah on 2026-11-28 in rooftop terrace.",
+    "output": {
+      "action": "create_event",
+      "person": "Noah",
+      "date": "2026-11-28",
+      "time": "15:00",
+      "location": "rooftop terrace"
+    }
+  },
+  {
+    "input": "New task: send the invoice. Due date: 2027-01-04. Priority: urgent.",
+    "output": {
+      "action": "create_task",
+      "title": "send the invoice",
+      "due_date": "2027-01-04",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Postpone my 2026-11-24 meeting with Sophia to 2026-12-21 at 10:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Sophia",
+      "old_date": "2026-11-24",
+      "new_date": "2026-12-21",
+      "new_time": "10:00"
+    }
+  },
+  {
+    "input": "Reschedule Ava's meeting: 2026-11-26 \u2192 2027-01-07 at 17:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Ava",
+      "old_date": "2026-11-26",
+      "new_date": "2027-01-07",
+      "new_time": "17:15"
+    }
+  },
+  {
+    "input": "Write to Liam: please confirm receipt",
+    "output": {
+      "action": "send_message",
+      "person": "Liam",
+      "message": "please confirm receipt"
+    }
+  },
+  {
+    "input": "Add a task: finish the analysis due 2027-01-16 with low priority.",
+    "output": {
+      "action": "create_task",
+      "title": "finish the analysis",
+      "due_date": "2027-01-16",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "New event: James, 2026-12-29, 13:00.",
+    "output": {
+      "action": "create_event",
+      "person": "James",
+      "date": "2026-12-29",
+      "time": "13:00"
+    }
+  },
+  {
+    "input": "Notify me to review pull requests when it is 16:30 on 2026-11-30.",
+    "output": {
+      "action": "set_reminder",
+      "task": "review pull requests",
+      "date": "2026-11-30",
+      "time": "16:30"
+    }
+  },
+  {
+    "input": "I need to cancel the event with Hank on 2026-11-18.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Hank",
+      "date": "2026-11-18"
+    }
+  },
+  {
+    "input": "Add to my to-do: update the roadmap. Deadline 2026-12-14, medium priority.",
+    "output": {
+      "action": "create_task",
+      "title": "update the roadmap",
+      "due_date": "2026-12-14",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Can you ping me to draft the email on 2026-12-16 at 08:00?",
+    "output": {
+      "action": "set_reminder",
+      "task": "draft the email",
+      "date": "2026-12-16",
+      "time": "08:00"
+    }
+  },
+  {
+    "input": "I need to meet Bob on 2026-11-25 at 12:15.",
+    "output": {
+      "action": "create_event",
+      "person": "Bob",
+      "date": "2026-11-25",
+      "time": "12:15"
+    }
+  },
+  {
+    "input": "Ping Yara with: can we reschedule?",
+    "output": {
+      "action": "send_message",
+      "person": "Yara",
+      "message": "can we reschedule?"
+    }
+  },
+  {
+    "input": "Call off the 2026-12-01 session with Alice.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Alice",
+      "date": "2026-12-01"
+    }
+  },
+  {
+    "input": "Can you add an event: meet Noah at Conference Room A on 2027-01-10 at 12:00?",
+    "output": {
+      "action": "create_event",
+      "person": "Noah",
+      "date": "2027-01-10",
+      "time": "12:00",
+      "location": "Conference Room A"
+    }
+  },
+  {
+    "input": "Please cancel my 2026-12-02 meeting with Vince.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Vince",
+      "date": "2026-12-02"
+    }
+  },
+  {
+    "input": "Add Lucas to my calendar on 2026-12-19 at 18:15.",
+    "output": {
+      "action": "create_event",
+      "person": "Lucas",
+      "date": "2026-12-19",
+      "time": "18:15"
+    }
+  },
+  {
+    "input": "Change my 2026-12-14 meeting with Ray to 2027-01-06 at 18:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Ray",
+      "old_date": "2026-12-14",
+      "new_date": "2027-01-06",
+      "new_time": "18:00"
+    }
+  },
+  {
+    "input": "Create an appointment with Hank on 2026-11-19 at 12:15 at cafeteria.",
+    "output": {
+      "action": "create_event",
+      "person": "Hank",
+      "date": "2026-11-19",
+      "time": "12:15",
+      "location": "cafeteria"
+    }
+  },
+  {
+    "input": "I want to be reminded to deploy the fix at 15:30 on 2027-01-15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "deploy the fix",
+      "date": "2027-01-15",
+      "time": "15:30"
+    }
+  },
+  {
+    "input": "Let Isabella know: sending the agenda now",
+    "output": {
+      "action": "send_message",
+      "person": "Isabella",
+      "message": "sending the agenda now"
+    }
+  },
+  {
+    "input": "Can you add an event: meet Ray at the lab on 2026-12-10 at 18:45?",
+    "output": {
+      "action": "create_event",
+      "person": "Ray",
+      "date": "2026-12-10",
+      "time": "18:45",
+      "location": "the lab"
+    }
+  },
+  {
+    "input": "Drop Ethan a message saying here are the notes from last time",
+    "output": {
+      "action": "send_message",
+      "person": "Ethan",
+      "message": "here are the notes from last time"
+    }
+  },
+  {
+    "input": "I'd like to schedule time with Lucas at Zoom on 2026-11-18 starting at 18:30.",
+    "output": {
+      "action": "create_event",
+      "person": "Lucas",
+      "date": "2026-11-18",
+      "time": "18:30",
+      "location": "Zoom"
+    }
+  },
+  {
+    "input": "Organise a 09:45 meeting with Olivia on 2026-12-22 in Main Hall.",
+    "output": {
+      "action": "create_event",
+      "person": "Olivia",
+      "date": "2026-12-22",
+      "time": "09:45",
+      "location": "Main Hall"
+    }
+  },
+  {
+    "input": "Flag 2027-01-05 at 11:45 so I don't miss update the roadmap.",
+    "output": {
+      "action": "set_reminder",
+      "task": "update the roadmap",
+      "date": "2027-01-05",
+      "time": "11:45"
+    }
+  },
+  {
+    "input": "Ping Ava with: great job on the presentation",
+    "output": {
+      "action": "send_message",
+      "person": "Ava",
+      "message": "great job on the presentation"
+    }
+  },
+  {
+    "input": "Message Vince and say: just following up on this",
+    "output": {
+      "action": "send_message",
+      "person": "Vince",
+      "message": "just following up on this"
+    }
+  },
+  {
+    "input": "Let Quinn know: the venue has changed",
+    "output": {
+      "action": "send_message",
+      "person": "Quinn",
+      "message": "the venue has changed"
+    }
+  },
+  {
+    "input": "Let's sync with Yara on 2026-12-04 at 15:30 at my place.",
+    "output": {
+      "action": "create_event",
+      "person": "Yara",
+      "date": "2026-12-04",
+      "time": "15:30",
+      "location": "my place"
+    }
+  },
+  {
+    "input": "Send Eve the following message: looking forward to our call",
+    "output": {
+      "action": "send_message",
+      "person": "Eve",
+      "message": "looking forward to our call"
+    }
+  },
+  {
+    "input": "Schedule a 08:00 stand-up with Ethan on 2027-01-12 in the lab.",
+    "output": {
+      "action": "create_event",
+      "person": "Ethan",
+      "date": "2027-01-12",
+      "time": "08:00",
+      "location": "the lab"
+    }
+  },
+  {
+    "input": "Change my 2026-12-15 meeting with Lucas to 2026-12-21 at 12:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Lucas",
+      "old_date": "2026-12-15",
+      "new_date": "2026-12-21",
+      "new_time": "12:00"
+    }
+  },
+  {
+    "input": "Scratch the meeting with Grace on 2026-12-03.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Grace",
+      "date": "2026-12-03"
+    }
+  },
+  {
+    "input": "Schedule a notification at 10:45 on 2027-01-05 to review pull requests.",
+    "output": {
+      "action": "set_reminder",
+      "task": "review pull requests",
+      "date": "2027-01-05",
+      "time": "10:45"
+    }
+  },
+  {
+    "input": "Change my 2026-12-07 meeting with Alice to 2026-12-29 at 11:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Alice",
+      "old_date": "2026-12-07",
+      "new_date": "2026-12-29",
+      "new_time": "11:45"
+    }
+  },
+  {
+    "input": "Schedule a notification at 18:30 on 2026-11-24 to schedule interviews.",
+    "output": {
+      "action": "set_reminder",
+      "task": "schedule interviews",
+      "date": "2026-11-24",
+      "time": "18:30"
+    }
+  },
+  {
+    "input": "Forward a note to Ethan: can we reschedule?",
+    "output": {
+      "action": "send_message",
+      "person": "Ethan",
+      "message": "can we reschedule?"
+    }
+  },
+  {
+    "input": "Call off the 2026-12-30 session with Uma.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Uma",
+      "date": "2026-12-30"
+    }
+  },
+  {
+    "input": "Set up a call with Quinn for 2026-12-20 at 15:30.",
+    "output": {
+      "action": "create_event",
+      "person": "Quinn",
+      "date": "2026-12-20",
+      "time": "15:30"
+    }
+  },
+  {
+    "input": "Schedule task 'file the expenses' with deadline 2026-12-02 and urgent urgency.",
+    "output": {
+      "action": "create_task",
+      "title": "file the expenses",
+      "due_date": "2026-12-02",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "I need to cancel the event with Lucas on 2026-12-06.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Lucas",
+      "date": "2026-12-06"
+    }
+  },
+  {
+    "input": "Track a urgent item: draft the email, deadline 2026-11-27.",
+    "output": {
+      "action": "create_task",
+      "title": "draft the email",
+      "due_date": "2026-11-27",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Notify Zoe: please review before EOD",
+    "output": {
+      "action": "send_message",
+      "person": "Zoe",
+      "message": "please review before EOD"
+    }
+  },
+  {
+    "input": "Move my meeting with Jack from 2026-12-15 to 2027-01-06 at 18:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Jack",
+      "old_date": "2026-12-15",
+      "new_date": "2027-01-06",
+      "new_time": "18:45"
+    }
+  },
+  {
+    "input": "Set a reminder for read the proposal at 12:45 on 2027-01-02.",
+    "output": {
+      "action": "set_reminder",
+      "task": "read the proposal",
+      "date": "2027-01-02",
+      "time": "12:45"
+    }
+  },
+  {
+    "input": "Drop Ray a message saying sending the agenda now",
+    "output": {
+      "action": "send_message",
+      "person": "Ray",
+      "message": "sending the agenda now"
+    }
+  },
+  {
+    "input": "Track a high item: run the tests, deadline 2026-12-29.",
+    "output": {
+      "action": "create_task",
+      "title": "run the tests",
+      "due_date": "2026-12-29",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Let's sync with Nina on 2027-01-10 at 14:45 at Studio 3.",
+    "output": {
+      "action": "create_event",
+      "person": "Nina",
+      "date": "2027-01-10",
+      "time": "14:45",
+      "location": "Studio 3"
+    }
+  },
+  {
+    "input": "The 2026-11-26 meeting with Noah needs to move to 2027-01-07 at 08:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Noah",
+      "old_date": "2026-11-26",
+      "new_date": "2027-01-07",
+      "new_time": "08:00"
+    }
+  },
+  {
+    "input": "Write to Uma: I'll be 10 minutes late",
+    "output": {
+      "action": "send_message",
+      "person": "Uma",
+      "message": "I'll be 10 minutes late"
+    }
+  },
+  {
+    "input": "Text Jack: can we reschedule?",
+    "output": {
+      "action": "send_message",
+      "person": "Jack",
+      "message": "can we reschedule?"
+    }
+  },
+  {
+    "input": "Set a reminder for renew the license at 09:45 on 2026-12-09.",
+    "output": {
+      "action": "set_reminder",
+      "task": "renew the license",
+      "date": "2026-12-09",
+      "time": "09:45"
+    }
+  },
+  {
+    "input": "I need to send the invoice before 2026-12-17. Set priority to high.",
+    "output": {
+      "action": "create_task",
+      "title": "send the invoice",
+      "due_date": "2026-12-17",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Move my meeting with Grace from 2026-12-12 to 2027-01-05 at 13:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Grace",
+      "old_date": "2026-12-12",
+      "new_date": "2027-01-05",
+      "new_time": "13:15"
+    }
+  },
+  {
+    "input": "Put a meeting with Sophia in my calendar for 2027-01-09 at 09:15.",
+    "output": {
+      "action": "create_event",
+      "person": "Sophia",
+      "date": "2027-01-09",
+      "time": "09:15"
+    }
+  },
+  {
+    "input": "Task: schedule interviews. Due 2026-11-25. Mark as medium.",
+    "output": {
+      "action": "create_task",
+      "title": "schedule interviews",
+      "due_date": "2026-11-25",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Please remind me about submit the report on 2026-12-30 at 16:45.",
+    "output": {
+      "action": "set_reminder",
+      "task": "submit the report",
+      "date": "2026-12-30",
+      "time": "16:45"
+    }
+  },
+  {
+    "input": "Remove the event with Jack from 2026-12-03.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Jack",
+      "date": "2026-12-03"
+    }
+  },
+  {
+    "input": "Cancel my meeting with Carol on 2026-12-15.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Carol",
+      "date": "2026-12-15"
+    }
+  },
+  {
+    "input": "Call off the 2026-12-14 session with Emma.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Emma",
+      "date": "2026-12-14"
+    }
+  },
+  {
+    "input": "Set a reminder for complete onboarding at 09:45 on 2027-01-08.",
+    "output": {
+      "action": "set_reminder",
+      "task": "complete onboarding",
+      "date": "2027-01-08",
+      "time": "09:45"
+    }
+  },
+  {
+    "input": "Drop Pam a message saying just following up on this",
+    "output": {
+      "action": "send_message",
+      "person": "Pam",
+      "message": "just following up on this"
+    }
+  },
+  {
+    "input": "New task: file the expenses. Due date: 2026-12-17. Priority: high.",
+    "output": {
+      "action": "create_task",
+      "title": "file the expenses",
+      "due_date": "2026-12-17",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Schedule task 'run the tests' with deadline 2026-12-10 and medium urgency.",
+    "output": {
+      "action": "create_task",
+      "title": "run the tests",
+      "due_date": "2026-12-10",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Tell Olivia that just following up on this",
+    "output": {
+      "action": "send_message",
+      "person": "Olivia",
+      "message": "just following up on this"
+    }
+  },
+  {
+    "input": "Reschedule Ivy's meeting: 2026-11-19 \u2192 2026-12-27 at 15:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Ivy",
+      "old_date": "2026-11-19",
+      "new_date": "2026-12-27",
+      "new_time": "15:15"
+    }
+  },
+  {
+    "input": "Move the Karen session on 2026-11-23 to a new time: 2026-12-28 at 11:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Karen",
+      "old_date": "2026-11-23",
+      "new_date": "2026-12-28",
+      "new_time": "11:30"
+    }
+  },
+  {
+    "input": "Plan a meeting with Grace in Studio 3 at 16:00 on 2026-12-31.",
+    "output": {
+      "action": "create_event",
+      "person": "Grace",
+      "date": "2026-12-31",
+      "time": "16:00",
+      "location": "Studio 3"
+    }
+  },
+  {
+    "input": "Please cancel my 2026-12-14 meeting with Hank.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Hank",
+      "date": "2026-12-14"
+    }
+  },
+  {
+    "input": "Can you ping me to send the invoice on 2026-12-22 at 11:15?",
+    "output": {
+      "action": "set_reminder",
+      "task": "send the invoice",
+      "date": "2026-12-22",
+      "time": "11:15"
+    }
+  },
+  {
+    "input": "Send Karen the following message: please confirm receipt",
+    "output": {
+      "action": "send_message",
+      "person": "Karen",
+      "message": "please confirm receipt"
+    }
+  },
+  {
+    "input": "Log a urgent task: draft the email \u2014 must be done by 2026-12-21.",
+    "output": {
+      "action": "create_task",
+      "title": "draft the email",
+      "due_date": "2026-12-21",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Don't let me forget to book the flight on 2027-01-13 at 13:30.",
+    "output": {
+      "action": "set_reminder",
+      "task": "book the flight",
+      "date": "2027-01-13",
+      "time": "13:30"
+    }
+  },
+  {
+    "input": "Text Ray: can we reschedule?",
+    "output": {
+      "action": "send_message",
+      "person": "Ray",
+      "message": "can we reschedule?"
+    }
+  },
+  {
+    "input": "Add to my to-do: read the proposal. Deadline 2027-01-03, low priority.",
+    "output": {
+      "action": "create_task",
+      "title": "read the proposal",
+      "due_date": "2027-01-03",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Change my 2026-12-06 meeting with Dave to 2027-01-02 at 10:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Dave",
+      "old_date": "2026-12-06",
+      "new_date": "2027-01-02",
+      "new_time": "10:45"
+    }
+  },
+  {
+    "input": "Please cancel my 2027-01-14 meeting with Mia.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Mia",
+      "date": "2027-01-14"
+    }
+  },
+  {
+    "input": "Task: renew the license. Due 2026-11-25. Mark as low.",
+    "output": {
+      "action": "create_task",
+      "title": "renew the license",
+      "due_date": "2026-11-25",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Write to Pam: great job on the presentation",
+    "output": {
+      "action": "send_message",
+      "person": "Pam",
+      "message": "great job on the presentation"
+    }
+  },
+  {
+    "input": "Please cancel my 2026-12-25 meeting with Pam.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Pam",
+      "date": "2026-12-25"
+    }
+  },
+  {
+    "input": "Notify me to draft the email when it is 12:30 on 2027-01-07.",
+    "output": {
+      "action": "set_reminder",
+      "task": "draft the email",
+      "date": "2027-01-07",
+      "time": "12:30"
+    }
+  },
+  {
+    "input": "I'd like to schedule time with Dave at Main Hall on 2026-12-29 starting at 16:00.",
+    "output": {
+      "action": "create_event",
+      "person": "Dave",
+      "date": "2026-12-29",
+      "time": "16:00",
+      "location": "Main Hall"
+    }
+  },
+  {
+    "input": "Add to my to-do: back up the database. Deadline 2027-01-02, medium priority.",
+    "output": {
+      "action": "create_task",
+      "title": "back up the database",
+      "due_date": "2027-01-02",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Update my meeting with Aiden: old date 2026-11-26, new date 2027-01-07 at 11:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Aiden",
+      "old_date": "2026-11-26",
+      "new_date": "2027-01-07",
+      "new_time": "11:45"
+    }
+  },
+  {
+    "input": "Shift the 2026-11-29 event with Bob to 2027-01-12 at 09:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Bob",
+      "old_date": "2026-11-29",
+      "new_date": "2027-01-12",
+      "new_time": "09:30"
+    }
+  },
+  {
+    "input": "Unschedule my appointment with Noah on 2026-12-19.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Noah",
+      "date": "2026-12-19"
+    }
+  },
+  {
+    "input": "Set up a call with Dave for 2026-12-02 at 09:00.",
+    "output": {
+      "action": "create_event",
+      "person": "Dave",
+      "date": "2026-12-02",
+      "time": "09:00"
+    }
+  },
+  {
+    "input": "Flag 2026-11-29 at 11:15 so I don't miss update dependencies.",
+    "output": {
+      "action": "set_reminder",
+      "task": "update dependencies",
+      "date": "2026-11-29",
+      "time": "11:15"
+    }
+  },
+  {
+    "input": "Please remind me about draft the email on 2026-12-03 at 15:15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "draft the email",
+      "date": "2026-12-03",
+      "time": "15:15"
+    }
+  },
+  {
+    "input": "I need a reminder to review pull requests at 08:30 on 2026-12-08.",
+    "output": {
+      "action": "set_reminder",
+      "task": "review pull requests",
+      "date": "2026-12-08",
+      "time": "08:30"
+    }
+  },
+  {
+    "input": "Unschedule my appointment with Jack on 2026-11-28.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Jack",
+      "date": "2026-11-28"
+    }
+  },
+  {
+    "input": "Remove the event with Emma from 2026-11-22.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Emma",
+      "date": "2026-11-22"
+    }
+  },
+  {
+    "input": "Write to Mason: please confirm receipt",
+    "output": {
+      "action": "send_message",
+      "person": "Mason",
+      "message": "please confirm receipt"
+    }
+  },
+  {
+    "input": "Remind me I have to draft the email by 2027-01-03. This is urgent.",
+    "output": {
+      "action": "create_task",
+      "title": "draft the email",
+      "due_date": "2027-01-03",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Can we bump the 2026-12-06 call with James to 2026-12-25 at 10:30?",
+    "output": {
+      "action": "reschedule_event",
+      "person": "James",
+      "old_date": "2026-12-06",
+      "new_date": "2026-12-25",
+      "new_time": "10:30"
+    }
+  },
+  {
+    "input": "I need to update the roadmap before 2027-01-03. Set priority to urgent.",
+    "output": {
+      "action": "create_task",
+      "title": "update the roadmap",
+      "due_date": "2027-01-03",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Drop the 2026-12-19 meeting with Chloe.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Chloe",
+      "date": "2026-12-19"
+    }
+  },
+  {
+    "input": "Can you ping me to read the proposal on 2026-11-18 at 16:15?",
+    "output": {
+      "action": "set_reminder",
+      "task": "read the proposal",
+      "date": "2026-11-18",
+      "time": "16:15"
+    }
+  },
+  {
+    "input": "Unschedule my appointment with Ethan on 2026-12-01.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Ethan",
+      "date": "2026-12-01"
+    }
+  },
+  {
+    "input": "Set an alert for 2026-12-19 at 13:15 to submit the report.",
+    "output": {
+      "action": "set_reminder",
+      "task": "submit the report",
+      "date": "2026-12-19",
+      "time": "13:15"
+    }
+  },
+  {
+    "input": "Let's sync with Sophia on 2026-11-24 at 14:30 at their office.",
+    "output": {
+      "action": "create_event",
+      "person": "Sophia",
+      "date": "2026-11-24",
+      "time": "14:30",
+      "location": "their office"
+    }
+  },
+  {
+    "input": "The meeting with Hank on 2027-01-11 is no longer happening. Remove it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Hank",
+      "date": "2027-01-11"
+    }
+  },
+  {
+    "input": "Chat Sara and tell them: can you join 5 minutes early?",
+    "output": {
+      "action": "send_message",
+      "person": "Sara",
+      "message": "can you join 5 minutes early?"
+    }
+  },
+  {
+    "input": "Update my meeting with Emma: old date 2026-11-29, new date 2027-01-01 at 08:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Emma",
+      "old_date": "2026-11-29",
+      "new_date": "2027-01-01",
+      "new_time": "08:30"
+    }
+  },
+  {
+    "input": "Set an alert for 2026-11-23 at 11:45 to finish the analysis.",
+    "output": {
+      "action": "set_reminder",
+      "task": "finish the analysis",
+      "date": "2026-11-23",
+      "time": "11:45"
+    }
+  },
+  {
+    "input": "Schedule a 10:00 stand-up with Zoe on 2026-12-03 in Zoom.",
+    "output": {
+      "action": "create_event",
+      "person": "Zoe",
+      "date": "2026-12-03",
+      "time": "10:00",
+      "location": "Zoom"
+    }
+  },
+  {
+    "input": "The meeting with Zoe on 2026-12-15 is no longer happening. Remove it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Zoe",
+      "date": "2026-12-15"
+    }
+  },
+  {
+    "input": "Please cancel my 2026-12-23 meeting with Ethan.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Ethan",
+      "date": "2026-12-23"
+    }
+  },
+  {
+    "input": "I need to update the roadmap before 2026-12-07. Set priority to urgent.",
+    "output": {
+      "action": "create_task",
+      "title": "update the roadmap",
+      "due_date": "2026-12-07",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Cancel my meeting with Zoe on 2026-12-26.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Zoe",
+      "date": "2026-12-26"
+    }
+  },
+  {
+    "input": "Please add 'read the proposal' to my task list. Due: 2027-01-13. Priority: medium.",
+    "output": {
+      "action": "create_task",
+      "title": "read the proposal",
+      "due_date": "2027-01-13",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Free up 2026-12-14 \u2014 cancel my time with Zoe.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Zoe",
+      "date": "2026-12-14"
+    }
+  },
+  {
+    "input": "Create a urgent priority task to finish the analysis by 2027-01-02.",
+    "output": {
+      "action": "create_task",
+      "title": "finish the analysis",
+      "due_date": "2027-01-02",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "I'd like to schedule time with Nina at auditorium on 2026-12-20 starting at 12:15.",
+    "output": {
+      "action": "create_event",
+      "person": "Nina",
+      "date": "2026-12-20",
+      "time": "12:15",
+      "location": "auditorium"
+    }
+  },
+  {
+    "input": "Create a high priority task to run the tests by 2026-12-21.",
+    "output": {
+      "action": "create_task",
+      "title": "run the tests",
+      "due_date": "2026-12-21",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Compose a message to Sophia saying 'just following up on this'",
+    "output": {
+      "action": "send_message",
+      "person": "Sophia",
+      "message": "just following up on this"
+    }
+  },
+  {
+    "input": "Please remind me about renew the license on 2026-12-11 at 15:30.",
+    "output": {
+      "action": "set_reminder",
+      "task": "renew the license",
+      "date": "2026-12-11",
+      "time": "15:30"
+    }
+  },
+  {
+    "input": "Set an alert for 2026-12-26 at 17:30 to read the proposal.",
+    "output": {
+      "action": "set_reminder",
+      "task": "read the proposal",
+      "date": "2026-12-26",
+      "time": "17:30"
+    }
+  },
+  {
+    "input": "I need to push my Ethan meeting from 2026-11-22 to 2027-01-06 at 09:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Ethan",
+      "old_date": "2026-11-22",
+      "new_date": "2027-01-06",
+      "new_time": "09:00"
+    }
+  },
+  {
+    "input": "I can't make it to the meeting with Leo on 2026-12-26. Cancel it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Leo",
+      "date": "2026-12-26"
+    }
+  },
+  {
+    "input": "Don't let me forget to update dependencies on 2026-12-24 at 18:15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "update dependencies",
+      "date": "2026-12-24",
+      "time": "18:15"
+    }
+  },
+  {
+    "input": "Set a reminder for review pull requests at 12:45 on 2026-11-20.",
+    "output": {
+      "action": "set_reminder",
+      "task": "review pull requests",
+      "date": "2026-11-20",
+      "time": "12:45"
+    }
+  },
+  {
+    "input": "Notify Mia: just following up on this",
+    "output": {
+      "action": "send_message",
+      "person": "Mia",
+      "message": "just following up on this"
+    }
+  },
+  {
+    "input": "Move my meeting with Carol from 2026-12-14 to 2027-01-14 at 08:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Carol",
+      "old_date": "2026-12-14",
+      "new_date": "2027-01-14",
+      "new_time": "08:00"
+    }
+  },
+  {
+    "input": "Organise a 10:30 meeting with Yara on 2026-12-31 in board room.",
+    "output": {
+      "action": "create_event",
+      "person": "Yara",
+      "date": "2026-12-31",
+      "time": "10:30",
+      "location": "board room"
+    }
+  },
+  {
+    "input": "Write to Ava: I'll be 10 minutes late",
+    "output": {
+      "action": "send_message",
+      "person": "Ava",
+      "message": "I'll be 10 minutes late"
+    }
+  },
+  {
+    "input": "Drop the 2026-12-16 meeting with Grace.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Grace",
+      "date": "2026-12-16"
+    }
+  },
+  {
+    "input": "Compose a message to Yara saying 'can we reschedule?'",
+    "output": {
+      "action": "send_message",
+      "person": "Yara",
+      "message": "can we reschedule?"
+    }
+  },
+  {
+    "input": "Notify James: can you join 5 minutes early?",
+    "output": {
+      "action": "send_message",
+      "person": "James",
+      "message": "can you join 5 minutes early?"
+    }
+  },
+  {
+    "input": "Write to Oscar: bring the signed docs",
+    "output": {
+      "action": "send_message",
+      "person": "Oscar",
+      "message": "bring the signed docs"
+    }
+  },
+  {
+    "input": "I can't make it to the meeting with Vince on 2026-12-03. Cancel it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Vince",
+      "date": "2026-12-03"
+    }
+  },
+  {
+    "input": "Drop Noah a message saying bring the signed docs",
+    "output": {
+      "action": "send_message",
+      "person": "Noah",
+      "message": "bring the signed docs"
+    }
+  },
+  {
+    "input": "Please update the Karen meeting: was 2026-12-10, now 2027-01-09 at 18:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Karen",
+      "old_date": "2026-12-10",
+      "new_date": "2027-01-09",
+      "new_time": "18:15"
+    }
+  },
+  {
+    "input": "Remind me to schedule interviews on 2026-12-24 at 12:30.",
+    "output": {
+      "action": "set_reminder",
+      "task": "schedule interviews",
+      "date": "2026-12-24",
+      "time": "12:30"
+    }
+  },
+  {
+    "input": "The 2026-12-03 meeting with Bob needs to move to 2027-01-15 at 18:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Bob",
+      "old_date": "2026-12-03",
+      "new_date": "2027-01-15",
+      "new_time": "18:30"
+    }
+  },
+  {
+    "input": "New event: Noah, 2026-12-10, 14:45.",
+    "output": {
+      "action": "create_event",
+      "person": "Noah",
+      "date": "2026-12-10",
+      "time": "14:45"
+    }
+  },
+  {
+    "input": "Task: read the proposal. Due 2026-12-17. Mark as urgent.",
+    "output": {
+      "action": "create_task",
+      "title": "read the proposal",
+      "due_date": "2026-12-17",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "I need to push my Frank meeting from 2026-12-06 to 2027-01-08 at 10:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Frank",
+      "old_date": "2026-12-06",
+      "new_date": "2027-01-08",
+      "new_time": "10:30"
+    }
+  },
+  {
+    "input": "New task: audit the logs. Due date: 2027-01-09. Priority: medium.",
+    "output": {
+      "action": "create_task",
+      "title": "audit the logs",
+      "due_date": "2027-01-09",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Free up 2026-12-19 \u2014 cancel my time with Grace.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Grace",
+      "date": "2026-12-19"
+    }
+  },
+  {
+    "input": "Text Alice: can you join 5 minutes early?",
+    "output": {
+      "action": "send_message",
+      "person": "Alice",
+      "message": "can you join 5 minutes early?"
+    }
+  },
+  {
+    "input": "I need to meet Noah on 2026-11-26 at 15:15.",
+    "output": {
+      "action": "create_event",
+      "person": "Noah",
+      "date": "2026-11-26",
+      "time": "15:15"
+    }
+  },
+  {
+    "input": "Send a message to Ethan: 'here are the notes from last time'",
+    "output": {
+      "action": "send_message",
+      "person": "Ethan",
+      "message": "here are the notes from last time"
+    }
+  },
+  {
+    "input": "New task: review pull requests. Due date: 2026-12-13. Priority: urgent.",
+    "output": {
+      "action": "create_task",
+      "title": "review pull requests",
+      "due_date": "2026-12-13",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "I need to renew the license before 2026-12-02. Set priority to low.",
+    "output": {
+      "action": "create_task",
+      "title": "renew the license",
+      "due_date": "2026-12-02",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Drop Carol a message saying can we reschedule?",
+    "output": {
+      "action": "send_message",
+      "person": "Carol",
+      "message": "can we reschedule?"
+    }
+  },
+  {
+    "input": "Notify me to back up the database when it is 14:30 on 2026-11-20.",
+    "output": {
+      "action": "set_reminder",
+      "task": "back up the database",
+      "date": "2026-11-20",
+      "time": "14:30"
+    }
+  },
+  {
+    "input": "Schedule task 'book the flight' with deadline 2026-12-29 and high urgency.",
+    "output": {
+      "action": "create_task",
+      "title": "book the flight",
+      "due_date": "2026-12-29",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Send Eve the following message: can we reschedule?",
+    "output": {
+      "action": "send_message",
+      "person": "Eve",
+      "message": "can we reschedule?"
+    }
+  },
+  {
+    "input": "I want to be reminded to update the roadmap at 12:30 on 2026-11-23.",
+    "output": {
+      "action": "set_reminder",
+      "task": "update the roadmap",
+      "date": "2026-11-23",
+      "time": "12:30"
+    }
+  },
+  {
+    "input": "Scratch the meeting with James on 2026-12-26.",
+    "output": {
+      "action": "cancel_event",
+      "person": "James",
+      "date": "2026-12-26"
+    }
+  },
+  {
+    "input": "New event: Ava, 2026-12-23, 10:30.",
+    "output": {
+      "action": "create_event",
+      "person": "Ava",
+      "date": "2026-12-23",
+      "time": "10:30"
+    }
+  },
+  {
+    "input": "Unschedule my appointment with Dave on 2026-12-06.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Dave",
+      "date": "2026-12-06"
+    }
+  },
+  {
+    "input": "Notify me to draft the email when it is 12:15 on 2027-01-10.",
+    "output": {
+      "action": "set_reminder",
+      "task": "draft the email",
+      "date": "2027-01-10",
+      "time": "12:15"
+    }
+  },
+  {
+    "input": "Let's sync with Pam on 2027-01-13 at 17:00 at Main Hall.",
+    "output": {
+      "action": "create_event",
+      "person": "Pam",
+      "date": "2027-01-13",
+      "time": "17:00",
+      "location": "Main Hall"
+    }
+  },
+  {
+    "input": "Schedule a meeting with Aiden on 2026-11-30 at 12:00 in my place.",
+    "output": {
+      "action": "create_event",
+      "person": "Aiden",
+      "date": "2026-11-30",
+      "time": "12:00",
+      "location": "my place"
+    }
+  },
+  {
+    "input": "Set a reminder for file the expenses at 15:45 on 2026-12-22.",
+    "output": {
+      "action": "set_reminder",
+      "task": "file the expenses",
+      "date": "2026-12-22",
+      "time": "15:45"
+    }
+  },
+  {
+    "input": "New task: send the invoice. Due date: 2026-12-27. Priority: medium.",
+    "output": {
+      "action": "create_task",
+      "title": "send the invoice",
+      "due_date": "2026-12-27",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Update my meeting with Liam: old date 2026-12-03, new date 2027-01-01 at 11:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Liam",
+      "old_date": "2026-12-03",
+      "new_date": "2027-01-01",
+      "new_time": "11:30"
+    }
+  },
+  {
+    "input": "Send Emma the following message: sending the agenda now",
+    "output": {
+      "action": "send_message",
+      "person": "Emma",
+      "message": "sending the agenda now"
+    }
+  },
+  {
+    "input": "Create a urgent priority task to complete onboarding by 2027-01-02.",
+    "output": {
+      "action": "create_task",
+      "title": "complete onboarding",
+      "due_date": "2027-01-02",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Please update the Isabella meeting: was 2026-12-14, now 2026-12-23 at 16:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Isabella",
+      "old_date": "2026-12-14",
+      "new_date": "2026-12-23",
+      "new_time": "16:30"
+    }
+  },
+  {
+    "input": "Create a low priority task to complete onboarding by 2026-12-06.",
+    "output": {
+      "action": "create_task",
+      "title": "complete onboarding",
+      "due_date": "2026-12-06",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "I need to renew the license before 2026-12-31. Set priority to medium.",
+    "output": {
+      "action": "create_task",
+      "title": "renew the license",
+      "due_date": "2026-12-31",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Add to my to-do: review pull requests. Deadline 2026-12-23, urgent priority.",
+    "output": {
+      "action": "create_task",
+      "title": "review pull requests",
+      "due_date": "2026-12-23",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Shift the 2026-11-19 event with Liam to 2026-12-30 at 16:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Liam",
+      "old_date": "2026-11-19",
+      "new_date": "2026-12-30",
+      "new_time": "16:30"
+    }
+  },
+  {
+    "input": "Notify me to complete onboarding when it is 11:15 on 2027-01-12.",
+    "output": {
+      "action": "set_reminder",
+      "task": "complete onboarding",
+      "date": "2027-01-12",
+      "time": "11:15"
+    }
+  },
+  {
+    "input": "Create a reminder for me: book the flight on 2027-01-05 at 11:45.",
+    "output": {
+      "action": "set_reminder",
+      "task": "book the flight",
+      "date": "2027-01-05",
+      "time": "11:45"
+    }
+  },
+  {
+    "input": "Log a low task: review pull requests \u2014 must be done by 2026-12-06.",
+    "output": {
+      "action": "create_task",
+      "title": "review pull requests",
+      "due_date": "2026-12-06",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Book a session with Sara at 18:30 on 2027-01-10 in Studio 3.",
+    "output": {
+      "action": "create_event",
+      "person": "Sara",
+      "date": "2027-01-10",
+      "time": "18:30",
+      "location": "Studio 3"
+    }
+  },
+  {
+    "input": "Update my meeting with Chloe: old date 2026-12-05, new date 2027-01-12 at 08:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Chloe",
+      "old_date": "2026-12-05",
+      "new_date": "2027-01-12",
+      "new_time": "08:45"
+    }
+  },
+  {
+    "input": "Set up a call with Frank for 2027-01-11 at 10:00.",
+    "output": {
+      "action": "create_event",
+      "person": "Frank",
+      "date": "2027-01-11",
+      "time": "10:00"
+    }
+  },
+  {
+    "input": "Move my meeting with Olivia from 2026-12-03 to 2027-01-15 at 12:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Olivia",
+      "old_date": "2026-12-03",
+      "new_date": "2027-01-15",
+      "new_time": "12:45"
+    }
+  },
+  {
+    "input": "Remove the event with Dave from 2026-12-31.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Dave",
+      "date": "2026-12-31"
+    }
+  },
+  {
+    "input": "Drop Mason a message saying looking forward to our call",
+    "output": {
+      "action": "send_message",
+      "person": "Mason",
+      "message": "looking forward to our call"
+    }
+  },
+  {
+    "input": "Can you ping me to book the flight on 2026-12-09 at 13:45?",
+    "output": {
+      "action": "set_reminder",
+      "task": "book the flight",
+      "date": "2026-12-09",
+      "time": "13:45"
+    }
+  },
+  {
+    "input": "Unschedule my appointment with Ethan on 2026-11-21.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Ethan",
+      "date": "2026-11-21"
+    }
+  },
+  {
+    "input": "Send a message to Aiden: 'great job on the presentation'",
+    "output": {
+      "action": "send_message",
+      "person": "Aiden",
+      "message": "great job on the presentation"
+    }
+  },
+  {
+    "input": "Can you ping me to send the invoice on 2026-12-17 at 12:45?",
+    "output": {
+      "action": "set_reminder",
+      "task": "send the invoice",
+      "date": "2026-12-17",
+      "time": "12:45"
+    }
+  },
+  {
+    "input": "Please add 'deploy the fix' to my task list. Due: 2026-11-21. Priority: medium.",
+    "output": {
+      "action": "create_task",
+      "title": "deploy the fix",
+      "due_date": "2026-11-21",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Set an alert for 2026-12-28 at 15:00 to update dependencies.",
+    "output": {
+      "action": "set_reminder",
+      "task": "update dependencies",
+      "date": "2026-12-28",
+      "time": "15:00"
+    }
+  },
+  {
+    "input": "Add to my to-do: audit the logs. Deadline 2026-12-16, urgent priority.",
+    "output": {
+      "action": "create_task",
+      "title": "audit the logs",
+      "due_date": "2026-12-16",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Task: draft the email. Due 2026-12-01. Mark as medium.",
+    "output": {
+      "action": "create_task",
+      "title": "draft the email",
+      "due_date": "2026-12-01",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Compose a message to Emma saying 'looking forward to our call'",
+    "output": {
+      "action": "send_message",
+      "person": "Emma",
+      "message": "looking forward to our call"
+    }
+  },
+  {
+    "input": "The 2026-12-16 meeting with Leo needs to move to 2027-01-09 at 15:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Leo",
+      "old_date": "2026-12-16",
+      "new_date": "2027-01-09",
+      "new_time": "15:00"
+    }
+  },
+  {
+    "input": "Move my meeting with Frank from 2026-12-17 to 2026-12-25 at 15:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Frank",
+      "old_date": "2026-12-17",
+      "new_date": "2026-12-25",
+      "new_time": "15:30"
+    }
+  },
+  {
+    "input": "Remind me I have to deploy the fix by 2026-12-11. This is urgent.",
+    "output": {
+      "action": "create_task",
+      "title": "deploy the fix",
+      "due_date": "2026-12-11",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Create a reminder for me: write the blog post on 2026-12-13 at 11:30.",
+    "output": {
+      "action": "set_reminder",
+      "task": "write the blog post",
+      "date": "2026-12-13",
+      "time": "11:30"
+    }
+  },
+  {
+    "input": "The 2026-12-04 meeting with Ivy needs to move to 2026-12-29 at 14:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Ivy",
+      "old_date": "2026-12-04",
+      "new_date": "2026-12-29",
+      "new_time": "14:30"
+    }
+  },
+  {
+    "input": "Chat Oscar and tell them: the meeting link is in your calendar",
+    "output": {
+      "action": "send_message",
+      "person": "Oscar",
+      "message": "the meeting link is in your calendar"
+    }
+  },
+  {
+    "input": "Create a task called 'deploy the fix' that is due on 2026-12-09 and has high priority.",
+    "output": {
+      "action": "create_task",
+      "title": "deploy the fix",
+      "due_date": "2026-12-09",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "I want to be reminded to read the proposal at 11:00 on 2026-12-04.",
+    "output": {
+      "action": "set_reminder",
+      "task": "read the proposal",
+      "date": "2026-12-04",
+      "time": "11:00"
+    }
+  },
+  {
+    "input": "Update my meeting with Vince: old date 2026-12-16, new date 2027-01-11 at 17:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Vince",
+      "old_date": "2026-12-16",
+      "new_date": "2027-01-11",
+      "new_time": "17:15"
+    }
+  },
+  {
+    "input": "I want to be reminded to draft the email at 08:15 on 2026-11-25.",
+    "output": {
+      "action": "set_reminder",
+      "task": "draft the email",
+      "date": "2026-11-25",
+      "time": "08:15"
+    }
+  },
+  {
+    "input": "Book a session with Eve at 18:00 on 2027-01-06 in Conference Room A.",
+    "output": {
+      "action": "create_event",
+      "person": "Eve",
+      "date": "2027-01-06",
+      "time": "18:00",
+      "location": "Conference Room A"
+    }
+  },
+  {
+    "input": "I can't make it to the meeting with Leo on 2027-01-12. Cancel it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Leo",
+      "date": "2027-01-12"
+    }
+  },
+  {
+    "input": "Notify me to run the tests when it is 18:45 on 2026-12-11.",
+    "output": {
+      "action": "set_reminder",
+      "task": "run the tests",
+      "date": "2026-12-11",
+      "time": "18:45"
+    }
+  },
+  {
+    "input": "Create an appointment with Mia on 2027-01-10 at 08:15 at cafeteria.",
+    "output": {
+      "action": "create_event",
+      "person": "Mia",
+      "date": "2027-01-10",
+      "time": "08:15",
+      "location": "cafeteria"
+    }
+  },
+  {
+    "input": "Message Carol and say: please prepare a 2-minute intro",
+    "output": {
+      "action": "send_message",
+      "person": "Carol",
+      "message": "please prepare a 2-minute intro"
+    }
+  },
+  {
+    "input": "Schedule a notification at 12:00 on 2027-01-01 to back up the database.",
+    "output": {
+      "action": "set_reminder",
+      "task": "back up the database",
+      "date": "2027-01-01",
+      "time": "12:00"
+    }
+  },
+  {
+    "input": "Let's sync with Eve on 2026-12-30 at 13:30 at Zoom.",
+    "output": {
+      "action": "create_event",
+      "person": "Eve",
+      "date": "2026-12-30",
+      "time": "13:30",
+      "location": "Zoom"
+    }
+  },
+  {
+    "input": "Chat Oscar and tell them: can we reschedule?",
+    "output": {
+      "action": "send_message",
+      "person": "Oscar",
+      "message": "can we reschedule?"
+    }
+  },
+  {
+    "input": "Drop the 2027-01-11 meeting with Wendy.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Wendy",
+      "date": "2027-01-11"
+    }
+  },
+  {
+    "input": "Notify me to run the tests when it is 12:15 on 2027-01-15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "run the tests",
+      "date": "2027-01-15",
+      "time": "12:15"
+    }
+  },
+  {
+    "input": "Chat Jack and tell them: sending the agenda now",
+    "output": {
+      "action": "send_message",
+      "person": "Jack",
+      "message": "sending the agenda now"
+    }
+  },
+  {
+    "input": "Postpone my 2026-11-23 meeting with Eve to 2027-01-11 at 18:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Eve",
+      "old_date": "2026-11-23",
+      "new_date": "2027-01-11",
+      "new_time": "18:45"
+    }
+  },
+  {
+    "input": "Let Mia know: the deadline has changed to next Friday",
+    "output": {
+      "action": "send_message",
+      "person": "Mia",
+      "message": "the deadline has changed to next Friday"
+    }
+  },
+  {
+    "input": "Forward a note to Bob: the meeting link is in your calendar",
+    "output": {
+      "action": "send_message",
+      "person": "Bob",
+      "message": "the meeting link is in your calendar"
+    }
+  },
+  {
+    "input": "Message Lucas and say: I'll be 10 minutes late",
+    "output": {
+      "action": "send_message",
+      "person": "Lucas",
+      "message": "I'll be 10 minutes late"
+    }
+  },
+  {
+    "input": "The 2026-12-14 meeting with Hank needs to move to 2027-01-15 at 15:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Hank",
+      "old_date": "2026-12-14",
+      "new_date": "2027-01-15",
+      "new_time": "15:00"
+    }
+  },
+  {
+    "input": "Notify Yara: here are the notes from last time",
+    "output": {
+      "action": "send_message",
+      "person": "Yara",
+      "message": "here are the notes from last time"
+    }
+  },
+  {
+    "input": "Move my meeting with Ava from 2026-12-02 to 2027-01-06 at 08:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Ava",
+      "old_date": "2026-12-02",
+      "new_date": "2027-01-06",
+      "new_time": "08:00"
+    }
+  },
+  {
+    "input": "Chat Bob and tell them: please review before EOD",
+    "output": {
+      "action": "send_message",
+      "person": "Bob",
+      "message": "please review before EOD"
+    }
+  },
+  {
+    "input": "Cancel my meeting with Isabella on 2026-11-23.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Isabella",
+      "date": "2026-11-23"
+    }
+  },
+  {
+    "input": "Remind me I have to file the expenses by 2026-12-16. This is low.",
+    "output": {
+      "action": "create_task",
+      "title": "file the expenses",
+      "due_date": "2026-12-16",
+      "priority": "low"
+    }
+  },
+  {
+    "input": "Please add 'review pull requests' to my task list. Due: 2026-12-30. Priority: medium.",
+    "output": {
+      "action": "create_task",
+      "title": "review pull requests",
+      "due_date": "2026-12-30",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Unschedule my appointment with Xander on 2026-12-20.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Xander",
+      "date": "2026-12-20"
+    }
+  },
+  {
+    "input": "Can you add an event: meet Yara at room 202 on 2026-12-08 at 11:45?",
+    "output": {
+      "action": "create_event",
+      "person": "Yara",
+      "date": "2026-12-08",
+      "time": "11:45",
+      "location": "room 202"
+    }
+  },
+  {
+    "input": "Move the Ethan session on 2026-11-27 to a new time: 2026-12-20 at 14:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Ethan",
+      "old_date": "2026-11-27",
+      "new_date": "2026-12-20",
+      "new_time": "14:45"
+    }
+  },
+  {
+    "input": "Create a reminder for me: draft the email on 2027-01-02 at 14:45.",
+    "output": {
+      "action": "set_reminder",
+      "task": "draft the email",
+      "date": "2027-01-02",
+      "time": "14:45"
+    }
+  },
+  {
+    "input": "I can't make it to the meeting with Nina on 2027-01-06. Cancel it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Nina",
+      "date": "2027-01-06"
+    }
+  },
+  {
+    "input": "Please update the Quinn meeting: was 2026-12-11, now 2027-01-14 at 18:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Quinn",
+      "old_date": "2026-12-11",
+      "new_date": "2027-01-14",
+      "new_time": "18:15"
+    }
+  },
+  {
+    "input": "Set an alert for 2026-12-20 at 12:45 to read the proposal.",
+    "output": {
+      "action": "set_reminder",
+      "task": "read the proposal",
+      "date": "2026-12-20",
+      "time": "12:45"
+    }
+  },
+  {
+    "input": "Log a urgent task: update the roadmap \u2014 must be done by 2027-01-06.",
+    "output": {
+      "action": "create_task",
+      "title": "update the roadmap",
+      "due_date": "2027-01-06",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Can you add an event: meet Eve at rooftop terrace on 2027-01-02 at 12:15?",
+    "output": {
+      "action": "create_event",
+      "person": "Eve",
+      "date": "2027-01-02",
+      "time": "12:15",
+      "location": "rooftop terrace"
+    }
+  },
+  {
+    "input": "Track a medium item: review pull requests, deadline 2026-12-24.",
+    "output": {
+      "action": "create_task",
+      "title": "review pull requests",
+      "due_date": "2026-12-24",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Create an appointment with Ivy on 2026-12-04 at 09:00 at the lab.",
+    "output": {
+      "action": "create_event",
+      "person": "Ivy",
+      "date": "2026-12-04",
+      "time": "09:00",
+      "location": "the lab"
+    }
+  },
+  {
+    "input": "Delete the appointment with Noah scheduled for 2026-12-16.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Noah",
+      "date": "2026-12-16"
+    }
+  },
+  {
+    "input": "Set a reminder for read the proposal at 09:45 on 2026-12-02.",
+    "output": {
+      "action": "set_reminder",
+      "task": "read the proposal",
+      "date": "2026-12-02",
+      "time": "09:45"
+    }
+  },
+  {
+    "input": "I need a reminder to book the flight at 09:45 on 2026-11-28.",
+    "output": {
+      "action": "set_reminder",
+      "task": "book the flight",
+      "date": "2026-11-28",
+      "time": "09:45"
+    }
+  },
+  {
+    "input": "Schedule a 17:30 stand-up with Oscar on 2026-12-16 in Conference Room A.",
+    "output": {
+      "action": "create_event",
+      "person": "Oscar",
+      "date": "2026-12-16",
+      "time": "17:30",
+      "location": "Conference Room A"
+    }
+  },
+  {
+    "input": "Reschedule the appointment with Quinn originally on 2026-11-24 to 2027-01-13 at 10:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Quinn",
+      "old_date": "2026-11-24",
+      "new_date": "2027-01-13",
+      "new_time": "10:45"
+    }
+  },
+  {
+    "input": "Can we bump the 2026-12-10 call with Zoe to 2027-01-10 at 15:45?",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Zoe",
+      "old_date": "2026-12-10",
+      "new_date": "2027-01-10",
+      "new_time": "15:45"
+    }
+  },
+  {
+    "input": "Let James know: the deadline has changed to next Friday",
+    "output": {
+      "action": "send_message",
+      "person": "James",
+      "message": "the deadline has changed to next Friday"
+    }
+  },
+  {
+    "input": "Move the Uma session on 2026-11-24 to a new time: 2027-01-11 at 10:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Uma",
+      "old_date": "2026-11-24",
+      "new_date": "2027-01-11",
+      "new_time": "10:45"
+    }
+  },
+  {
+    "input": "Schedule a notification at 08:15 on 2026-12-19 to update the roadmap.",
+    "output": {
+      "action": "set_reminder",
+      "task": "update the roadmap",
+      "date": "2026-12-19",
+      "time": "08:15"
+    }
+  },
+  {
+    "input": "Drop Frank a message saying the deadline has changed to next Friday",
+    "output": {
+      "action": "send_message",
+      "person": "Frank",
+      "message": "the deadline has changed to next Friday"
+    }
+  },
+  {
+    "input": "Schedule a meeting with Lucas on 2027-01-15 at 08:30 in downtown HQ.",
+    "output": {
+      "action": "create_event",
+      "person": "Lucas",
+      "date": "2027-01-15",
+      "time": "08:30",
+      "location": "downtown HQ"
+    }
+  },
+  {
+    "input": "I need to push my Ava meeting from 2026-11-19 to 2027-01-07 at 14:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Ava",
+      "old_date": "2026-11-19",
+      "new_date": "2027-01-07",
+      "new_time": "14:30"
+    }
+  },
+  {
+    "input": "Move the Chloe session on 2026-11-23 to a new time: 2027-01-11 at 10:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Chloe",
+      "old_date": "2026-11-23",
+      "new_date": "2027-01-11",
+      "new_time": "10:45"
+    }
+  },
+  {
+    "input": "Tell Sara that sending the agenda now",
+    "output": {
+      "action": "send_message",
+      "person": "Sara",
+      "message": "sending the agenda now"
+    }
+  },
+  {
+    "input": "I want to be reminded to send the invoice at 10:45 on 2026-12-29.",
+    "output": {
+      "action": "set_reminder",
+      "task": "send the invoice",
+      "date": "2026-12-29",
+      "time": "10:45"
+    }
+  },
+  {
+    "input": "Schedule a notification at 16:00 on 2026-12-07 to call the client.",
+    "output": {
+      "action": "set_reminder",
+      "task": "call the client",
+      "date": "2026-12-07",
+      "time": "16:00"
+    }
+  },
+  {
+    "input": "Chat Frank and tell them: please review before EOD",
+    "output": {
+      "action": "send_message",
+      "person": "Frank",
+      "message": "please review before EOD"
+    }
+  },
+  {
+    "input": "Reschedule the appointment with Dave originally on 2026-12-15 to 2027-01-07 at 13:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Dave",
+      "old_date": "2026-12-15",
+      "new_date": "2027-01-07",
+      "new_time": "13:30"
+    }
+  },
+  {
+    "input": "I need a reminder to deploy the fix at 09:45 on 2026-12-22.",
+    "output": {
+      "action": "set_reminder",
+      "task": "deploy the fix",
+      "date": "2026-12-22",
+      "time": "09:45"
+    }
+  },
+  {
+    "input": "Please update the Olivia meeting: was 2026-11-22, now 2027-01-06 at 16:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Olivia",
+      "old_date": "2026-11-22",
+      "new_date": "2027-01-06",
+      "new_time": "16:15"
+    }
+  },
+  {
+    "input": "Shift the 2026-11-25 event with James to 2026-12-21 at 11:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "James",
+      "old_date": "2026-11-25",
+      "new_date": "2026-12-21",
+      "new_time": "11:15"
+    }
+  },
+  {
+    "input": "New task: book the flight. Due date: 2026-12-18. Priority: medium.",
+    "output": {
+      "action": "create_task",
+      "title": "book the flight",
+      "due_date": "2026-12-18",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Drop the 2026-12-20 meeting with Oscar.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Oscar",
+      "date": "2026-12-20"
+    }
+  },
+  {
+    "input": "Set an alert for 2026-11-28 at 08:45 to prepare slides.",
+    "output": {
+      "action": "set_reminder",
+      "task": "prepare slides",
+      "date": "2026-11-28",
+      "time": "08:45"
+    }
+  },
+  {
+    "input": "New task: renew the license. Due date: 2026-12-08. Priority: high.",
+    "output": {
+      "action": "create_task",
+      "title": "renew the license",
+      "due_date": "2026-12-08",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Create a reminder for me: schedule interviews on 2026-12-14 at 13:30.",
+    "output": {
+      "action": "set_reminder",
+      "task": "schedule interviews",
+      "date": "2026-12-14",
+      "time": "13:30"
+    }
+  },
+  {
+    "input": "Log a high task: send the invoice \u2014 must be done by 2026-12-28.",
+    "output": {
+      "action": "create_task",
+      "title": "send the invoice",
+      "due_date": "2026-12-28",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Add a reminder: schedule interviews \u2014 2026-11-21 at 14:30.",
+    "output": {
+      "action": "set_reminder",
+      "task": "schedule interviews",
+      "date": "2026-11-21",
+      "time": "14:30"
+    }
+  },
+  {
+    "input": "Flag 2026-11-22 at 08:15 so I don't miss update the roadmap.",
+    "output": {
+      "action": "set_reminder",
+      "task": "update the roadmap",
+      "date": "2026-11-22",
+      "time": "08:15"
+    }
+  },
+  {
+    "input": "Book a session with Mason at 17:15 on 2027-01-08 in downtown HQ.",
+    "output": {
+      "action": "create_event",
+      "person": "Mason",
+      "date": "2027-01-08",
+      "time": "17:15",
+      "location": "downtown HQ"
+    }
+  },
+  {
+    "input": "Drop Frank a message saying please confirm receipt",
+    "output": {
+      "action": "send_message",
+      "person": "Frank",
+      "message": "please confirm receipt"
+    }
+  },
+  {
+    "input": "Compose a message to Ray saying 'the venue has changed'",
+    "output": {
+      "action": "send_message",
+      "person": "Ray",
+      "message": "the venue has changed"
+    }
+  },
+  {
+    "input": "I need to meet Yara on 2026-12-12 at 17:45.",
+    "output": {
+      "action": "create_event",
+      "person": "Yara",
+      "date": "2026-12-12",
+      "time": "17:45"
+    }
+  },
+  {
+    "input": "Add Yara to my calendar on 2026-12-05 at 14:30.",
+    "output": {
+      "action": "create_event",
+      "person": "Yara",
+      "date": "2026-12-05",
+      "time": "14:30"
+    }
+  },
+  {
+    "input": "I need to meet Mason on 2026-12-16 at 10:45.",
+    "output": {
+      "action": "create_event",
+      "person": "Mason",
+      "date": "2026-12-16",
+      "time": "10:45"
+    }
+  },
+  {
+    "input": "Unschedule my appointment with Ethan on 2027-01-06.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Ethan",
+      "date": "2027-01-06"
+    }
+  },
+  {
+    "input": "Organise a 12:15 meeting with Ivy on 2026-12-28 in their office.",
+    "output": {
+      "action": "create_event",
+      "person": "Ivy",
+      "date": "2026-12-28",
+      "time": "12:15",
+      "location": "their office"
+    }
+  },
+  {
+    "input": "Drop the 2027-01-05 meeting with Nina.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Nina",
+      "date": "2027-01-05"
+    }
+  },
+  {
+    "input": "Postpone my 2026-11-29 meeting with Chloe to 2026-12-19 at 08:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Chloe",
+      "old_date": "2026-11-29",
+      "new_date": "2026-12-19",
+      "new_time": "08:30"
+    }
+  },
+  {
+    "input": "Update my meeting with Chloe: old date 2026-11-22, new date 2026-12-23 at 18:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Chloe",
+      "old_date": "2026-11-22",
+      "new_date": "2026-12-23",
+      "new_time": "18:30"
+    }
+  },
+  {
+    "input": "Schedule a 09:45 stand-up with Pam on 2027-01-15 in Teams.",
+    "output": {
+      "action": "create_event",
+      "person": "Pam",
+      "date": "2027-01-15",
+      "time": "09:45",
+      "location": "Teams"
+    }
+  },
+  {
+    "input": "Task: call the client. Due 2026-12-17. Mark as high.",
+    "output": {
+      "action": "create_task",
+      "title": "call the client",
+      "due_date": "2026-12-17",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Forward a note to Aiden: the meeting link is in your calendar",
+    "output": {
+      "action": "send_message",
+      "person": "Aiden",
+      "message": "the meeting link is in your calendar"
+    }
+  },
+  {
+    "input": "Send Ivy the following message: great job on the presentation",
+    "output": {
+      "action": "send_message",
+      "person": "Ivy",
+      "message": "great job on the presentation"
+    }
+  },
+  {
+    "input": "Please add 'finish the analysis' to my task list. Due: 2027-01-05. Priority: medium.",
+    "output": {
+      "action": "create_task",
+      "title": "finish the analysis",
+      "due_date": "2027-01-05",
+      "priority": "medium"
+    }
+  },
+  {
+    "input": "Remind me to send the invoice on 2026-12-16 at 10:30.",
+    "output": {
+      "action": "set_reminder",
+      "task": "send the invoice",
+      "date": "2026-12-16",
+      "time": "10:30"
+    }
+  },
+  {
+    "input": "Move my meeting with Quinn from 2026-12-11 to 2026-12-29 at 14:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Quinn",
+      "old_date": "2026-12-11",
+      "new_date": "2026-12-29",
+      "new_time": "14:30"
+    }
+  },
+  {
+    "input": "Call off the 2026-12-13 session with Frank.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Frank",
+      "date": "2026-12-13"
+    }
+  },
+  {
+    "input": "Unschedule my appointment with Uma on 2027-01-06.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Uma",
+      "date": "2027-01-06"
+    }
+  },
+  {
+    "input": "The meeting with Wendy on 2027-01-03 is no longer happening. Remove it.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Wendy",
+      "date": "2027-01-03"
+    }
+  },
+  {
+    "input": "Add a reminder: finish the analysis \u2014 2026-12-08 at 09:15.",
+    "output": {
+      "action": "set_reminder",
+      "task": "finish the analysis",
+      "date": "2026-12-08",
+      "time": "09:15"
+    }
+  },
+  {
+    "input": "Book a session with Bob at 16:00 on 2027-01-04 in auditorium.",
+    "output": {
+      "action": "create_event",
+      "person": "Bob",
+      "date": "2027-01-04",
+      "time": "16:00",
+      "location": "auditorium"
+    }
+  },
+  {
+    "input": "Plan a meeting with Tom in room 202 at 12:45 on 2026-12-20.",
+    "output": {
+      "action": "create_event",
+      "person": "Tom",
+      "date": "2026-12-20",
+      "time": "12:45",
+      "location": "room 202"
+    }
+  },
+  {
+    "input": "Please update the Ivy meeting: was 2026-11-20, now 2026-12-25 at 18:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Ivy",
+      "old_date": "2026-11-20",
+      "new_date": "2026-12-25",
+      "new_time": "18:30"
+    }
+  },
+  {
+    "input": "I need to cancel the event with Jack on 2026-12-30.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Jack",
+      "date": "2026-12-30"
+    }
+  },
+  {
+    "input": "Schedule a meeting with Liam on 2026-12-09 at 16:45 in my place.",
+    "output": {
+      "action": "create_event",
+      "person": "Liam",
+      "date": "2026-12-09",
+      "time": "16:45",
+      "location": "my place"
+    }
+  },
+  {
+    "input": "Add to my to-do: send the invoice. Deadline 2026-12-24, urgent priority.",
+    "output": {
+      "action": "create_task",
+      "title": "send the invoice",
+      "due_date": "2026-12-24",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "I need to meet Ray on 2027-01-06 at 18:30.",
+    "output": {
+      "action": "create_event",
+      "person": "Ray",
+      "date": "2027-01-06",
+      "time": "18:30"
+    }
+  },
+  {
+    "input": "Drop the 2026-11-22 meeting with Karen.",
+    "output": {
+      "action": "cancel_event",
+      "person": "Karen",
+      "date": "2026-11-22"
+    }
+  },
+  {
+    "input": "Set an alert for 2027-01-09 at 09:45 to send the invoice.",
+    "output": {
+      "action": "set_reminder",
+      "task": "send the invoice",
+      "date": "2027-01-09",
+      "time": "09:45"
+    }
+  },
+  {
+    "input": "I need to read the proposal before 2026-12-17. Set priority to urgent.",
+    "output": {
+      "action": "create_task",
+      "title": "read the proposal",
+      "due_date": "2026-12-17",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Forward a note to Isabella: the deadline has changed to next Friday",
+    "output": {
+      "action": "send_message",
+      "person": "Isabella",
+      "message": "the deadline has changed to next Friday"
+    }
+  },
+  {
+    "input": "Send a message to Dave: 'sending the agenda now'",
+    "output": {
+      "action": "send_message",
+      "person": "Dave",
+      "message": "sending the agenda now"
+    }
+  },
+  {
+    "input": "Message Zoe and say: looking forward to our call",
+    "output": {
+      "action": "send_message",
+      "person": "Zoe",
+      "message": "looking forward to our call"
+    }
+  },
+  {
+    "input": "Update my meeting with Uma: old date 2026-11-23, new date 2026-12-30 at 17:30.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Uma",
+      "old_date": "2026-11-23",
+      "new_date": "2026-12-30",
+      "new_time": "17:30"
+    }
+  },
+  {
+    "input": "Reschedule the appointment with Liam originally on 2026-12-08 to 2027-01-12 at 17:45.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Liam",
+      "old_date": "2026-12-08",
+      "new_date": "2027-01-12",
+      "new_time": "17:45"
+    }
+  },
+  {
+    "input": "Reschedule Yara's meeting: 2026-11-22 \u2192 2026-12-23 at 10:15.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Yara",
+      "old_date": "2026-11-22",
+      "new_date": "2026-12-23",
+      "new_time": "10:15"
+    }
+  },
+  {
+    "input": "Please update the Ivy meeting: was 2026-12-12, now 2026-12-29 at 16:00.",
+    "output": {
+      "action": "reschedule_event",
+      "person": "Ivy",
+      "old_date": "2026-12-12",
+      "new_date": "2026-12-29",
+      "new_time": "16:00"
+    }
+  },
+  {
+    "input": "Notify me to schedule interviews when it is 18:15 on 2026-12-02.",
+    "output": {
+      "action": "set_reminder",
+      "task": "schedule interviews",
+      "date": "2026-12-02",
+      "time": "18:15"
+    }
+  },
+  {
+    "input": "Log a urgent task: send the invoice \u2014 must be done by 2027-01-08.",
+    "output": {
+      "action": "create_task",
+      "title": "send the invoice",
+      "due_date": "2027-01-08",
+      "priority": "urgent"
+    }
+  },
+  {
+    "input": "Write to Pam: bring the signed docs",
+    "output": {
+      "action": "send_message",
+      "person": "Pam",
+      "message": "bring the signed docs"
+    }
+  },
+  {
+    "input": "New task: update the roadmap. Due date: 2026-11-30. Priority: high.",
+    "output": {
+      "action": "create_task",
+      "title": "update the roadmap",
+      "due_date": "2026-11-30",
+      "priority": "high"
+    }
+  },
+  {
+    "input": "Add to my to-do: complete onboarding. Deadline 2027-01-01, urgent priority.",
+    "output": {
+      "action": "create_task",
+      "title": "complete onboarding",
+      "due_date": "2027-01-01",
+      "priority": "urgent"
+    }
+  }
+]
