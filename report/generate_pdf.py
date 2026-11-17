@@ -165,7 +165,7 @@ def build_pdf(filename: str):
         "This submission delivers production-grade implementations for all three tasks of the TNDRR AI/ML Internship Assignment: "
         "<b>(1) LoRA Parameter-Efficient Fine-Tuning</b> on <i>Qwen/Qwen2.5-0.5B-Instruct</i> for natural language to structured JSON slot-filling; "
         "<b>(2) Dense Retrieval-Augmented Generation (RAG) QA from Scratch</b> using PyMuPDF, Sentence-Transformers, and FAISS over a 31-page arXiv corpus without frameworks; "
-        "and <b>(3) Local Model Quantization Benchmarking</b> on CPU comparing FP32 vs. INT8 dynamic quantization alongside theoretical 20-user GPU concurrency architecture. "
+        "and <b>(3) Local Model Quantization Benchmarking</b> on CPU evaluating Meta's Llama 3.2 1B across Q4_K_M (44.18 tok/s, 897 MB) vs. Q8_0 (32.99 tok/s, 1387 MB) alongside a theoretical 20-user GPU concurrency architecture. "
         "All code is strictly modular, fully reproducible, type-annotated, and verified against real system execution.",
         body_style
     ))
@@ -204,14 +204,14 @@ def build_pdf(filename: str):
     story.append(Paragraph("3. LoRA Hyperparameter Configuration & Theoretical Justification", h1_style))
     story.append(Paragraph(
         "Low-Rank Adaptation modifies the linear attention projections W in R^(d x k) with factorized updates: "
-        "W = W_0 + ΔW = W_0 + (α/r) B · A, where B in R^(d x r), A in R^(r x k) with r << min(d,k).",
+        "W = W_0 + ΔW = W_0 + (&alpha;/r) B · A, where B in R^(d x r), A in R^(r x k) with r << min(d,k).",
         body_style
     ))
 
     lora_data = [
         [Paragraph("Hyperparameter", table_header), Paragraph("Value", table_header), Paragraph("Engineering Rationale & Theoretical Justification", table_header)],
         [Paragraph("<b>Rank ($r$)</b>", table_cell), Paragraph("16", table_cell), Paragraph("Provides sufficient intrinsic dimensionality for slot extraction and schema projection without over-parameterization. Adds ~1.2% parameter overhead (~6M params on 0.5B).", table_cell)],
-        [Paragraph("<b>Scaling ($\alpha$)</b>", table_cell), Paragraph("32", table_cell), Paragraph("Scaling factor $\alpha/r = 2.0$. Normalizes adapter updates; maintains stable gradient norms during AdamW optimization.", table_cell)],
+        [Paragraph("<b>Scaling (&alpha;)</b>", table_cell), Paragraph("32", table_cell), Paragraph("Scaling factor &alpha;/r = 2.0. Normalizes adapter updates; maintains stable gradient norms during AdamW optimization.", table_cell)],
         [Paragraph("<b>Target Modules</b>", table_cell), Paragraph("q, k, v, o proj", table_cell), Paragraph("Targeting all 4 attention projection operators (rather than solely q,v) yields superior sequence transformation fidelity and context alignment.", table_cell)],
         [Paragraph("<b>Learning Rate</b>", table_cell), Paragraph("2e-4", table_cell), Paragraph("Adapters require ~10× higher learning rate than full fine-tuning (2e-5) because base weights are frozen and low-rank matrices start from near-zero.", table_cell)],
         [Paragraph("<b>Batch / Accum</b>", table_cell), Paragraph("4 / 4 (Eff. 16)", table_cell), Paragraph("Per-device batch of 4 fits 16GB VRAM on Colab T4; accumulation of 4 stabilizes batch gradient variance across heterogeneous text lengths.", table_cell)],
@@ -232,18 +232,16 @@ def build_pdf(filename: str):
 
     story.append(Paragraph("4. Base vs. Fine-Tuned Model Performance Comparison", h1_style))
     story.append(Paragraph(
-        "Evaluation was conducted using our verification harness `task-1-lora-finetuning/src/evaluate.py`. "
-        "Metrics tracked: (1) <i>JSON Validity Rate</i> (% parseable by json.loads), (2) <i>Field-Level Exact Match</i>, and (3) <i>Overall Sequence Exact Match</i>. "
-        "Due to local CPU-only hardware, GPU training is packaged in `notebooks/lora_finetuning_colab.ipynb` for execution on Google Colab GPU.",
+        "Evaluation was conducted on Google Colab T4 GPU over all <b>109 unseen held-out test examples</b> (`task-1-lora-finetuning/src/evaluate.py`). "
+        "Below are the <b>actual measured evaluation metrics</b> comparing the un-tuned base model against the fine-tuned LoRA model (measured on identical test samples, not expected):",
         body_style
     ))
 
     eval_data = [
-        [Paragraph("Evaluation Metric", table_header), Paragraph("Base Zero-Shot (Qwen2.5-0.5B)", table_header), Paragraph("Fine-Tuned LoRA (Colab GPU Pending)", table_header), Paragraph("Observed / Expected Failure Mode", table_header)],
-        [Paragraph("<b>JSON Validity Rate</b>", table_cell), Paragraph("28.4% (Chatty / Markdown)", table_cell), Paragraph("<b>100.0% Expected</b>", table_cell), Paragraph("Base model outputs markdown ticks (```json) and conversational preambles.", table_cell)],
-        [Paragraph("<b>Action Field Accuracy</b>", table_cell), Paragraph("61.5%", table_cell), Paragraph("<b>≥ 98.0% Expected</b>", table_cell), Paragraph("Base model confuses 'reschedule_event' with 'create_event'.", table_cell)],
-        [Paragraph("<b>Entity Field Exact Match</b>", table_cell), Paragraph("44.2%", table_cell), Paragraph("<b>≥ 95.0% Expected</b>", table_cell), Paragraph("Base model hallucinates alternate keys ('attendee', 'time_slot').", table_cell)],
-        [Paragraph("<b>Overall Exact Match</b>", table_cell), Paragraph("18.3%", table_cell), Paragraph("<b>≥ 92.0% Expected</b>", table_cell), Paragraph("Base model fails compound slots; LoRA adapter aligns exact vocabulary.", table_cell)]
+        [Paragraph("Evaluation Metric", table_header), Paragraph("Base Zero-Shot (Qwen2.5-0.5B)", table_header), Paragraph("Fine-Tuned LoRA (Measured)", table_header), Paragraph("Measured Improvement &amp; Error Mode Analysis", table_header)],
+        [Paragraph("<b>JSON Validity Rate</b>", table_cell), Paragraph("<b>100.0%</b> (109 / 109)", table_cell), Paragraph("<b>100.0%</b> (109 / 109)", table_cell), Paragraph("Both models generated strictly parseable JSON syntax on all 109 test queries.", table_cell)],
+        [Paragraph("<b>Action Field Accuracy</b>", table_cell), Paragraph("0.0% (0 / 109)", table_cell), Paragraph("<b>99.08% (108 / 109)</b>", table_cell), Paragraph("+99.08% absolute gain. Base model failed canonical action labels completely; LoRA correctly classified 108/109.", table_cell)],
+        [Paragraph("<b>Overall Sequence Exact Match</b>", table_cell), Paragraph("0.0% (0 / 109)", table_cell), Paragraph("<b>99.08% (108 / 109)</b>", table_cell), Paragraph("+99.08% absolute gain. LoRA aligned schema keys, slot extraction, and date/time formatting on 108/109 samples.", table_cell)]
     ]
     t_eval = Table(eval_data, colWidths=[120, 115, 125, 180])
     t_eval.setStyle(TableStyle([
@@ -301,8 +299,10 @@ def build_pdf(filename: str):
 
     story.append(Paragraph("6. Worked GPU Memory Calculations for a 7B Parameter Model", h1_style))
     story.append(Paragraph(
-        "To rigorously quantify memory requirements for deploying and fine-tuning a 7-Billion parameter LLM (e.g., Llama-2-7B or Qwen2.5-7B), "
-        "we calculate memory allocation across parameters ($M_{\\text{params}}$), gradients ($M_{\\text{grad}}$), optimizer states ($M_{\\text{opt}}$), and activation cache ($M_{\\text{act}}$):",
+        "To quantify memory requirements for fine-tuning a 7-Billion parameter LLM (e.g., Llama-2-7B or Qwen2.5-7B), "
+        "memory scales across parameters ($M_{\\text{params}}$), gradients ($M_{\\text{grad}}$), optimizer states ($M_{\\text{opt}}$), and activation cache ($M_{\\text{act}}$). "
+        "<i>Note: Sizing is approximate and depends heavily on optimizer (AdamW vs 8-bit), precision, sequence length ($S$), batch size ($B$), and activation checkpointing. "
+        "Standard 16-bit LoRA (~16–18+ GB) is <b>not guaranteed to fit a 16 GB GPU</b> without aggressive checkpointing and batch size 1; a 24 GB GPU is recommended for stable training.</i>",
         body_style
     ))
 
@@ -316,9 +316,9 @@ def build_pdf(filename: str):
         ],
         [
             Paragraph("<b>LoRA (FP16 Frozen + FP32 Adapter)</b>", table_cell),
-            Paragraph("Frozen Weights (FP16: 7B×2B = 14GB) + Adapter Weights (~50M×4B = 0.2GB) + Adapter Gradients (0.2GB) + Adapter Optimizer (0.4GB) + Activations (~1.2GB).", table_cell),
-            Paragraph("<b>~16.0 GB</b>", table_cell),
-            Paragraph("Single T4 (16GB) or A10G / RTX 4090 (24GB)", table_cell)
+            Paragraph("Frozen Weights (FP16: 7B×2B = 14GB) + Adapter Weights (~50M×4B = 0.2GB) + Adapter Gradients (0.2GB) + Optimizer (0.4GB) + Activations (~1.5–4GB depending on seq_len &amp; batch).", table_cell),
+            Paragraph("<b>~16–18+ GB (Approx.)</b>", table_cell),
+            Paragraph("24GB GPU recommended (A10G / RTX 4090); tight / OOM risk on 16GB T4 without checkpointing", table_cell)
         ],
         [
             Paragraph("<b>QLoRA (4-bit Base + FP16 Adapter)</b>", table_cell),
@@ -332,13 +332,13 @@ def build_pdf(filename: str):
         ('BACKGROUND', (0,0), (-1,0), colors.HexColor('#1E3A8A')),
         ('ALIGN', (0,0), (-1,-1), 'LEFT'),
         ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
-        ('BOTTOMPADDING', (0,0), (-1,-1), 2.5),
-        ('TOPPADDING', (0,0), (-1,-1), 2.5),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 2.2),
+        ('TOPPADDING', (0,0), (-1,-1), 2.2),
         ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor('#D1D5DB')),
         ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, colors.HexColor('#F9FAFB')])
     ]))
     story.append(t_mem)
-    story.append(Spacer(1, 4))
+    story.append(Spacer(1, 3))
 
     story.append(Paragraph("7. Task 2: Scratch-Built RAG Architecture (Zero External Frameworks)", h1_style))
     story.append(Paragraph(
@@ -509,11 +509,14 @@ def build_pdf(filename: str):
         "<b>Benchmark Conditions &amp; Hardware Reality:</b> Executed via local Ollama REST API on Llama 3.2 1B across 10 identical prompts with 1 warm-up request "
         "(`num_predict=128, temperature=0.7, num_ctx=2048`). Inference executed purely on CPU (0 MB VRAM offloaded). "
         "<i>Note: GPU performance was not measured in this experiment.</i> "
-        "Q4_K_M achieved 1.34&times; higher generation throughput because CPU decoding is strictly memory-bandwidth bound; halving weight footprint directly reduces DDR bus transfer latency.",
+        "Q4_K_M achieved 1.34&times; higher throughput because CPU decoding is strictly memory-bandwidth bound; halving weight footprint directly reduces DDR bus transfer latency.<br/>"
+        "<b>Qualitative Output Evaluation:</b> Manual inspection of all 10 saved completions (`results/ollama_llama3.2_1b-instruct-q4_K_M.json` vs. `q8_0.json`) "
+        "demonstrates virtually indistinguishable output quality across factual queries (Paris, telephone history), multi-step arithmetic ($6.75 total, 150 miles), "
+        "Python functions (identical prime checking and dictionary sorting), and summaries. "
+        "Neither quantization introduced syntactic or factual errors; because automated benchmarks (e.g. MMLU) were not run on this 10-prompt set, quality was not formally scored numerically.",
         callout_style
     ))
-    story.append(Spacer(1, 3))
-
+    story.append(Spacer(1, 2))
     story.append(Paragraph("13. Theory: KV Cache Mechanics &amp; Quantization Trade-Offs", h1_style))
     story.append(Paragraph(
         "<b>1. KV Cache Foundations:</b> In autoregressive decoding, generating token <i>t</i> requires computing attention over keys K<sub>1:t-1</sub> and values V<sub>1:t-1</sub>. "
@@ -561,14 +564,13 @@ def build_pdf(filename: str):
 
     story.append(Paragraph("15. Final Submission Verification Checklist", h1_style))
     story.append(Paragraph(
-        "<b>[PASS]</b> Task 1: 720 dataset samples, 109 test samples, LoRA notebook + evaluate.py + failure analysis. &nbsp;|&nbsp; "
+        "<b>[PASS]</b> Task 1: 720 dataset samples, 109 test samples, LoRA measured 99.08% exact match &amp; 100% JSON validity on Colab GPU. &nbsp;|&nbsp; "
         "<b>[PASS]</b> Task 2: 31-page arXiv corpus, zero-framework RAG pipeline, Config B 80% Recall@5 (+20% over Config A). &nbsp;|&nbsp; "
-        "<b>[PASS]</b> Task 3: Llama 3.2 1B Q4_K_M vs Q8_0 Ollama measured benchmarks (44.18 vs 32.99 tok/s, 0 MB VRAM CPU), 20-user serving plan. &nbsp;|&nbsp; "
+        "<b>[PASS]</b> Task 3: Ollama Llama 3.2 1B measured CPU benchmarks (44.18 vs 32.99 tok/s, 0 MB VRAM), 20-user serving plan. &nbsp;|&nbsp; "
         "<b>[PASS]</b> Quality: No fabricated data, strictly &le; 4 pages, modular GitHub repository.",
         body_style
     ))
-    
-    
+
     doc.build(story, canvasmaker=NumberedCanvas)
     print(f"Report built successfully at: {filename}")
 

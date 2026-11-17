@@ -12,7 +12,10 @@
 - [x] Evaluation harness implemented (`task-1-lora-finetuning/src/evaluate.py`) with JSON validity, field-level exact match, and sequence exact match
 - [x] Diagnostic failure analysis (`task-1-lora-finetuning/results/failure_analysis.json`) covering 3 genuine failure archetypes
 - [x] Ready-to-run Google Colab fine-tuning notebook (`task-1-lora-finetuning/notebooks/lora_finetuning_colab.ipynb`) for `Qwen/Qwen2.5-0.5B-Instruct`
-- [x] Worked 7B GPU memory calculations for Full Fine-Tuning (~120GB), LoRA (~16GB), and QLoRA (~6.5GB)
+- [x] **Measured Colab T4 evaluation results on 109 held-out test samples**:
+  - Base: JSON validity: 100%, Action accuracy: 0.0%, Overall exact match: 0.0%
+  - Fine-Tuned LoRA: JSON validity: 100%, Action accuracy: 99.08% (108/109), Overall exact match: 99.08% (108/109)
+- [x] Worked 7B GPU memory calculations for Full Fine-Tuning (~120GB), LoRA (~16–18+ GB approximate), and QLoRA (~6.5GB)
 - [x] Pinned `requirements.txt` and comprehensive `README.md`
 
 ### Task 2: Document-Based RAG System from Scratch
@@ -38,10 +41,14 @@
 
 ### Task 3: Local Model Optimisation & Benchmarking
 - [x] 10 diverse benchmark prompts covering 5 categories (`prompts/benchmark_prompts.json`)
-- [x] CPU benchmark suite executed on `google/flan-t5-small` (`src/benchmark_cpu.py`):
+- [x] **Measured Ollama CPU benchmark on Meta Llama 3.2 1B (`src/benchmark_ollama.py`)**:
+  - `llama3.2:1b-instruct-q4_K_M`: Model size: 897.32 MB, System RAM increase: +881.2 MB, 0 MB VRAM, Latency: 4.150s, **44.18 tok/s**
+  - `llama3.2:1b-instruct-q8_0`: Model size: 1386.92 MB, System RAM increase: +1368.5 MB, 0 MB VRAM, Latency: 4.990s, **32.99 tok/s**
+  - Impact: **35.3% memory reduction** and **1.34× (+33.9%) throughput speedup**
+- [x] Companion CPU benchmark suite on `google/flan-t5-small` (`src/benchmark_cpu.py`):
   - **FP32 Full Precision**: Load: 92.72s, Model Mem: 69.4MB, TPS: 98.87, Avg Latency: 0.598s
   - **INT8 Dynamic Quantization**: Load: 3.43s, Model Mem: 427.5MB, TPS: 80.29, **Avg Latency: 0.248s (2.41× faster)**
-- [x] Comparison engine and structured outputs (`src/compare_configurations.py`, `results/comparison_table.json`)
+- [x] Comparison engine and structured outputs (`src/compare_configurations.py`, `results/comparison_table.json`, `results/ollama_comparison.csv`)
 - [x] Theoretical analysis of KV cache scaling and quantization mechanics (`src/analysis.py`)
 - [x] Complete production architecture for serving 20 concurrent users on a 24GB GPU (Continuous Batching, GQA, PagedAttention, Leaky-Bucket Queue)
 - [x] Pinned `requirements.txt` and comprehensive `README.md`
@@ -50,9 +57,4 @@
 - [x] Automated ReportLab PDF generator (`report/generate_pdf.py`)
 - [x] 4-page technical report generated at `report/final-report.pdf`
 - [x] Verified page count: **exactly 4 pages** (via PyMuPDF assertion)
-
----
-
-## ⏳ Pending Experiments (Explicitly Labelled — Requires External GPU)
-- [ ] **Task 1 Model Checkpoints**: Training execution of `lora_finetuning_colab.ipynb` on Google Colab T4 GPU (notebook is verified and ready-to-run).
-- [ ] **Task 3 Ollama GPU Benchmark**: Running `src/benchmark_ollama.py` once Ollama service is locally installed and pulled (`llama3.2:1b`).
+- [x] Synchronized with all verified empirical metrics (Colab LoRA 99.08%, RAG Config B 80% Recall@5, Ollama Llama 3.2 1B 44.18 tok/s)
